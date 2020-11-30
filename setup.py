@@ -9,12 +9,12 @@ from setuptools import setup, find_packages
 from _version import __version__
 
 setup(
-    name='tedxntua<VAR:YEAR>',
+    name='tedxntua2021',
     version=__version__,
     packages=find_packages(),
     scripts=['manage.py'],
-    url='<VAR:REPO_URL>',
-    author='TEDxNTUA IT Team <VAR:YEAR>',
+    url='https://github.com/TEDxNTUA/tedxntua2021',
+    author='TEDxNTUA IT Team 2021',
     author_email='webmaster@tedxntua.com',
     install_requires=[
         'dj-database-url',
@@ -23,10 +23,14 @@ setup(
         'django-versatileimagefield',
         'django-webpack-loader',
         'django-parler',
+        'django-extensions',
+        'django-active-link',
     ],
     extras_require={
         'dev': [
-            'django-extensions',
+            'fabric',
+            'colorama',
+            'decorator',
         ],
     },
 )
