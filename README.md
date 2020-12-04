@@ -11,7 +11,7 @@ Listed alphabetically:
 1. Nick Bellos v2([nickbel7](https://github.com/nickbel7))
 1. Theodore Diamantidis ([tdiam](https://github.com/tdiam))
 1. Manolis Panagiotou ([panagiotou](https://github.com/panagiotou))
-1. 
+1. Elina Syrri
 
 ## Documentation
 * [Contributing](docs/contributing.md)
