@@ -1,4 +1,4 @@
-# TEDxNTUA Base
+﻿# TEDxNTUA Base
 Django project that serves as a base for [TEDxNTUA](https://tedxntua.com)'s websites.
 
 ## Usage
@@ -11,7 +11,7 @@ Listed alphabetically:
 1. Nick Bellos ([nickbel7](https://github.com/nickbel7))
 1. Lydia Balafouti ([LydiaBal](https://github.com/LydiaBal))
 1. George Papadoulis ([G-Papad](https://github.com/G-Papad))
-1. Elina Syrri
+1. Elina Syrri ([ElinaSyr](https://github.com/ElinaSyr))
 
 ## Documentation
 * [Contributing](docs/contributing.md)
