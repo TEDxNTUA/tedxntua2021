@@ -8,9 +8,14 @@ The project contains some `<VAR:NAME>` occurrences for information that changes 
 
 ## Contributors
 Listed alphabetically:
-1. Nick Bellos ([nickbel7](https://github.com/nickbel7))
+1. Nick Bellos v2([nickbel7](https://github.com/nickbel7))
 1. Theodore Diamantidis ([tdiam](https://github.com/tdiam))
+<<<<<<< HEAD
 1. George Papadoulis ([G-Papad](https://github.com/G-Papad))
+=======
+1. Manolis Panagiotou ([panagiotou](https://github.com/panagiotou))
+1. Elina Syrri
+>>>>>>> b17a2ae64ba6526e5bfe23eb5f36380ce4e54a13
 
 ## Documentation
 * [Contributing](docs/contributing.md)
