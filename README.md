@@ -10,7 +10,7 @@ The project contains some `<VAR:NAME>` occurrences for information that changes 
 Listed alphabetically:
 1. Nick Bellos ([nickbel7](https://github.com/nickbel7))
 1. Lydia Balafouti ([LydiaBal](https://github.com/LydiaBal))
-1. Manolis Panagiotou ([panagiotou](https://github.com/panagiotou))
+1. George Papadoulis ([G-Papad](https://github.com/G-Papad))
 1. Elina Syrri
 
 ## Documentation
