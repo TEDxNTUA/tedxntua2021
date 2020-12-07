@@ -9,12 +9,22 @@ from parler.managers import TranslatableManager
 
 
 class PartnerManager(TranslatableManager):
-    def get_partners_by_type(self):
-        '''Table-level method to get all partners grouped by type.
-        Returns a dictionary where partner types from Partner.PARTNER_TYPES
-        are the keys and the value is a dictionary with the `title` of
-        the team and a `items` array.
-        The order of partner types is the same as in PARTNER_TYPES.
+    def get_partners_by_type(self, unpublished=False):
+        '''
+        Table-level method to get all partners grouped by type.
+
+        Parameters
+        ----------
+        unpublished : bool (default False)
+            Controls if unpublished partners are included.
+
+        Returns
+        -------
+        directory : dict
+            A dictionary where partner types from Partner.PARTNER_TYPES
+            are the keys and the value is a dictionary with the `title` of
+            the team and a `items` array.
+            The order of partner types is the same as in PARTNER_TYPES.
         '''
         partners = OrderedDict()
         for type_, title in Partner.PARTNER_TYPES:
@@ -23,7 +33,11 @@ class PartnerManager(TranslatableManager):
                 'items': [],
             }
 
-        for item in self.get_queryset().filter(is_published=True):
+        qs = self.get_queryset()
+        if not unpublished:
+            qs = qs.filter(is_published=True)
+
+        for item in qs:
             partners[item.partner_type]['items'].append(item)
         return partners
 
@@ -39,6 +53,7 @@ class Partner(TranslatableModel):
     the official documentation example:
     https://docs.djangoproject.com/en/2.2/ref/models/fields/#urlfield
     '''
+    PLATINUM_SPONSORS = 'PS'
     GRAND_SPONSORS = 'GS'
     GRAND_CARRIER_SPONSORS = 'GCS'
     GRAND_HOSPITALITY_SPONSORS = 'GHS'
@@ -47,6 +62,7 @@ class Partner(TranslatableModel):
     MEDIA_PARTNERS = 'MP'
     COMMUNITY_PARTNERS = 'CP'
     PARTNER_TYPES = (
+        (PLATINUM_SPONSORS, _('Platinum Sponsor')),
         (GRAND_SPONSORS, _('Grand Sponsors')),
         (GRAND_CARRIER_SPONSORS, _('Grand Carrier Sponsors')),
         (GRAND_HOSPITALITY_SPONSORS, _('Grand Hospitality Sponsors')),
@@ -71,6 +87,12 @@ class Partner(TranslatableModel):
     image_width = models.PositiveIntegerField(editable=False, null=True)
 
     is_published = models.BooleanField(_('Published'), default=True)
+
+    leaflet = models.FileField(
+        upload_to='partners/leaflet/',
+        null=True,
+        blank=True,
+    )
 
     objects = PartnerManager()
 

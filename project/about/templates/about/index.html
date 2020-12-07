@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load render_bundle from webpack_loader %}
+{% block title %}{% trans 'about.title' %}{% endblock %}
+{% block description %}{% trans 'about.description' %}{% endblock %}
+{% block image %}{% static "images/tedxntua_photo_1200.jpg" %}{% endblock %}
+{% block content %}
+<article class="about-page">
+    <section id="team">
+        <div id="simple-view">
+            <header>
+                <h2>{% trans 'about.meet_the_team' %}</h2>
+            </header>
+            {% for member in members %}
+            <div class="member">
+                <div class="slider-image normal">
+                    {% if member.image %}
+                    <img class="lazy lazy-on-hover" data-loaded="false"
+                        src="{{ member.image.thumbnail.320x320.url }}"
+                        data-srcset="{{ member.image.thumbnail.320x320.url }} 320w,
+                            {{ member.image.thumbnail.720x720.url }} 720w,
+                            {{ member.image.thumbnail.1024x1024.url }} 1024w"
+                        sizes="(max-width: 576px) 320px,
+                            (max-width: 992px) 720px,
+                            1024px"
+                        alt="" />
+                    {% endif %}
+                    <p>{{ member.name }}</p>
+                </div>
+                <div class="slider-image on-hover">
+                    {% if member.image_alt %}
+                    <img class="lazy lazy-on-hover" data-loaded="false"
+                        src="{{ member.image_alt.thumbnail.320x320.url }}"
+                        data-srcset="{{ member.image_alt.thumbnail.320x320.url }} 320w,
+                            {{ member.image_alt.thumbnail.720x720.url }} 720w,
+                            {{ member.image_alt.thumbnail.1024x1024.url }} 1024w"
+                        sizes="(max-width: 576px) 320px,
+                            (max-width: 992px) 720px,
+                            1024px"
+                        alt="" />
+                    {% endif %}
+                    <p>
+                        {% blocktrans trimmed with team_name=member.get_team_display|upper %}
+                            {{ team_name }} TEAM
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="cube-view"></div>
+    </section>
+    <section id="about">
+        <img class="lazy lazy-on-view"
+            src="{% static "images/tedxntua_photo_540.jpg" %}"
+            data-srcset="{% static "images/tedxntua_photo_540.jpg" %} 540w,
+                     {% static "images/tedxntua_photo_1200.jpg" %} 1200w,
+                     {% static "images/tedxntua_photo_2400.jpg" %} 2400w"
+            sizes="(max-width: 768px) 540px,
+                    (max-width: 1440px) 1200px,
+                    2400px"
+            alt="TEDxNTUA organizing team and volunteers celebrating the conclusion of the 2019 event" />
+        <div class="about-section" id="about-tedxntua">
+            {% trans 'about.tedxntua' %}
+            {% trans 'about.join' %}
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 about-section" id="about-ted">
+                    {% trans 'about.ted' %}
+                </div>
+                <div class="col-12 col-md-6 about-section" id="about-tedx">
+                    {% trans 'about.tedx' %}
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}
+{% block scripts %}
+    {% render_bundle 'about' 'js' %}
+{% endblock %}
