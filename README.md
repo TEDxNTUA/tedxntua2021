@@ -1,17 +1,12 @@
-﻿# TEDxNTUA Base
-Django project that serves as a base for [TEDxNTUA](https://tedxntua.com)'s websites.
-
-## Usage
-Copy this repository into a new one, e.g. `tedxntua2019`.
-
-The project contains some `<VAR:NAME>` occurrences for information that changes for each event, such as the year of the event, the repository URL etc. Search for `<VAR:` in the project directory to find all of them and edit them accordingly.
+# TEDxNTUA 2021
+Django project for [TEDxNTUA](https://tedxntua.com)'s 2021 website.
 
 ## Contributors
 Listed alphabetically:
-1. Nick Bellos ([nickbel7](https://github.com/nickbel7))
-1. Lydia Balafouti ([LydiaBal](https://github.com/LydiaBal))
-1. George Papadoulis ([G-Papad](https://github.com/G-Papad))
 1. Elina Syrri ([ElinaSyr](https://github.com/ElinaSyr))
+1. George Papadoulis ([G-Papad](https://github.com/G-Papad))
+1. Lydia Balafouti ([LydiaBal](https://github.com/LydiaBal))
+1. Nick Bellos ([nickbel7](https://github.com/nickbel7))
 
 ## Documentation
 * [Contributing](docs/contributing.md)
@@ -20,6 +15,7 @@ Listed alphabetically:
 * [Usage](docs/usage.md)
 * Subsystems:
     * [Webpack](docs/webpack/index.md)
+    * [Deployment: Fub](fub/README.md)
 
 ## Code license
 The code in this repository is licensed under the [MIT license](LICENSE).

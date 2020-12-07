@@ -2,7 +2,7 @@
 Models for the "Program" section of the website.
 
 The event consists of Activities presented by Presenters, where each activity
-happens on one of the three stages: Main event, Performances, Side events.
+happens on one of the two stages: Main event, Side events.
 
 In this module you'll find:
 - Django models for each entity.
@@ -19,11 +19,13 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.dispatch import receiver
 from django.utils.translation import ugettext_lazy as _
+from django_extensions.db.fields import AutoSlugField
 
 from versatileimagefield.fields import VersatileImageField
 from versatileimagefield.image_warmer import VersatileImageFieldWarmer
-from parler.models import TranslatableModel, TranslatedFields
+from parler.models import TranslatableModel, TranslatedFields, TranslationDoesNotExist
 from parler.managers import TranslatableQuerySet, TranslatableManager
+from project.utils.slug import EnglishAutoSlugField
 
 
 logger = logging.getLogger(__name__)
@@ -33,16 +35,14 @@ logger = logging.getLogger(__name__)
 class Stage(Enum):
     '''Enum class that represents the event stages'''
     MAIN = 'main'
-    PERFORMANCE = 'performance'
     SIDE = 'side'
 
     @classmethod
     def get_verbose_names(cls):
         '''The stage labels that will be shown in the schedule page'''
         return {
-            cls.MAIN.value: _('Main stage'),
-            cls.PERFORMANCE.value: _('Performances'),
-            cls.SIDE.value: _('Side events'),
+            cls.MAIN.value: _('MAIN STAGE'),
+            cls.SIDE.value: _('SIDE EVENTS'),
         }
 
     @classmethod
@@ -51,8 +51,8 @@ class Stage(Enum):
         map_to_stage = {
             Activity.GENERAL: cls.MAIN.value,
             Activity.TALK: cls.MAIN.value,
-            Activity.PERFORMANCE: cls.PERFORMANCE.value,
-            Activity.WORKSHOP: cls.SIDE.value,
+            Activity.PERFORMANCE: cls.MAIN.value,
+            Activity.SIDE_EVENT: cls.SIDE.value,
         }
         # Return None if activity type is not mapped to any stage
         return map_to_stage.get(activity.activity_type, None)
@@ -64,7 +64,7 @@ class ActivityManager(TranslatableManager):
     '''
     The main manager of the Activity model providing class-level functionality.
     '''
-    def get_schedule(self):
+    def get_schedule(self, unpublished=False):
         '''
         Get the schedule of the event organized by time and stages.
 
@@ -82,27 +82,35 @@ class ActivityManager(TranslatableManager):
         {
             '11:30': {
                 'main': <Activity: Exploring space (Talk)>,
-                'performance': None,
                 'side': None
             },
             '12:20': {
-                'main': None,
-                'performance': <Activity: Banjo session (Performance)>,
-                'side': <Activity: Labyrinth of Senses (Workshop)>
+                'main': <Activity: Banjo session (Performance)>,
+                'side': <Activity: Labyrinth of Senses (Side event)>
             },
             ...
         }
+
+        Parameters
+        ----------
+        unpublished : bool (default False)
+            Controls if unpublished activities are included.
         '''
 
         slots = {}
         # Initialize each line to contain None for each stage
         blank_line = {stage.value: None for stage in Stage}
 
-        activities = Activity.objects.filter(
-            is_published=True,
+        activities = Activity.objects.select_related('presenter').filter(
             start__isnull=False,
             end__isnull=False,
         )
+        if not unpublished:
+            # Hide activities when their presenter is unpublished
+            activities = activities.filter(
+                presenter__is_published=True,
+                is_published=True,
+            )
 
         for activity in activities:
             # Get time slot
@@ -137,6 +145,18 @@ class ActivityManager(TranslatableManager):
                 setattr(a, field, '-')
         return a
 
+    def published(self):
+        '''
+        Fetches only published activities.
+
+        Becomes handy in templates where we can write for example:
+        `for act in presenter.activity_set.published`.
+        '''
+        return self.get_queryset().filter(
+            presenter__is_published=True,
+            is_published=True,
+        )
+
 
 class ActivityTypeManager(TranslatableManager):
     '''
@@ -150,6 +170,11 @@ class ActivityTypeManager(TranslatableManager):
     def get_queryset(self):
         return super().get_queryset().filter(
             activity_type=self.type_,
+        )
+
+    def published(self):
+        return self.get_queryset().filter(
+            presenter__is_published=True,
             is_published=True,
         )
 
@@ -162,13 +187,13 @@ class Activity(TranslatableModel):
     GENERAL = 'G'
     TALK = 'T'
     PERFORMANCE = 'P'
-    WORKSHOP = 'W'
+    SIDE_EVENT = 'S'
     HOSTING = 'H'
     TYPE_CHOICES = (
         (GENERAL, _('General')),
         (TALK, _('Talk')),
         (PERFORMANCE, _('Performance')),
-        (WORKSHOP, _('Workshop')),
+        (SIDE_EVENT, _('Side event')),
         (HOSTING, _('Hosting')),
     )
 
@@ -197,18 +222,16 @@ class Activity(TranslatableModel):
 
     is_published = models.BooleanField(_('Published'), default=True)
 
-    '''An activity may be presented by many people and a presenter
-    may present many activities respectively
-
-    Documentation for many-to-many relationships may be found here:
-    https://docs.djangoproject.com/en/2.2/topics/db/examples/many_to_many/
-    '''
-    presenters = models.ManyToManyField('Presenter')
+    presenter = models.ForeignKey(
+        'Presenter',
+        null=True,
+        on_delete=models.SET_NULL,
+    )
 
     objects = ActivityManager()
     talks = ActivityTypeManager(TALK)
     performances = ActivityTypeManager(PERFORMANCE)
-    workshops = ActivityTypeManager(WORKSHOP)
+    side_events = ActivityTypeManager(SIDE_EVENT)
 
     def __str__(self):
         return self.title
@@ -233,6 +256,9 @@ class Activity(TranslatableModel):
 
     def clean(self):
         '''Ensures that only one activity starts at a certain time and stage'''
+        # Skip if start time has not been set
+        if self.start is None:
+            return
         same_time_activities = Activity.objects.filter(start=self.start)
         for other in same_time_activities:
             if (self.id != other.id
@@ -269,31 +295,6 @@ def warm_activity_images(sender, instance, **kwargs):
         logger.info('No image file added for this activity: %s', instance)
 
 
-class PresenterManager(TranslatableManager):
-    '''Class-level functionality'''
-    def get_speakers(self):
-        '''Returns a list of all speakers with their talk info.
-
-        Unlike the rest of the models file, here we make the assumption
-        that each speaker is presenting only a single talk.
-        '''
-        speakers = self.get_queryset().filter(
-            activity__activity_type=Activity.TALK,
-            is_published=True,
-        ).distinct()
-        for speaker in speakers:
-            speaker.talk = speaker.activity_set.filter(is_published=True).first()
-        return speakers
-
-    def get_hosts(self):
-        '''Returns the host of the event'''
-        hosts = self.get_queryset().filter(
-            activity__activity_type=Activity.HOSTING,
-            is_published=True,
-        ).distinct()
-        return hosts
-
-
 # Presenter model & managers
 
 class PresenterTypeManager(TranslatableManager):
@@ -308,8 +309,10 @@ class PresenterTypeManager(TranslatableManager):
     def get_queryset(self):
         return super().get_queryset().filter(
             activity__activity_type=self.type_,
-            is_published=True,
         ).distinct()
+
+    def published(self):
+        return self.get_queryset().filter(is_published=True)
 
 
 class Presenter(TranslatableModel):
@@ -320,8 +323,7 @@ class Presenter(TranslatableModel):
     First and last name are the only required fields.
     '''
     translations = TranslatedFields(
-        first=models.CharField(max_length=255, verbose_name='First name'),
-        last=models.CharField(max_length=255, verbose_name='Last name'),
+        name=models.CharField(max_length=255, default=''),
         occupation=models.CharField(max_length=255, blank=True),
         short_bio=models.TextField(blank=True, verbose_name='Short bio'),
         quote=models.CharField(max_length=255, blank=True,
@@ -349,17 +351,16 @@ class Presenter(TranslatableModel):
     # Documentation link:
     # https://docs.djangoproject.com/en/2.2/topics/db/managers/
 
-    objects = PresenterManager()
+    objects = TranslatableManager()
     speakers = PresenterTypeManager(Activity.TALK)
     performers = PresenterTypeManager(Activity.PERFORMANCE)
-    workshop_presenters = PresenterTypeManager(Activity.WORKSHOP)
+    side_presenters = PresenterTypeManager(Activity.SIDE_EVENT)
+    hosts = PresenterTypeManager(Activity.HOSTING)
 
-    @property
-    def fullname(self):
-        return ' '.join([self.first, self.last])
+    slug = EnglishAutoSlugField(populate_from=['name'], overwrite=True)
 
     def __str__(self):
-        return self.fullname
+        return self.name
 
 
 @receiver(models.signals.post_save, sender=Presenter)

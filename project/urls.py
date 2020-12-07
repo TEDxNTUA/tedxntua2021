@@ -22,20 +22,16 @@ from django.views.generic import RedirectView
 from django.utils.translation import ugettext_lazy as _
 
 
-urlpatterns = [
-    path('', include('project.home.urls')),
-    path('', include('django.conf.urls.i18n')),
-    path('schedule/', include('project.program.schedule_urls')),
-    path('speakers/', include('project.program.urls')),
-    path('partners/', include('project.partners.urls')),
-    path('team/', include('project.team.urls')),
-    path('about/', include('project.about.urls')),
-    path('tickets/', RedirectView.as_view(url='<VAR:TICKETS_URL>'))
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
-  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns = static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
+    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
+    path('', include('project.home.urls')),
+    path('', include('django.conf.urls.i18n')),
+    path('', include('project.program.urls')),
+    path('partners/', include('project.partners.urls')),
+    path('about/', include('project.about.urls')),
 )
 
 admin.site.site_header = _('TEDxNTUA 2021 administration')

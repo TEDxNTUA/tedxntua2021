@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
-    'django_extensions'
+    'django_extensions',
+    'active_link',
 ]
 
 MIDDLEWARE = [
@@ -61,8 +62,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'project.utils.contextprocessors.settings',
             ],
             'libraries': {
+                'iter_extras': 'project.templatetags.iter_extras',
                 'lang_extras': 'project.templatetags.lang_extras',
             },
         },
@@ -188,3 +191,9 @@ PARLER_LANGUAGES = {
     }
 }
 PARLER_DEFAULT_LANGUAGE_CODE = 'en'
+
+TEDXNTUA_DATE = '2020-03-28'
+TEDXNTUA_SHOW_UNPUBLISHED = env_bool('TEDXNTUA_SHOW_UNPUBLISHED', False)
+TEDXNTUA_TICKETS_ENABLED = env_bool('TEDXNTUA_TICKETS_ENABLED', False)
+TEDXNTUA_TICKETS_URL = env_str('TEDXNTUA_TICKETS_URL', '/')
+TEDXNTUA_SCHEDULE_ENABLED = env_bool('TEDXNTUA_SCHEDULE_ENABLED', False)

@@ -1,0 +1,26 @@
+{% load i18n %}
+{% load static %}
+<section id="about">
+    <header>
+        <h2>{% trans 'home.about.title' %}</h2>
+    </header>
+    <div class="auspices">
+        <a href="https://www.ntua.gr" target="_blank" rel="noopener">
+            <img src="{% static "images/pyrforos.svg" %}"
+                alt="{% trans 'home.about.pyrforos' %}" />
+        </a>
+        <h5>{% trans 'home.about.auspices' %}</h5>
+    </div>
+    <div class="content">
+        {% trans 'home.about.content' %}
+        <a href="{% url "about" %}" class="btn btn-lg btn-secondary">
+            {% trans 'home.about.learn_more' %} &gt;
+        </a>
+        {% if settings.TEDXNTUA_TICKETS_ENABLED %}
+        <h3>{% trans 'home.about.cta_header' %}</h3>
+        <a href="{{ settings.TEDXNTUA_TICKETS_URL }}" class="btn btn-lg btn-primary">
+            {% trans 'tickets.cta' %}
+        </a>
+        {% endif %}
+    </div>
+</section>
