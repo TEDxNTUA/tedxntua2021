@@ -41,7 +41,7 @@ article.home-page {
             margin-right: .5em;
             font-size: 1.25em;
             &.active {
-                color: black;
+                color: $body-color;
                 @include underline();
             }
         }

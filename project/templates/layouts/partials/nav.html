@@ -8,7 +8,7 @@
 <nav id="nav" aria-label="Navigation header">
     <a class="navbar-brand" href="{% url 'index' %}"
         aria-label="Go to homepage">
-        <img src="{% static "images/tedxntua_logo_blacktext.png" %}"
+        <img src="{% static "images/tedxntua_logo_whitetext.png" %}"
              alt="TEDxNTUA logo" />
     </a>
     <button class="navbar-toggler" data-toggle="collapse"
@@ -17,8 +17,8 @@
         <div class="navbar-toggler-icon" aria-hidden="true">
             <span></span><span></span><span></span>
         </div>
-        <span class="unexpanded">{% trans 'MENU' %}</span>
-        <span class="expanded">{% trans 'CLOSE' %}</span>
+        <span class="unexpanded contrast-font">{% trans 'MENU' %}</span>
+        <span class="expanded contrast-font">{% trans 'CLOSE' %}</span>
     </button>
     <hr></hr>
     <ul role="menu" id="navbar-nav" class="navbar-nav collapse"

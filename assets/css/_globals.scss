@@ -7,6 +7,7 @@ html, body {
 
 body {
 	color: $body-color;
+	background-color: $body-bg;
 	// Body is a column flexbox consisting of three parts:
 	// The header, the main and the footer
 	display: flex;
@@ -24,12 +25,16 @@ main {
 	// Seen at:
 	// https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f
     flex-grow: 1;
-    padding: 0 $page-padding-x $page-padding-y;
+	padding: 0 $page-padding-x $page-padding-y;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-serif;
     font-weight: bold;
+}
+
+.contrast-font {
+	color: $body-color;
 }
 
 @mixin underline($in: 5px, $out: 1px) {
