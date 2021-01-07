@@ -12,6 +12,12 @@ nav#nav {
         margin: 0;
         border: 0;
     }
+
+    // position: fixed;
+	// top: 0;
+    // width: 100%;
+    // background-color: $body-bg;
+    // z-index: 1000;
 }
 
 .navbar-brand {
@@ -116,6 +122,7 @@ nav#nav {
         height: 100%;
     }
     .dropdown-menu {
+        background-color: $body-bg;
         display: flex;
         flex-direction: column;
         min-width: auto;
