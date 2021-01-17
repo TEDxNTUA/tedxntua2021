@@ -13,15 +13,16 @@ nav#nav {
         border: 0;
     }
 
-    // position: fixed;
-	// top: 0;
-    // width: 100%;
-    // background-color: $body-bg;
-    // z-index: 1000;
+    //for sticky navbar
+    position: fixed;
+	top: 0;
+    width: 100%;
+    background-color: $body-bg;
+    z-index: 1;
 }
 
 .navbar-brand {
-    height: 3.25em;
+    height: $logo-height;
     border-bottom: $nav-hover-border-width solid transparent;
     font-size: inherit;
     &:hover {

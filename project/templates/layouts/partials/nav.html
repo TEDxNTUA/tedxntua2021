@@ -109,4 +109,13 @@
             </div>
         </li>
     </ul>
+    <div role="group" class="btn-group language-switch"
+        aria-label="Select website language">
+        {% for code, lang_name in LANGUAGES %}
+        <a class="btn{% if code == CURR_LANG %} active{% endif %}"
+            aria-label="{{ lang_name }}" href="{% change_lang code %}">
+            {{ code | lang_short_name }}
+        </a>
+        {% endfor %}
+    </div>
 </nav>
