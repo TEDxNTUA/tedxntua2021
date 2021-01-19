@@ -11,16 +11,8 @@
         <img src="{% static "images/tedxntua_logo_whitetext.png" %}"
              alt="TEDxNTUA logo" />
     </a>
-    <button class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-nav" aria-controls="navbar-nav"
-            aria-label="Toggle navigation menu" aria-expanded="false">
-        <div class="navbar-toggler-icon" aria-hidden="true">
-            <span></span><span></span><span></span>
-        </div>
-        <span class="unexpanded contrast-font">{% trans 'MENU' %}</span>
-        <span class="expanded contrast-font">{% trans 'CLOSE' %}</span>
-    </button>
-    <hr></hr>
+    
+    <!-- <hr></hr> -->
     <ul role="menu" id="navbar-nav" class="navbar-nav collapse"
         aria-label="Navigation menu">
         <li class="nav-item">
@@ -96,7 +88,7 @@
             </a>
         </li>
         {% endif %}
-        <li class="nav-item language-switch-container">
+        <!-- <li class="nav-item language-switch-container">
             <h6>{% trans 'LANGUAGE' %}</h6>
             <div role="group" class="btn-group language-switch"
                 aria-label="Select website language">
@@ -107,7 +99,7 @@
                 </a>
                 {% endfor %}
             </div>
-        </li>
+        </li> -->
     </ul>
     <div role="group" class="btn-group language-switch"
         aria-label="Select website language">
@@ -118,4 +110,13 @@
         </a>
         {% endfor %}
     </div>
+    <button class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-nav" aria-controls="navbar-nav"
+            aria-label="Toggle navigation menu" aria-expanded="false">
+        <div class="navbar-toggler-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </div>
+        <!-- <span class="unexpanded contrast-font">{% trans 'MENU' %}</span>
+        <span class="expanded contrast-font">{% trans 'CLOSE' %}</span> -->
+    </button>
 </nav>
