@@ -34,6 +34,12 @@
                     {% trans 'The event' %}<span class="sr-only">{% trans '(Toggle dropdown)' %}</span>
                 </span>
             </a>
+            <a role="menuitem" href="{% url 'speakers' %}"
+                class="nav-link dropdown-toggle-hidden">
+                <span class="nav-item-text">
+                    {% trans 'The event' %}
+                </span>
+            </a>
             <div role="menu" class="dropdown-menu">
                 <a role="menuitem" href="{% url 'speakers' %}"
                     class="nav-link dropdown-item">
