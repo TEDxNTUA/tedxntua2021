@@ -69,16 +69,20 @@ nav#nav {
             display: flex;
         }
         .navbar-toggler-icon {
+            width: 2em;
+            height: 2em;
             span:nth-child(1) {
-                transform: rotate(34deg);
+                transform: rotate(45deg);
                 transform-origin: bottom left;
+                width: 124%;
             }
             span:nth-child(2) {
                 display: none;
             }
             span:nth-child(3) {
-                transform: rotate(-34deg);
+                transform: rotate(-45deg);
                 transform-origin: top left;
+                width: 124%;
             }
         }
     }
@@ -113,7 +117,7 @@ nav#nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     &.collapsing {
-        transition: none;
+        transition: 0.4s;
     }
     .nav-link {
         display: flex;
@@ -270,11 +274,14 @@ Enforce that dropdown becomes static for small screens.
         }
     }
 }
-
 @include media-breakpoint-up(lg) {
     nav#nav {
         padding: $page-padding-y-lg $page-padding-x-lg;
+        transition: 0.4s;
         font-size: 1.35rem;
+        &.scrolled {
+            padding: 0.4*$page-padding-y-lg $page-padding-x-lg;
+        }
     }
     .navbar-nav {
         .nav-link-icon {

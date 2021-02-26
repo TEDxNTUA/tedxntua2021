@@ -1,15 +1,61 @@
 $social-icon-size: 3em;
 
+* {
+    // border: 1px solid red;
+}
+
 #footer {
-    padding: 2em $page-padding-y $page-padding-y;
+    padding: 0.5em $page-padding-x;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
     section {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
     }
     h4 {
         display: inline-block;
-        box-shadow: 0 5px $secondary;
         margin-bottom: calc(1em + 5px);
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+    #prev-talks {
+        #prev-talks-card {
+            height: 10em;
+            max-width: 20em;
+            margin-bottom: 1em;
+            border-radius: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                filter: contrast(0.6);
+                
+            }
+            .prev-talks-btn {
+                width: 90%;
+                height: 2em;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $ted;
+                border-radius: 20px;
+                position: relative;
+                top: -3em;
+                cursor: pointer;
+            }
+            &:hover {
+                img {
+                    filter: contrast(0.8);
+                }
+            }
+        }
     }
     #find-us {
         flex-shrink: 0;
@@ -142,7 +188,7 @@ $social-icon-size: 3em;
 
 @include media-breakpoint-up(lg) {
     #footer {
-        padding: 4em $page-padding-x-lg $page-padding-y-lg;
+        padding: 1em $page-padding-x-lg;
         ul.scrollable-cards {
             img {
                 width: 20em;

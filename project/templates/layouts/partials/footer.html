@@ -4,7 +4,36 @@
 {% get_available_languages as LANGUAGES %}
 {% get_current_language as CURR_LANG %}
 <section id="footer-main">
-    <div id="find-us">
+    <div id="prev-talks" class="footer-container col-4">
+        <header>
+            <h4>Previous Talks</h4>
+        </header>
+        <a href="https://www.youtube.com/playlist?list=PLd7-PjFC85gz9xYWxVVqTddWLg75c8jZU" target="blank">
+            <div id="prev-talks-card">
+                <img src="{% static "images/TED-talk-2016.jpg" %}" alt="">
+                <div class="prev-talks-btn">WATCH</div>
+            </div>
+        </a>
+    </div>
+    <div id="prev-events" class="footer-container col-4">
+        <header>
+            <h4>Previous Events</h4>
+        </header>
+        <div id="prev-talks-card">
+            <!-- <img src="{% static "images/TED-talk-2016.jpg" %}" alt=""> -->
+            <div class="prev-talks-btn"></div>
+        </div>
+    </div>
+    <div id="prev-talks" class="footer-container col-4">
+        <header>
+            <h4>NEWSLETTER</h4>
+        </header>
+        <div id="prev-talks-card">
+            <!-- <img src="{% static "images/TED-talk-2016.jpg" %}" alt=""> -->
+            <div class="prev-talks-btn"></div>
+        </div>
+    </div>
+    <!-- <div id="find-us">
         <header>
             <h4>{% trans 'Find us' %}</h4>
         </header>
@@ -89,9 +118,9 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
 </section>
-<section id="footer-bottom">
+<!-- <section id="footer-bottom">
     <a class="footer-brand" href="{% url 'index' %}"
         aria-label="Go to homepage">
         <img src="{% static "images/tedxntua_logo_whitetext.png" %}"
@@ -122,4 +151,4 @@
             {% trans 'This independent TEDx event is operated under license from TED.' %}
         </p>
     </div>
-</section>
+</section> -->

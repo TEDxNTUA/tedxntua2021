@@ -18,8 +18,10 @@
         <li class="nav-item">
             <a role="menuitem" href="{% url 'index' %}"
                 class="nav-link {% active_link 'index' strict=True %}">
-                <div class="nav-link-icon squares-overlayed orange-blue"
-                    aria-hidden="true"></div>
+                <div class="nav-link-icon"
+                    aria-hidden="true">
+                    <img src="{% static "images/Letter-H.png" %}" alt="letter-H"/>
+                </div>
                 <span class="nav-item-text">{% trans 'Home' %}</span>
             </a>
         </li>
@@ -28,8 +30,10 @@
                 class="nav-link dropdown-toggle {% active_link 'speakers || performers || side-events || presenter' %}"
                 data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                <div class="nav-link-icon triangles blue-black"
-                    aria-hidden="true"></div>
+                <div class="nav-link-icon"
+                    aria-hidden="true">
+                    <img src="{% static "images/Letter-E.png" %}" alt="letter-H"/>
+                </div>
                 <span class="nav-item-text">
                     {% trans 'The event' %}<span class="sr-only">{% trans '(Toggle dropdown)' %}</span>
                 </span>
@@ -72,24 +76,30 @@
         <li class="nav-item">
             <a role="menuitem" href="{% url 'partners' %}"
                 class="nav-link {% active_link 'partners' %}">
-                <div class="nav-link-icon verticals orange-black"
-                    aria-hidden="true"></div>
+                <div class="nav-link-icon"
+                    aria-hidden="true">
+                    <img src="{% static "images/Letter-P.png" %}" alt="letter-H"/>
+                </div>
                 <span class="nav-item-text">{% trans 'Partners' %}</span>
             </a>
         </li>
         <li class="nav-item">
             <a role="menuitem" href="{% url 'about' %}"
                 class="nav-link {% active_link 'about' %}">
-                <div class="nav-link-icon circle-in-black red bottom"
-                    aria-hidden="true"></div>
+                <div class="nav-link-icon"
+                    aria-hidden="true">
+                    <img src="{% static "images/Letter-A.png" %}" alt="letter-H"/>
+                </div>
                 <span class="nav-item-text">{% trans 'About us' %}</span>
             </a>
         </li>
         {% if settings.TEDXNTUA_TICKETS_ENABLED %}
         <li class="nav-item">
             <a role="menuitem" class="nav-link" href="{{ settings.TEDXNTUA_TICKETS_URL }}">
-                <div class="nav-link-icon circle-in-black blue top"
-                    aria-hidden="true"></div>
+                <div class="nav-link-icon"
+                    aria-hidden="true">
+                    <img src="{% static "images/Letter-T.png" %}" alt="letter-H"/>
+                </div>
                 <span class="nav-item-text">{% trans 'Tickets' %}</span>
             </a>
         </li>
