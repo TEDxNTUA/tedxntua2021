@@ -1,8 +1,7 @@
 var navOffsetY = 100
 
-navBar = document.querySelector("#nav")
-
 window.addEventListener('scroll', function() {
+    navBar = document.querySelector("#nav")
     if (window.pageYOffset > navOffsetY) {
         navBar.classList.add('scrolled')
     }

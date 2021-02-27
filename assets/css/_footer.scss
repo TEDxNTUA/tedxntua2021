@@ -15,7 +15,7 @@ $social-icon-size: 3em;
     }
     h4 {
         display: inline-block;
-        margin-bottom: calc(1em + 5px);
+        margin-bottom: calc(0.5em + 5px);
     }
     .footer-container {
         display: flex;
@@ -53,7 +53,51 @@ $social-icon-size: 3em;
             &:hover {
                 img {
                     filter: contrast(0.8);
+                    transition: 0.4s;
                 }
+                .prev-talks-btn {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+    #prev-events {
+        #prev-events-card {
+            height: 10em;
+            max-width: 20em;
+            margin-bottom: 1em;
+            border-radius: 20px;
+        }
+    }
+    #newsletter {
+        #newsletter-card {
+            height: 10em;
+            width: 100%;
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: space-around;
+            .input-field {
+                width: 90%;
+                height: 2em;
+                border-radius: 20px;
+                text-align: center;
+                outline: none;
+                color: $body-color;
+                border: 1px solid $body-color;
+                background-color: transparent;
+                margin-bottom: 1em;
+            }
+            .submit-btn {
+                width: 30%;
+                height: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $ted;
+                border-radius: 20px;
             }
         }
     }
@@ -83,6 +127,10 @@ $social-icon-size: 3em;
         margin-top: 1.5em;
     }
     ul.scrollable-cards {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        height: 100%;
         display: flex;
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -90,6 +138,7 @@ $social-icon-size: 3em;
         scroll-snap-type: x mandatory;
         list-style: none;
         padding: 0;
+        border-radius: 20px;
         li {
             flex-shrink: 0;
             scroll-snap-align: center;
@@ -100,18 +149,26 @@ $social-icon-size: 3em;
             }
         }
         a {
+            height: 100%;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: $body-color;
         }
         img {
-            width: 16em;
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            opacity: 0.6;
             &[data-loaded="false"] {
                 height: 16em / 21 * 9;
+            }
+        }
+        &:hover {
+            img {
+                opacity: 0.85;
+                transition: 0.4s;
             }
         }
         .overlay {
@@ -123,7 +180,7 @@ $social-icon-size: 3em;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, .6);
+            // background-color: rgba(0, 0, 0, .6);
         }
         h5 {
             margin-bottom: 0;
