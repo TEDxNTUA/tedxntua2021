@@ -1,12 +1,9 @@
 $social-icon-size: 3em;
 
-* {
-    // border: 1px solid red;
-}
-
 #footer {
     z-index: 0;
     padding: 1em $page-padding-x-lg;
+    padding-bottom: 0.5em;
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     section {
         display: flex;
@@ -176,43 +173,28 @@ $social-icon-size: 3em;
             }
         }
     }
-    .legal {
-        margin-top: .5em;
-        .links {
-            > a, > span {
-                font-size: 1.15em;
+    #footer-bottom {
+        .legal {
+            max-height: 2em;
+            margin-top: .5em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            .links {
+                > a, > span {
+                    font-size: 0.9em;
+                }
+                margin-right: 1em;
             }
         }
-    }
-    .license {
-        margin-top: .25em;
-        font-size: .9em;
-        color: lighten($body-color, 20%);
+        .license {
+            font-size: .9em;
+            color: lighten($body-color, 20%);
+        }
     }
 }
-
-// @include media-breakpoint-up(sm) {
-//     #footer {
-//         section {
-//             flex-direction: row;
-//         }
-//     }
-// }
-
-// @include media-breakpoint-up(md) {
-//     #footer {
-//         section {
-//             flex-direction: row;
-//         }
-//         .legal {
-//             margin-left: auto;
-//             text-align: right;
-//         }
-//         .license {
-//             margin-top: 0;
-//         }
-//     }
-// }
 
 @include media-breakpoint-down(lg) {
     #footer {
@@ -243,9 +225,20 @@ $social-icon-size: 3em;
                 .input-field {
                     margin-bottom: 0;
                     margin-right: 0.5em;
-                    &::-webkit-input-placeholder {
-                        content: "kati";
+                }
+            }
+        }
+        #footer-bottom {
+            .legal {
+                flex-direction: column;
+                max-height: 4em;
+                .links {
+                    > a, > span {
+                        font-size: 70%;
                     }
+                }
+                .license {
+                    font-size: 70%;
                 }
             }
         }
