@@ -1,9 +1,5 @@
 $nav-hover-border-width: 6px;
 
-*{
-    // border: 1px solid red;
-}
-
 nav#nav {
     display: flex;
     flex-flow: row wrap;
@@ -14,6 +10,12 @@ nav#nav {
     &.scrolled {
         padding: 0.6*$page-padding-y $page-padding-x;
         transition: 0.4s;
+    }
+    #navbar-nav {
+        &.scrolled {
+            margin-top: 0.15em;
+            transition: 0.4s;
+        }
     }
     hr {
         flex-basis: 100%;
@@ -33,7 +35,6 @@ nav#nav {
 .navbar-brand {
     height: $logo-height;
     margin-right: auto;
-    // border-bottom: $nav-hover-border-width solid transparent;
     font-size: inherit;
     &:hover {
         border-color: $primary;
@@ -51,9 +52,6 @@ nav#nav {
     width: 3.6em;
     margin-left: 4vw;
     outline: none !important;
-    // Counterweight for the border of the logo which due to center alignment
-    // causes the toggler to appear lower than the logo.
-    // margin-top: -$nav-hover-border-width;
     padding: 0 .75rem;
     font-size: 1em;
     > span {
@@ -119,7 +117,7 @@ nav#nav {
     margin-top: .75em;
     background: $body-bg;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
+    border-radius: 0 0 $border-radius $border-radius;
     &.collapsing {
         transition: 0.4s;
     }

@@ -248,6 +248,9 @@ $social-icon-size: 3em;
 @include media-breakpoint-down(xs) {
     #footer {
         #prev-talks, #prev-events {
+            &:not(#prev-events) {
+                width: 60%;
+            }
             @include make-col(12);
             header {
                 display: none;
@@ -258,7 +261,7 @@ $social-icon-size: 3em;
                     display: none;
                 }
                 #prev-talks-btn-sm {
-                    width: 60%;
+                    width: 100%;
                     height: 2em;
                     margin: auto;
                     margin-bottom: 1.5em;
