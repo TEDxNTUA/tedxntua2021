@@ -25,6 +25,7 @@ setup(
         'django-parler',
         'django-extensions',
         'django-active-link',
+        # 'django-newsletter'
     ],
     extras_require={
         'dev': [

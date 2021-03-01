@@ -8,23 +8,26 @@ $btn-active-transform: translate($btn-box-shadow-size - $btn-active-box-shadow-s
     color: color-yiq($background);
     @include gradient-bg($background);
     border-color: $border;
-    @include box-shadow($btn-box-shadow);
+    border-radius: 20px;
+    font-weight: bold;
+    // @include box-shadow($btn-box-shadow);
     transition: $transition-base;
-    margin-right: $btn-box-shadow-size;
-    margin-bottom: $btn-box-shadow-size;
+    // margin-right: $btn-box-shadow-size;
+    // margin-bottom: $btn-box-shadow-size;
     font-family: $font-family-serif;
 
     @include hover {
         color: color-yiq($hover-background);
-        @include gradient-bg($hover-background);
+        // @include gradient-bg($hover-background);
         border-color: $hover-border;
-        box-shadow: $btn-active-box-shadow;
-        transform: $btn-active-transform;
+        // box-shadow: $btn-active-box-shadow;
+        // transform: $btn-active-transform;
+        // transform: scale(1.02);
     }
 
     &:focus,
     &.focus {
-        box-shadow: $btn-active-box-shadow;
+        // box-shadow: $btn-active-box-shadow;
         transform: $btn-active-transform;
     }
 

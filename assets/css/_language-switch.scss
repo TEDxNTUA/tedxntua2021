@@ -1,9 +1,12 @@
 .language-switch {
+    margin-left: 0.5em;
     h6 {
         font-family: $font-family-serif;
     }
     .btn {
+        // font-size: 0.9em;
         border: 1px solid #CCC;
+        border-radius: 10px;
         cursor: pointer;
         &.focus {
             outline: 1px dotted;
@@ -14,5 +17,15 @@
             font-weight: bold;
             display: none;
         }
+    }
+}
+@include media-breakpoint-down(md) {
+    .language-switch .btn{
+        padding: .375rem 0.8rem;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .language-switch .btn {
+        font-size: 0.8em;
     }
 }

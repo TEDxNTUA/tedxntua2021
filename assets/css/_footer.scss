@@ -1,42 +1,84 @@
 $social-icon-size: 3em;
 
 #footer {
-    padding: 2em $page-padding-y $page-padding-y;
+    z-index: 0;
+    padding: 1em $page-padding-x-lg;
+    padding-bottom: 0.5em;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
     section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
     }
     h4 {
         display: inline-block;
-        box-shadow: 0 5px $secondary;
-        margin-bottom: calc(1em + 5px);
+        margin-bottom: calc(0.5em + 5px);
+        text-align: center;
     }
-    #find-us {
-        flex-shrink: 0;
-    }
-    .contact {
+    .footer-container {
         display: flex;
-        list-style: none;
-        padding: 0;
-        margin-bottom: .5em;
-        svg {
-            width: $social-icon-size;
-            height: $social-icon-size;
-        }
-        a:hover svg {
-            transform: scale(1.05);
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+    #prev-talks {
+        a {
+            #prev-talks-card {
+                height: 10em;
+                max-width: 20em;
+                margin-bottom: 1em;
+                border-radius: $border-radius;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: $border-radius;
+                    filter: contrast(0.6);
+                    
+                }
+                .prev-talks-btn {
+                    width: 90%;
+                    height: 2em;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $ted;
+                    border-radius: $border-radius;
+                    position: relative;
+                    top: -3em;
+                    cursor: pointer;
+                }
+            }
+            &:hover {
+                #prev-talks-card img {
+                    filter: contrast(0.8);
+                    transition: 0.4s;
+                }
+                .prev-talks-btn, #prev-talks-btn-sm {
+                    transform: scale(1.02);
+                }
+            }
+            #prev-talks-btn-sm {
+                display: none;
+            }
         }
     }
-    a.email {
-        font-family: $font-family-serif;
-        font-size: 1.15em;
-        font-style: italic;
-        font-weight: bold;
-    }
-    #more-stuff {
-        margin-top: 1.5em;
+    #prev-events {
+        #prev-events-card {
+            height: 10em;
+            max-width: 20em;
+            margin-bottom: 1em;
+            border-radius: $border-radius;
+        }
     }
     ul.scrollable-cards {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        height: 100%;
         display: flex;
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -44,6 +86,7 @@ $social-icon-size: 3em;
         scroll-snap-type: x mandatory;
         list-style: none;
         padding: 0;
+        border-radius: $border-radius;
         li {
             flex-shrink: 0;
             scroll-snap-align: center;
@@ -54,18 +97,26 @@ $social-icon-size: 3em;
             }
         }
         a {
+            height: 100%;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: $body-color;
         }
         img {
-            width: 16em;
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: $border-radius;
+            opacity: 0.6;
             &[data-loaded="false"] {
                 height: 16em / 21 * 9;
+            }
+        }
+        &:hover {
+            img {
+                opacity: 0.85;
+                transition: 0.4s;
             }
         }
         .overlay {
@@ -77,77 +128,149 @@ $social-icon-size: 3em;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, .6);
         }
         h5 {
             margin-bottom: 0;
             color: white;
             font-size: 2em;
-            text-shadow: 0 0 10px rgba(0, 0, 0, .75);
+            text-shadow: 0 0 20px rgba(0, 0, 0, .9);
         }
     }
-    .footer-brand, .language-switch {
-        display: none;
-    }
-    .footer-brand {
-        height: 2.5rem;
-        img {
-            height: 100%;
-            width: auto;
-        }
-    }
-    .language-switch {
-        margin-left: 1em;
-    }
-    .legal {
-        margin-top: .5em;
-        .links {
-            > a, > span {
-                font-size: 1.15em;
+    #newsletter {
+        #newsletter-card {
+            height: 10em;
+            width: 100%;
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: space-around;
+            .input-field {
+                width: 90%;
+                height: 2em;
+                border-radius: $border-radius;
+                text-align: center;
+                outline: none;
+                color: $body-color;
+                border: 1px solid $body-color;
+                background-color: transparent;
+                margin-bottom: 1em;
+            }
+            .submit-btn {
+                width: 30%;
+                height: 2rem;
+                padding: 0 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $ted;
+                border-radius: $border-radius;
+                font-size: 90%;
+                &:hover {
+                    transform: scale(1.02);
+                }
             }
         }
     }
-    .license {
-        margin-top: .25em;
-        font-size: .9em;
-        color: lighten($body-color, 20%);
-    }
-}
-
-@include media-breakpoint-up(md) {
-    #footer {
-        section {
-            flex-direction: row;
-        }
-        #more-stuff {
-            margin-top: 0;
-            margin-left: auto;
-            padding-left: 4em;
-        }
-        #footer-bottom {
-            align-items: center;
-        }
-        .footer-brand, .language-switch {
-            display: block;
-        }
+    #footer-bottom {
         .legal {
-            margin-left: auto;
-            text-align: right;
+            max-height: 2em;
+            margin-top: .5em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            .links {
+                > a, > span {
+                    font-size: 0.9em;
+                }
+                margin-right: 1em;
+            }
         }
         .license {
-            margin-top: 0;
+            font-size: .9em;
+            color: lighten($body-color, 20%);
         }
     }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-down(lg) {
     #footer {
-        padding: 4em $page-padding-x-lg $page-padding-y-lg;
-        ul.scrollable-cards {
-            img {
-                width: 20em;
-                &[data-loaded="false"] {
-                    height: 20em / 21 * 9;
+        padding: 0.5em $page-padding-x;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #footer {
+        section {
+            flex-wrap: wrap;
+            overflow-y: auto;
+        }
+        #prev-talks, #prev-events{
+            @include make-col(6);
+            order: 2;
+        }
+        #newsletter {
+            @include make-col(12);
+            order: 1;
+            height: 4em;
+            header {
+                display: none;
+            }
+            #newsletter-card {
+                padding: 0 5%;
+                flex-direction: row;
+                .input-field {
+                    margin-bottom: 0;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+        #footer-bottom {
+            .legal {
+                flex-direction: column;
+                max-height: 4em;
+                .links {
+                    > a, > span {
+                        font-size: 70%;
+                    }
+                }
+                .license {
+                    font-size: 70%;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    #footer {
+        #prev-talks, #prev-events {
+            &:not(#prev-events) {
+                width: 60%;
+            }
+            @include make-col(12);
+            header {
+                display: none;
+            }
+            a {
+                width: inherit;
+                #prev-talks-card {
+                    display: none;
+                }
+                #prev-talks-btn-sm {
+                    width: 100%;
+                    height: 2em;
+                    margin: auto;
+                    margin-bottom: 1.5em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $ted;
+                    border-radius: $border-radius;
+                    cursor: pointer;
                 }
             }
         }
