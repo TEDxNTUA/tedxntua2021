@@ -32,7 +32,6 @@ urlpatterns += i18n_patterns(
     path('', include('project.program.urls')),
     path('partners/', include('project.partners.urls')),
     path('about/', include('project.about.urls')),
-    path('newsletter/', include('project.newsletter.urls')),
 )
 
 admin.site.site_header = _('TEDxNTUA 2021 administration')
