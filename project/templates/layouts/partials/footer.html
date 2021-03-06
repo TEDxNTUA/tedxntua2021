@@ -10,7 +10,7 @@
         </header>
         <a href="https://www.youtube.com/playlist?list=PLd7-PjFC85gz9xYWxVVqTddWLg75c8jZU" target="blank">
             <div id="prev-talks-card">
-                <img src="{% static "images/TED-talk-2016.jpg" %}" alt="">
+                <img class="lazy lazy-on-view" src="{% static "images/TED-talk-2016.jpg" %}" alt="">
                 <div class="prev-talks-btn">WATCH</div>
             </div>
             <div id="prev-talks-btn-sm"><i class="fa fa-youtube-play"></i>&nbsp; Previous Talks</div>
@@ -81,8 +81,12 @@
             <h4>Newsletter</h4>
         </header>
         <div id="newsletter-card">
-            <input class="input-field" type="email" name="email_field" placeholder="Your email"></input>
-            <div type="button" class="submit-btn btn-secondary">Submit</div>
+            <form id="newsletter-form">
+                <input id="newsletter-input-field" type="email" name="Email" placeholder="Your email" onfocus="this.value=''"></input>
+            </form>
+            <div id="newsletter-submit-btn" type="button" class="submit-btn btn-secondary">
+                Submit
+            </div>
         </div>
     </div>
 </section>
