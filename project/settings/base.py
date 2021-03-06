@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'webpack_loader',
     'django_extensions',
     'active_link',
-    'project.newsletter',
 ]
 
 MIDDLEWARE = [
