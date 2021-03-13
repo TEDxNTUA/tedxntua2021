@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-07 17:26+0200\n"
+"POT-Creation-Date: 2021-03-09 20:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,15 +176,22 @@ msgid "home.about.cta_header"
 msgstr "Και μην ξεχάσεις:"
 
 #: .\project\home\templates\home\about.html:22
-#: .\project\home\templates\home\hero.html:36
+#: .\project\home\templates\home\hero.html:26
+#: .\project\home\templates\home\hero.html:65
 msgid "tickets.cta"
 msgstr "Κάνε κράτηση!"
 
-#: .\project\home\templates\home\hero.html:14
+#: .\project\home\templates\home\hero.html:13
+#: .\project\home\templates\home\hero.html:52
+msgid "home.date"
+msgstr "28 Μαρτίου"
+
+#: .\project\home\templates\home\hero.html:43
 msgid "home.dualism_logo"
 msgstr "Το λογότυπο του θέματός μας: Δυϊσμός"
 
-#: .\project\home\templates\home\hero.html:18
+#: .\project\home\templates\home\hero.html:47
+#: .\project\home\templates\home\summary.html:9
 msgid "home.dualism_summary"
 msgstr ""
 "<p><strong>ΔΥΪΣΜΟΣ</strong>, η προσπάθεια ερμηνείας του κόσμου με βάση "
@@ -192,28 +199,24 @@ msgstr ""
 "αποδοχή του δυϊσμού ως <strong>βάση σύνδεσης και δημιουργίας</strong>, η "
 "κατάρριψη της σύνδεσής του με την αντίθεση.</p>"
 
-#: .\project\home\templates\home\hero.html:19
+#: .\project\home\templates\home\hero.html:48
+#: .\project\home\templates\home\summary.html:10
 msgid "home.dualism_full"
 msgstr ""
-"<details><summary>Διάβασε περισσότερα</summary><p>Στο φετινό μας συνέδριο "
-"προσεγγίζουμε θεματικές που άπτονται σύγχρονων κοινωνικών, ανθρωπιστικών, "
-"καλλιτεχνικών και επιστημονικών θεμάτων, τα οποία συνίστανται από δύο αρχές."
-"</p><p>Πρόκειται για δύο αρχές που φαινομενικά ασυσχέτιστες που "
-"ανταγωνίζονται η μία την άλλη, αλλά στην πραγματικότητα αλληλοσυμπληρώνονται "
-"και συνεργούν στην επίτευξη μιας αρμονικής ενότητας.</p><p>Τι είναι ο "
-"άνθρωπος, ψυχή και σώμα ή μόνο ύλη; Πώς από τον κυματοσωματιδιακό δυϊσμό "
-"οδηγούμαστε στην τεχνολογία αιχμής των κβαντικών υπολογιστών; Πώς από την "
-"ταυτόχρονη συνύπαρξη του ηλεκτρισμού και του μαγνητισμού και της συσχέτισης "
-"τους από τον Maxwell οδηγούμαστε στη σύγχρονη οικονομία και κοινωνία; Πώς ο "
-"ψηφιακός δυισμός καθορίζει την καθημερινή μας ζωή; Πώς η αντίθεση λευκού και "
-"μαύρου συνθέτουν την εσάνς μιας φωτογραφίας; Πώς το κενό και το πλήρες "
-"συνθέτουν τοπία στην αρχιτεκτονική;</p><p>Σε όλα τα παραπάνω γίνεται σαφής η "
-"σχέση εξάρτησης των εκάστοτε εννοιών. Χωρίς την ύπαρξη της μίας αναιρείται "
-"το νόημα ύπαρξης της άλλης.</p></details>"
-
-#: .\project\home\templates\home\hero.html:23
-msgid "home.date"
-msgstr "28 Μαρτίου"
+"<p>Στο φετινό μας συνέδριο προσεγγίζουμε θεματικές που άπτονται σύγχρονων "
+"κοινωνικών, ανθρωπιστικών, καλλιτεχνικών και επιστημονικών θεμάτων, τα οποία "
+"συνίστανται από δύο αρχές.</p><p>Πρόκειται για δύο αρχές που φαινομενικά "
+"ασυσχέτιστες που ανταγωνίζονται η μία την άλλη, αλλά στην πραγματικότητα "
+"αλληλοσυμπληρώνονται και συνεργούν στην επίτευξη μιας αρμονικής ενότητας.</"
+"p><p>Τι είναι ο άνθρωπος, ψυχή και σώμα ή μόνο ύλη; Πώς από τον "
+"κυματοσωματιδιακό δυϊσμό οδηγούμαστε στην τεχνολογία αιχμής των κβαντικών "
+"υπολογιστών; Πώς από την ταυτόχρονη συνύπαρξη του ηλεκτρισμού και του "
+"μαγνητισμού και της συσχέτισης τους από τον Maxwell οδηγούμαστε στη σύγχρονη "
+"οικονομία και κοινωνία; Πώς ο ψηφιακός δυισμός καθορίζει την καθημερινή μας "
+"ζωή; Πώς η αντίθεση λευκού και μαύρου συνθέτουν την εσάνς μιας φωτογραφίας; "
+"Πώς το κενό και το πλήρες συνθέτουν τοπία στην αρχιτεκτονική;</p><p>Σε όλα "
+"τα παραπάνω γίνεται σαφής η σχέση εξάρτησης των εκάστοτε εννοιών. Χωρίς την "
+"ύπαρξη της μίας αναιρείται το νόημα ύπαρξης της άλλης.</p>"
 
 #: .\project\home\templates\home\index.html:5
 msgid "home.title"
@@ -337,7 +340,7 @@ msgid "Published"
 msgstr "Δημόσιο"
 
 #: .\project\partners\templates\partners\index.html:3
-#: .\project\templates\layouts\partials\nav.html:79
+#: .\project\templates\layouts\partials\nav.html:81
 msgid "Partners"
 msgstr "Συνεργάτες"
 
@@ -468,58 +471,51 @@ msgstr "Ελληνικά"
 msgid "English"
 msgstr "Αγγλικά"
 
-#: .\project\templates\layouts\partials\footer.html:9
-msgid "Find us"
-msgstr "Βρείτε μας"
-
-#: .\project\templates\layouts\partials\footer.html:52
-msgid "More stuff from us"
-msgstr "Περισσότερα από εμάς"
-
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:98
 msgid "Privacy Policy"
 msgstr "Πολιτική Απορρήτου"
 
-#: .\project\templates\layouts\partials\footer.html:118
+#: .\project\templates\layouts\partials\footer.html:101
 msgid "Terms of Use"
 msgstr "Όροι Χρήσης"
 
-#: .\project\templates\layouts\partials\footer.html:122
+#: .\project\templates\layouts\partials\footer.html:105
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 "Αυτή η ανεξάρτητα οργανωμένη εκδήλωση TEDx λειτουργεί με άδεια από το TED."
 
-#: .\project\templates\layouts\partials\nav.html:20
-msgid "MENU"
-msgstr "ΜΕΝΟΥ"
-
-#: .\project\templates\layouts\partials\nav.html:21
-msgid "CLOSE"
-msgstr "ΚΛΕΙΣΕ"
-
-#: .\project\templates\layouts\partials\nav.html:31
+#: .\project\templates\layouts\partials\nav.html:23
 msgid "Home"
 msgstr "Αρχική"
 
+#: .\project\templates\layouts\partials\nav.html:36
 #: .\project\templates\layouts\partials\nav.html:42
 msgid "The event"
 msgstr "Η εκδήλωση"
 
-#: .\project\templates\layouts\partials\nav.html:42
+#: .\project\templates\layouts\partials\nav.html:36
 msgid "(Toggle dropdown)"
 msgstr "(Εμφάνιση/Απόκρυψη υπομενού)"
 
-#: .\project\templates\layouts\partials\nav.html:87
+#: .\project\templates\layouts\partials\nav.html:91
 msgid "About us"
 msgstr "Σχετικά"
 
-#: .\project\templates\layouts\partials\nav.html:95
+#: .\project\templates\layouts\partials\nav.html:101
 msgid "Tickets"
 msgstr "Εισιτήρια"
 
-#: .\project\templates\layouts\partials\nav.html:100
+#: .\project\templates\layouts\partials\nav.html:106
 msgid "LANGUAGE"
 msgstr "ΓΛΩΣΣΑ"
+
+#: .\project\templates\layouts\partials\nav.html:133
+msgid "MENU"
+msgstr "ΜΕΝΟΥ"
+
+#: .\project\templates\layouts\partials\nav.html:134
+msgid "CLOSE"
+msgstr "ΚΛΕΙΣΕ"
 
 #: .\project\urls.py:37
 msgid "TEDxNTUA 2021 administration"
@@ -686,12 +682,12 @@ msgstr ""
 msgid "Null characters are not allowed."
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1162
+#: .\venv\Lib\site-packages\django\db\models\base.py:1165
 #: .\venv\Lib\site-packages\django\forms\models.py:756
 msgid "and"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1164
+#: .\venv\Lib\site-packages\django\db\models\base.py:1167
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
 msgstr ""
@@ -1010,6 +1006,7 @@ msgid "Please either submit a file or check the clear checkbox, not both."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:600
+#: .\venv\Lib\site-packages\sorl\thumbnail\fields.py:43
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
@@ -1719,6 +1716,12 @@ msgstr ""
 #: .\venv\Lib\site-packages\versatileimagefield\templates\versatileimagefield\forms\widgets\versatile_image_bootstrap.html:17
 msgid "Primary Point of Interest"
 msgstr ""
+
+#~ msgid "Find us"
+#~ msgstr "Βρείτε μας"
+
+#~ msgid "More stuff from us"
+#~ msgstr "Περισσότερα από εμάς"
 
 #~ msgid "Picture #1 of"
 #~ msgstr "Φωτογραφία #1 του/της"

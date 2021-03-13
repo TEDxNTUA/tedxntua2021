@@ -1,6 +1,66 @@
 {% load i18n %}
 <section id="lineup">
-    <header>
+
+    <ul class="nav nav-scrollable-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#speakers" class="btn-secondary active" id="speakers-tab"
+                data-toggle="tab" role="tab" aria-controls="speakers"
+                aria-selected="true">
+                {% trans 'Speakers' %}
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#performers" class="btn-secondary" id="performers-tab"
+                data-toggle="tab" role="tab" aria-controls="performers"
+                aria-selected="false">
+                {% trans 'Performers' %}
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#side_events" class="btn-secondary" id="side_events-tab"
+                data-toggle="tab" role="tab" aria-controls="side_events"
+                aria-selected="false">
+                {% trans 'Side events' %}
+            </a>
+        </li>
+    </ul>
+    
+    <div class="tab-content">
+        {% for lineup_type, items in lineup.items %}
+        <div class="lineup-container tab-pane container-fluid{% if forloop.first %} show active{% endif %}"
+            id="{{ lineup_type }}" role="tabpanel"
+            aria-labelledby="{{ lineup_type }}-tab">
+            <h3 class="lineup-type-title">
+                {{ lineup_type }}
+            </h3>
+            {% for item in items %}
+            <a class="presenter-card col-6 col-sm-4 col-lg-3 col-xl-2 mx-xl-1"
+                href="{% url "presenter" slug=item.slug %}">
+                {% if item.image %}
+                <img class="image"
+                    srcset="{{ item.image.thumbnail.320x320.url }} 320w,
+                            {{ item.image.thumbnail.720x720.url }} 720w,
+                            {{ item.image.thumbnail.1024x1024.url }} 1024w"
+                    sizes="(max-width: 576px) 320px,
+                            (max-width: 992px) 720px,
+                            1024px"
+                    src="{{ item.image.thumbnail.320x320.url }}"
+                    alt="" />
+                {% else %}
+                    <div class="media image image-placeholder squares-overlayed blue-black"></div>
+                {% endif %}
+                <div class="info">
+                    <p><strong>{{ item.name }}</strong></p>
+                    <p>{{ item.occupation }}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+
+    <!-- <header>
         <h2>{% trans 'home.lineup.title' %}</h2>
     </header>
     <ul class="nav nav-scrollable-tabs" role="tablist">
@@ -102,5 +162,6 @@
             <div class="checkerboard-view"></div>
         </div>
         {% endfor %}
-    </div>
+    </div> -->
+
 </section>
