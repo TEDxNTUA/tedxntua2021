@@ -1,4 +1,5 @@
 {% load i18n %}
+{% load static %}
 <section id="lineup">
 
     <!-- <ul class="nav nav-scrollable-tabs" role="tablist">
@@ -27,21 +28,21 @@
 
     <ul class="nav nav-pills mb-5" id="lineup-pills-tab" role="tablist">
         <li class="nav-item">
-            <a href="#speakers" class="nav-link active" id="speakers-tab"
+            <a href="#speakers" class="nav-link active mx-lg-3" id="speakers-tab"
                 data-toggle="pill" role="tab" 
                 aria-controls="speakers" aria-selected="true">
                 {% trans 'Speakers' %}
             </a>
         </li>
         <li class="nav-item">
-            <a href="#performers" class="nav-link" id="performers-tab"
+            <a href="#performers" class="nav-link mx-lg-3" id="performers-tab"
                 data-toggle="pill" role="tab" 
                 aria-controls="performers" aria-selected="false">
                 {% trans 'Performers' %}
             </a>
         </li>
         <li class="nav-item">
-            <a href="#side_events" class="nav-link" id="side_events-tab"
+            <a href="#side_events" class="nav-link mx-lg-3" id="side_events-tab"
                 data-toggle="pill" role="tab" 
                 aria-controls="side_events" aria-selected="false">
                 {% trans 'Side events' %}
@@ -80,23 +81,36 @@
                 <a class="presenter-card col-6 col-sm-4 col-lg-3 col-xl-2 mx-xl-1"
                     href="{% url "presenter" slug=item.slug %}">
                     {% if item.image %}
-                    <img class="image"
-                        srcset="{{ item.image.thumbnail.320x320.url }} 320w,
-                                {{ item.image.thumbnail.720x720.url }} 720w,
-                                {{ item.image.thumbnail.1024x1024.url }} 1024w"
-                        sizes="(max-width: 576px) 320px,
-                                (max-width: 992px) 720px,
-                                1024px"
-                        src="{{ item.image.thumbnail.320x320.url }}"
-                        alt="" />
+                        <img class="image"
+                            srcset="{{ item.image.thumbnail.320x320.url }} 320w,
+                                    {{ item.image.thumbnail.720x720.url }} 720w,
+                                    {{ item.image.thumbnail.1024x1024.url }} 1024w"
+                            sizes="(max-width: 576px) 320px,
+                                    (max-width: 992px) 720px,
+                                    1024px"
+                            src="{{ item.image.thumbnail.320x320.url }}"
+                            alt="" />
                     {% else %}
                         <div class="media image image-placeholder squares-overlayed blue-black"></div>
                     {% endif %}
                     <div class="info">
                         <p><strong>{{ item.name }}</strong></p>
-                        <p>{{ item.occupation }}</p>
+                        {% if item.occupation %}<p>{{ item.occupation }}</p>{% endif %}
                     </div>
                 </a>
+                {% endfor %}
+                {% comment %}
+                    Generate placeholders.
+                {% endcomment %}
+                {% for p in placeholders reversed %}
+                    {% if items|length <= p %}
+                        <a class="presenter-card placeholder col-6 col-sm-4 col-lg-3 col-xl-2 mx-xl-1">
+                            <img src="{% static "images/totem-hero-left.png" %}" alt="">
+                            <div class="info">
+                                <p><strong>{% trans 'more_soon' %}</strong></p>
+                            </div>
+                        </a>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>
