@@ -222,9 +222,9 @@ article.home-page {
     }
     ////// LINEUP //////
     section#lineup {
-        .tab-content {
+        .tab-content{
             // font-size: .85rem;
-            .lineup-container {
+            .lineup-container .lineup-inner{
                 width: 100%;
                 display: flex;
                 flex-flow: row wrap;
@@ -273,6 +273,33 @@ article.home-page {
                 }
             }
         }
+        #lineup-pills-tab {
+            display: flex;
+            justify-content: center;
+            .nav-link {
+                border-radius: $border-radius;
+                margin: 0 1em;
+                &.active {
+                    color: $body-bg;
+                    font-weight: bold;
+                }
+            }
+        }
+        // .tab-content {
+        //     .tab-pane {
+        //         height: 20vh;
+        //         width: 100%;
+        //     }
+        //     #tab-1 {
+        //         border: 1px solid orange;
+        //     }
+        //     #tab-2 {
+        //         border: 1px solid blue;
+        //     }
+        //     #tab-3 {
+        //         border: 1px solid green;
+        //     }
+        // }
         // .placeholder {
         //     align-self: flex-start;
         //     .media {
@@ -291,6 +318,7 @@ article.home-page {
         //         transform: translate(-50%, -50%);
         //     }
         // }
+
     }
 
     ////// VENUE //////
@@ -556,7 +584,7 @@ article.home-page {
         .section-container {
             display: flex;
             flex-flow: column nowrap;
-            justify-content: center;
+            // justify-content: center;
             min-height: 80vh;
             > section {
                 @if $scroll-snap-enabled {
