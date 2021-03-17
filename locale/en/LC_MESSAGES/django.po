@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-07 17:26+0200\n"
+"POT-Creation-Date: 2021-03-09 20:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,15 +164,22 @@ msgid "home.about.cta_header"
 msgstr "Oh, and don't forget to:"
 
 #: .\project\home\templates\home\about.html:22
-#: .\project\home\templates\home\hero.html:36
+#: .\project\home\templates\home\hero.html:26
+#: .\project\home\templates\home\hero.html:65
 msgid "tickets.cta"
 msgstr "Get your tickets!"
 
-#: .\project\home\templates\home\hero.html:14
+#: .\project\home\templates\home\hero.html:13
+#: .\project\home\templates\home\hero.html:52
+msgid "home.date"
+msgstr "March 28th"
+
+#: .\project\home\templates\home\hero.html:43
 msgid "home.dualism_logo"
 msgstr "Logo of our theme: Dualism"
 
-#: .\project\home\templates\home\hero.html:18
+#: .\project\home\templates\home\hero.html:47
+#: .\project\home\templates\home\summary.html:9
 msgid "home.dualism_summary"
 msgstr ""
 "<p><strong>DUALISM</strong> is the interpretation of the world based on "
@@ -180,28 +187,24 @@ msgstr ""
 "other. It is proposed to be <strong>the basis of connection and creation</"
 "strong>, rather than the foundation of opposition.</p>"
 
-#: .\project\home\templates\home\hero.html:19
+#: .\project\home\templates\home\hero.html:48
+#: .\project\home\templates\home\summary.html:10
 msgid "home.dualism_full"
 msgstr ""
-"<details><summary>Read more</summary><p>In this year's event, we approach "
-"subjects that touch upon current social, humanitarian, artistic and "
-"scientific issues, which consist of two principles.</p><p>The two principles "
-"seem to be unrelated and opposite to one another, but in reality they "
-"complement each other and act jointly to achieve a harmonious unity.</"
-"p><p>What are humans made of? Mind and body or just matter? How does the "
-"wave&mdash;particle duality lead to the cutting-edge technology of quantum "
-"computing? How do the parallel existence of electricity and magnetism and "
-"their relationship as identified by Maxwell, lead to our modern economy and "
-"society? How does digital dualism define our daily life? How does the "
-"contrast between white and black compose the essence of a picture? How do "
-"emptiness and fullness compose landscapes in architecture?</p><p>In all of "
-"the above, the dependence relationship between the two principles is clear. "
-"Without the existence of the first, the meaning of the other is negated.</"
-"p></details>"
-
-#: .\project\home\templates\home\hero.html:23
-msgid "home.date"
-msgstr "March 28th"
+"<p>In this year's event, we approach subjects that touch upon current "
+"social, humanitarian, artistic and scientific issues, which consist of two "
+"principles.</p><p>The two principles seem to be unrelated and opposite to "
+"one another, but in reality they complement each other and act jointly to "
+"achieve a harmonious unity.</p><p>What are humans made of? Mind and body or "
+"just matter? How does the wave&mdash;particle duality lead to the cutting-"
+"edge technology of quantum computing? How do the parallel existence of "
+"electricity and magnetism and their relationship as identified by Maxwell, "
+"lead to our modern economy and society? How does digital dualism define our "
+"daily life? How does the contrast between white and black compose the "
+"essence of a picture? How do emptiness and fullness compose landscapes in "
+"architecture?</p><p>In all of the above, the dependence relationship between "
+"the two principles is clear. Without the existence of the first, the meaning "
+"of the other is negated.</p>"
 
 #: .\project\home\templates\home\index.html:5
 msgid "home.title"
@@ -325,7 +328,7 @@ msgid "Published"
 msgstr ""
 
 #: .\project\partners\templates\partners\index.html:3
-#: .\project\templates\layouts\partials\nav.html:79
+#: .\project\templates\layouts\partials\nav.html:81
 msgid "Partners"
 msgstr ""
 
@@ -452,56 +455,49 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:9
-msgid "Find us"
-msgstr ""
-
-#: .\project\templates\layouts\partials\footer.html:52
-msgid "More stuff from us"
-msgstr ""
-
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:98
 msgid "Privacy Policy"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:118
+#: .\project\templates\layouts\partials\footer.html:101
 msgid "Terms of Use"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:122
+#: .\project\templates\layouts\partials\footer.html:105
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:20
-msgid "MENU"
-msgstr ""
-
-#: .\project\templates\layouts\partials\nav.html:21
-msgid "CLOSE"
-msgstr ""
-
-#: .\project\templates\layouts\partials\nav.html:31
+#: .\project\templates\layouts\partials\nav.html:23
 msgid "Home"
 msgstr ""
 
+#: .\project\templates\layouts\partials\nav.html:36
 #: .\project\templates\layouts\partials\nav.html:42
 msgid "The event"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:42
+#: .\project\templates\layouts\partials\nav.html:36
 msgid "(Toggle dropdown)"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:87
+#: .\project\templates\layouts\partials\nav.html:91
 msgid "About us"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:95
+#: .\project\templates\layouts\partials\nav.html:101
 msgid "Tickets"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:100
+#: .\project\templates\layouts\partials\nav.html:106
 msgid "LANGUAGE"
+msgstr ""
+
+#: .\project\templates\layouts\partials\nav.html:133
+msgid "MENU"
+msgstr ""
+
+#: .\project\templates\layouts\partials\nav.html:134
+msgid "CLOSE"
 msgstr ""
 
 #: .\project\urls.py:37
@@ -669,12 +665,12 @@ msgstr ""
 msgid "Null characters are not allowed."
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1162
+#: .\venv\Lib\site-packages\django\db\models\base.py:1165
 #: .\venv\Lib\site-packages\django\forms\models.py:756
 msgid "and"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1164
+#: .\venv\Lib\site-packages\django\db\models\base.py:1167
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
 msgstr ""
@@ -993,6 +989,7 @@ msgid "Please either submit a file or check the clear checkbox, not both."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:600
+#: .\venv\Lib\site-packages\sorl\thumbnail\fields.py:43
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."

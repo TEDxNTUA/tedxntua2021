@@ -1,4 +1,4 @@
-var navOffsetY = 100
+let navOffsetY = 100
 
 window.addEventListener('scroll', function() {
     navBar = document.querySelector("#nav");

@@ -4,6 +4,20 @@
 {% get_available_languages as LANGUAGES %}
 {% get_current_language as CURR_LANG %}
 <section id="footer-main">
+    <div id="footer-social-container">
+        <a href="https://www.instagram.com/tedxntua/?hl=en" target="_blank">
+            <img src="{% static "images/social-instagram.png" %}">
+        </a>
+        <a href="https://www.facebook.com/tedxntua/" target="_blank">
+            <img src="{% static "images/social-facebook.png" %}">
+        </a>
+        <a href="https://www.linkedin.com/company/tedxntua/" target="_blank">
+            <img src="{% static "images/social-linkedin.png" %}">
+        </a>
+        <a href="https://www.youtube.com/channel/UCVtjgrrBdSPZERmdso2o0dw/featured" target="_blank">
+            <img src="{% static "images/social-youtube.png" %}">
+        </a>
+    </div>
     <div id="prev-talks" class="footer-container col-4">
         <header>
             <h4>Previous Talks</h4>
@@ -82,9 +96,9 @@
         </header>
         <div id="newsletter-card">
             <form id="newsletter-form">
-                <input id="newsletter-input-field" type="email" name="Email" placeholder="Your email" onfocus="this.value=''"></input>
+                <input id="newsletter-input-field" type="email" name="Email" placeholder="Your email"></input>
             </form>
-            <div id="newsletter-submit-btn" type="button" class="submit-btn btn-secondary">
+            <div id="newsletter-submit-btn" class="submit-btn">
                 Submit
             </div>
         </div>

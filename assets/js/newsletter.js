@@ -4,7 +4,6 @@ var submitButton = document.getElementById('newsletter-submit-btn')
 var emailField = document.getElementById('newsletter-input-field')
 
 submitButton.onclick = function(){
-    console.log("It works!");
     $.ajax({
         url:'https://api.apispreadsheets.com/data/9080/',
         type:'post',
