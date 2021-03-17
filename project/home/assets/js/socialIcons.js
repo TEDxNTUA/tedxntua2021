@@ -1,9 +1,10 @@
 let socialOffsetY = 500
-let socialOffsetBottomY = 2800
 
 window.addEventListener('scroll', function() {
     socialContainer = document.querySelector("#social-container");
-    if (window.pageYOffset > socialOffsetY && window.pageYOffset < socialOffsetBottomY) {
+    footerOffsetY = document.querySelector('#footer').offsetTop;
+    console.log(footerOffsetY);
+    if (window.pageYOffset > socialOffsetY && window.pageYOffset < footerOffsetY-800) {
         socialContainer.classList.add('scrolled')
     }
     else {
