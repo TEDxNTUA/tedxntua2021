@@ -30,40 +30,4 @@
     <div id="totem-right" class="totem-container col-2">
         <img src="{% static "images/totem-hero-right.png" %}" alt="totem-right">
     </div>
-    <!-- <div class="image-container">
-        <div>
-        <img class="image" id="main-logo"
-            srcset="{% static 'images/totem.png' %} 512w,
-                    {% static 'images/totem.png' %} 1024w,
-                    {% static 'images/totem.png' %} 1585w"
-            sizes="(max-width: 768px) 512px,
-                    (max-width: 1366px) 1024px,
-                    1585px"
-            src="{% static 'images/totem.png' %}"
-            alt="{% trans "home.dualism_logo" %}" />
-        </div>
-    </div>
-    <div class="content">
-        {% trans 'home.dualism_summary' %}
-        {% trans 'home.dualism_full' %}
-        <div class="infobox">
-            <time class="date" datetime="{{ event_date }}"
-                aria-label="{{ event_date }}">
-                <div class="monthday">{% trans 'home.date' %}</div>
-                <div class="year">
-                    <span>20</span><span>20</span>
-                </div>
-            </time>
-            <div class="location">
-                <h2>
-                    <span>The Hub</span><span>Events</span><span>Kerameikos</span>
-                </h2>
-            </div>
-        </div>
-        {% if settings.TEDXNTUA_TICKETS_ENABLED %}
-        <a href="{{ settings.TEDXNTUA_TICKETS_URL }}" class="btn btn-lg btn-primary">
-            {% trans 'tickets.cta' %}
-        </a>
-        {% endif %}
-    </div> -->
 </section>
