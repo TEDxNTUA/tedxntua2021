@@ -68,6 +68,7 @@ article.home-page {
                     .monthday {
                         font-weight: bold;
                         text-align: center;
+                        margin-bottom: 1.5rem;
                     }
                 }
                 .location {
@@ -131,6 +132,7 @@ article.home-page {
                 width: 100%;
                 object-fit: contain;
                 padding: 4vh 2vw;
+                animation: rotation 8s infinite linear;
             }
             .summary-text {
                 display: flex;
@@ -346,6 +348,7 @@ article.home-page {
                     border-bottom: 3px solid $body-color;
                     border-right: none;
                     padding: 0;
+                    margin-bottom: 1em;
                 }
             }
         }
@@ -412,3 +415,12 @@ article.home-page {
         }
     }
 }
+
+@keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
