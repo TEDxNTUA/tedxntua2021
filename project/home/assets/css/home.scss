@@ -28,10 +28,11 @@ article.home-page {
     ////// HERO //////
     section#hero {
         display: flex;
+        flex-direction: row;
         margin-bottom: 0;
         .totem-container {
             width: 100%;
-            max-height: 80vh;
+            height: 80vh;
             flex-shrink: 0;
             padding: 0;
             img {
@@ -290,6 +291,21 @@ article.home-page {
         &.scrolled {
             opacity: 1;
             transition: .8s ease-in-out;
+        }
+    }
+}
+
+@media (max-width: 372px) {
+    .lineup-container {
+        padding: 0 5px;
+        .presenter-card {
+            padding: 0 5px;
+            p {
+                font-size: 0.8rem !important;
+                &:first-child {
+                    font-size: 1rem !important;
+                }
+            }  
         }
     }
 }
