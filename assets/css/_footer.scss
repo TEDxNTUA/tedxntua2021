@@ -6,6 +6,7 @@ $social-icon-size: 3em;
     padding-bottom: 0.5em;
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     position: relative;
+    margin-top: 4em; //for social icons
     section {
         display: flex;
         flex-direction: row;
@@ -231,6 +232,7 @@ $social-icon-size: 3em;
 
 @include media-breakpoint-down(sm) {
     #footer {
+        margin-top: calc(0.8 * 4em);
         section {
             flex-wrap: wrap;
             overflow-y: auto;
