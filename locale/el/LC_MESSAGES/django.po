@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-07 17:26+0200\n"
+"POT-Creation-Date: 2021-03-17 23:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,80 +140,13 @@ msgstr ""
 "μεμονωμένα γεγονότα TEDx είναι αυτόνομα οργανωμένα (σύμφωνα με ορισμένους "
 "κανόνες και κανονισμούς).</p>"
 
-#: .\project\home\templates\home\about.html:5
-msgid "home.about.title"
-msgstr "ΣΧΕΤΙΚΑ"
+#: .\project\home\templates\home\hero.html:13
+msgid "home.date"
+msgstr "29 Μαΐου 2021"
 
-#: .\project\home\templates\home\about.html:10
-msgid "home.about.pyrforos"
-msgstr "Πυρφόρος: Το έμβλημα του Εθνικού Μετσόβιου Πολυτεχνείου"
-
-#: .\project\home\templates\home\about.html:12
-msgid "home.about.auspices"
-msgstr "Υπό την αιγίδα του ΕΜΠ"
-
-#: .\project\home\templates\home\about.html:15
-msgid "home.about.content"
-msgstr ""
-"<h3>Τι είναι αυτή η εκδήλωση;</h3><p>Το TEDx είναι ένα πρόγραμμα "
-"<strong>τοπικών, αυτόνομα οργανωμένων εκδηλώσεων</strong> που φέρνουν τους "
-"ανθρώπους μαζί. Δημιουργήθηκε από το TED και υπόκειται στη γενική καθοδήγηση "
-"του συνεδρίου TED.</p><p>Το TEDxNTUA είναι ένα συνέδριο που περιλαμβάνει "
-"ομιλίες γύρω από την <strong>εκλαϊκευμένη επιστήμη</strong>, την "
-"<strong>τέχνη</strong> και τα <strong>κοινωνικά ζητήματα</strong>, "
-"<strong>ιστορίες που εμπνέουν</strong>, καθώς και <strong>πολυδιάστατα "
-"workshops και παραστάσεις</strong>. Ξεκίνησε το 2015 και διοργανώνεται "
-"έκτοτε από εθελοντές φοιτητές που προέρχονται κυρίως από το ΕΜΠ.</p><p>Μάθε "
-"περισσότερα για την εκδήλωση, γνώρισε τη φετινή ομάδα και μάθε πώς μπορείς "
-"να συμμετέχεις στην επόμενη, κάνοντας κλικ παρακάτω.</p>"
-
-#: .\project\home\templates\home\about.html:17
-msgid "home.about.learn_more"
-msgstr "Μάθε περισσότερα για μας"
-
-#: .\project\home\templates\home\about.html:20
-msgid "home.about.cta_header"
-msgstr "Και μην ξεχάσεις:"
-
-#: .\project\home\templates\home\about.html:22
-#: .\project\home\templates\home\hero.html:36
+#: .\project\home\templates\home\hero.html:26
 msgid "tickets.cta"
 msgstr "Κάνε κράτηση!"
-
-#: .\project\home\templates\home\hero.html:14
-msgid "home.dualism_logo"
-msgstr "Το λογότυπο του θέματός μας: Δυϊσμός"
-
-#: .\project\home\templates\home\hero.html:18
-msgid "home.dualism_summary"
-msgstr ""
-"<p><strong>ΔΥΪΣΜΟΣ</strong>, η προσπάθεια ερμηνείας του κόσμου με βάση "
-"<strong>δύο εξηγητικές αρχές</strong> που συνεργάζονται και συνενεργούν. Η "
-"αποδοχή του δυϊσμού ως <strong>βάση σύνδεσης και δημιουργίας</strong>, η "
-"κατάρριψη της σύνδεσής του με την αντίθεση.</p>"
-
-#: .\project\home\templates\home\hero.html:19
-msgid "home.dualism_full"
-msgstr ""
-"<details><summary>Διάβασε περισσότερα</summary><p>Στο φετινό μας συνέδριο "
-"προσεγγίζουμε θεματικές που άπτονται σύγχρονων κοινωνικών, ανθρωπιστικών, "
-"καλλιτεχνικών και επιστημονικών θεμάτων, τα οποία συνίστανται από δύο αρχές."
-"</p><p>Πρόκειται για δύο αρχές που φαινομενικά ασυσχέτιστες που "
-"ανταγωνίζονται η μία την άλλη, αλλά στην πραγματικότητα αλληλοσυμπληρώνονται "
-"και συνεργούν στην επίτευξη μιας αρμονικής ενότητας.</p><p>Τι είναι ο "
-"άνθρωπος, ψυχή και σώμα ή μόνο ύλη; Πώς από τον κυματοσωματιδιακό δυϊσμό "
-"οδηγούμαστε στην τεχνολογία αιχμής των κβαντικών υπολογιστών; Πώς από την "
-"ταυτόχρονη συνύπαρξη του ηλεκτρισμού και του μαγνητισμού και της συσχέτισης "
-"τους από τον Maxwell οδηγούμαστε στη σύγχρονη οικονομία και κοινωνία; Πώς ο "
-"ψηφιακός δυισμός καθορίζει την καθημερινή μας ζωή; Πώς η αντίθεση λευκού και "
-"μαύρου συνθέτουν την εσάνς μιας φωτογραφίας; Πώς το κενό και το πλήρες "
-"συνθέτουν τοπία στην αρχιτεκτονική;</p><p>Σε όλα τα παραπάνω γίνεται σαφής η "
-"σχέση εξάρτησης των εκάστοτε εννοιών. Χωρίς την ύπαρξη της μίας αναιρείται "
-"το νόημα ύπαρξης της άλλης.</p></details>"
-
-#: .\project\home\templates\home\hero.html:23
-msgid "home.date"
-msgstr "28 Μαρτίου"
 
 #: .\project\home\templates\home\index.html:5
 msgid "home.title"
@@ -222,77 +155,95 @@ msgstr "Αρχική"
 #: .\project\home\templates\home\index.html:6
 msgid "home.description"
 msgstr ""
-"Το TEDxNTUA 2020 διεξάγεται φέτος, το Σάββατο 28 Μαρτίου, στο Hub Events. Το "
-"θέμα της εκδήλωσης είναι ο Δυϊσμός. Ακολουθήστε μας σε αυτό το ταξίδι, "
+"Το TEDxNTUA 2021 διεξάγεται φέτος, το Σάββατο 21 Μαΐου, στο Hub Events. Το "
+"θέμα της εκδήλωσης είναι το Ubuntu. Ακολουθήστε μας σε αυτό το ταξίδι, "
 "γεμάτο από ομιλίες που θα σας κινήσουν την περιέργεια, παραστάσεις που θα "
 "σας γοητεύσουν και πολυδιάστατα workshops."
 
-#: .\project\home\templates\home\lineup.html:4
-msgid "home.lineup.title"
-msgstr "LINE UP"
-
-#: .\project\home\templates\home\lineup.html:11
+#: .\project\home\templates\home\lineup.html:9
 #: .\project\program\templates\program\_event-tabs.html:5
 #: .\project\program\templates\program\listing.html:5
 #: .\project\templates\layouts\partials\nav.html:50
 msgid "Speakers"
 msgstr "Ομιλητές"
 
-#: .\project\home\templates\home\lineup.html:18
+#: .\project\home\templates\home\lineup.html:16
 #: .\project\program\templates\program\_event-tabs.html:8
 #: .\project\program\templates\program\listing.html:7
 #: .\project\templates\layouts\partials\nav.html:56
 msgid "Performers"
 msgstr "Performers"
 
-#: .\project\home\templates\home\lineup.html:25
+#: .\project\home\templates\home\lineup.html:23
 #: .\project\program\templates\program\_event-tabs.html:11
 #: .\project\program\templates\program\listing.html:9
 #: .\project\templates\layouts\partials\nav.html:62
 msgid "Side events"
 msgstr "Side events"
 
-#: .\project\home\templates\home\lineup.html:97
+#: .\project\home\templates\home\lineup.html:64
 #: .\project\program\templates\program\listing.html:66
 msgid "more_soon"
 msgstr "Σύντομα περισσότερα"
 
-#: .\project\home\templates\home\venue.html:5
+#: .\project\home\templates\home\summary.html:9
+msgid "home.ubuntu_summary"
+msgstr ""
+"<p><strong>ΔΥΪΣΜΟΣ</strong>, η προσπάθεια ερμηνείας του κόσμου με βάση "
+"<strong>δύο εξηγητικές αρχές</strong> που συνεργάζονται και συνενεργούν. Η "
+"αποδοχή του δυϊσμού ως <strong>βάση σύνδεσης και δημιουργίας</strong>, η "
+"κατάρριψη της σύνδεσής του με την αντίθεση.</p>"
+
+#: .\project\home\templates\home\summary.html:10
+msgid "home.ubuntu_full"
+msgstr ""
+"<p>Στο φετινό μας συνέδριο προσεγγίζουμε θεματικές που άπτονται σύγχρονων "
+"κοινωνικών, ανθρωπιστικών, καλλιτεχνικών και επιστημονικών θεμάτων, τα οποία "
+"συνίστανται από δύο αρχές.</p><p>Πρόκειται για δύο αρχές που φαινομενικά "
+"ασυσχέτιστες που ανταγωνίζονται η μία την άλλη, αλλά στην πραγματικότητα "
+"αλληλοσυμπληρώνονται και συνεργούν στην επίτευξη μιας αρμονικής ενότητας.</"
+"p><p>Τι είναι ο άνθρωπος, ψυχή και σώμα ή μόνο ύλη; Πώς από τον "
+"κυματοσωματιδιακό δυϊσμό οδηγούμαστε στην τεχνολογία αιχμής των κβαντικών "
+"υπολογιστών; Πώς από την ταυτόχρονη συνύπαρξη του ηλεκτρισμού και του "
+"μαγνητισμού και της συσχέτισης τους από τον Maxwell οδηγούμαστε στη σύγχρονη "
+"οικονομία και κοινωνία; Πώς ο ψηφιακός δυισμός καθορίζει την καθημερινή μας "
+"ζωή; Πώς η αντίθεση λευκού και μαύρου συνθέτουν την εσάνς μιας φωτογραφίας; "
+"Πώς το κενό και το πλήρες συνθέτουν τοπία στην αρχιτεκτονική;</p><p>Σε όλα "
+"τα παραπάνω γίνεται σαφής η σχέση εξάρτησης των εκάστοτε εννοιών. Χωρίς την "
+"ύπαρξη της μίας αναιρείται το νόημα ύπαρξης της άλλης.</p>"
+
+#: .\project\home\templates\home\venue.html:4
 msgid "home.venue.title"
 msgstr "ΧΩΡΟΣ"
 
-#: .\project\home\templates\home\venue.html:9
+#: .\project\home\templates\home\venue.html:5
 msgid "home.venue.name"
 msgstr "The HUB Events"
 
-#: .\project\home\templates\home\venue.html:10
+#: .\project\home\templates\home\venue.html:6
 msgid "home.venue.address"
 msgstr "Αλκμήνης 5, Κεραμεικός"
 
-#: .\project\home\templates\home\venue.html:15
-msgid "home.venue.accessible_icon"
-msgstr "Για άτομα περιορισμένης κινητικότητας"
-
-#: .\project\home\templates\home\venue.html:16
-msgid "home.venue.accessible"
-msgstr "Προσβάσιμο"
-
-#: .\project\home\templates\home\venue.html:26
+#: .\project\home\templates\home\venue.html:10
 msgid "home.venue.photo_alt"
 msgstr "Φωτογραφία του κτιρίου του The HUB Events"
 
-#: .\project\home\templates\home\venue.html:30
+#: .\project\home\templates\home\venue.html:17
+msgid "home.venue.get_there"
+msgstr "ΠΩΣ ΝΑ ΠΑΤΕ ΕΚΕΙ"
+
+#: .\project\home\templates\home\venue.html:19
 msgid "home.venue.access"
 msgstr ""
-"<h3>Οδηγίες πρόσβασης</h3><h4>Μέσα μαζικής μεταφοράς</h4><p>Ο χώρος "
-"βρίσκεται 7 λεπτά μακριά με τα πόδια από τον κοντινότερο σταθμό μετρό, "
-"<strong>Κεραμεικός</strong> (γραμμή M3) και 12 λεπτά μακριά από τον σταθμό "
-"<strong>Κάτω Πετράλωνα</strong> (γραμμή M1).</p><p>Επίσης, μπορείς να έρθεις "
-"με λεωφορείο ή τρόλεϊ:</p><ul><li>Γραμμές λεωφορείων 049, 815, 838, 914, "
-"Β18, Γ18 (στάση Καμπά)</li><li>Γραμμή τρόλεϊ 21 (στάση Καμπά)</li></"
-"ul><p>Χρησιμοποίησε το εργαλείο <a class=\"underline-parent\" href=\"http://"
-"telematics.oasa.gr/\"><span class=\"underline\">Βέλτιστη Διαδρομή</span></a> "
-"της ιστοσελίδας του ΟΑΣΑ για αναλυτικές οδηγίες.</a>"
+"<h4>Μέσα μαζικής μεταφοράς</h4><p>Ο χώρος βρίσκεται 7 λεπτά μακριά με τα "
+"πόδια από τον κοντινότερο σταθμό μετρό, <strong>Κεραμεικός</strong> (γραμμή "
+"M3) και 12 λεπτά μακριά από τον σταθμό <strong>Κάτω Πετράλωνα</strong> "
+"(γραμμή M1).</p><p>Επίσης, μπορείς να έρθεις με λεωφορείο ή τρόλεϊ:</"
+"p><ul><li>Γραμμές λεωφορείων 049, 815, 838, 914, Β18, Γ18 (στάση Καμπά)</"
+"li><li>Γραμμή τρόλεϊ 21 (στάση Καμπά)</li></ul><p>Χρησιμοποίησε το εργαλείο "
+"<a class=\"underline-parent\" href=\"http://telematics.oasa.gr/\"><span "
+"class=\"underline\">Βέλτιστη Διαδρομή</span></a> της ιστοσελίδας του ΟΑΣΑ "
+"για αναλυτικές οδηγίες.</a>"
 
 #: .\project\partners\admin.py:15
 #: .\project\program\admin\presenter_admin.py:18
@@ -337,7 +288,7 @@ msgid "Published"
 msgstr "Δημόσιο"
 
 #: .\project\partners\templates\partners\index.html:3
-#: .\project\templates\layouts\partials\nav.html:79
+#: .\project\templates\layouts\partials\nav.html:81
 msgid "Partners"
 msgstr "Συνεργάτες"
 
@@ -468,58 +419,51 @@ msgstr "Ελληνικά"
 msgid "English"
 msgstr "Αγγλικά"
 
-#: .\project\templates\layouts\partials\footer.html:9
-msgid "Find us"
-msgstr "Βρείτε μας"
-
-#: .\project\templates\layouts\partials\footer.html:52
-msgid "More stuff from us"
-msgstr "Περισσότερα από εμάς"
-
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:112
 msgid "Privacy Policy"
 msgstr "Πολιτική Απορρήτου"
 
-#: .\project\templates\layouts\partials\footer.html:118
+#: .\project\templates\layouts\partials\footer.html:115
 msgid "Terms of Use"
 msgstr "Όροι Χρήσης"
 
-#: .\project\templates\layouts\partials\footer.html:122
+#: .\project\templates\layouts\partials\footer.html:119
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 "Αυτή η ανεξάρτητα οργανωμένη εκδήλωση TEDx λειτουργεί με άδεια από το TED."
 
-#: .\project\templates\layouts\partials\nav.html:20
-msgid "MENU"
-msgstr "ΜΕΝΟΥ"
-
-#: .\project\templates\layouts\partials\nav.html:21
-msgid "CLOSE"
-msgstr "ΚΛΕΙΣΕ"
-
-#: .\project\templates\layouts\partials\nav.html:31
+#: .\project\templates\layouts\partials\nav.html:23
 msgid "Home"
 msgstr "Αρχική"
 
+#: .\project\templates\layouts\partials\nav.html:36
 #: .\project\templates\layouts\partials\nav.html:42
 msgid "The event"
 msgstr "Η εκδήλωση"
 
-#: .\project\templates\layouts\partials\nav.html:42
+#: .\project\templates\layouts\partials\nav.html:36
 msgid "(Toggle dropdown)"
 msgstr "(Εμφάνιση/Απόκρυψη υπομενού)"
 
-#: .\project\templates\layouts\partials\nav.html:87
+#: .\project\templates\layouts\partials\nav.html:91
 msgid "About us"
 msgstr "Σχετικά"
 
-#: .\project\templates\layouts\partials\nav.html:95
+#: .\project\templates\layouts\partials\nav.html:101
 msgid "Tickets"
 msgstr "Εισιτήρια"
 
-#: .\project\templates\layouts\partials\nav.html:100
+#: .\project\templates\layouts\partials\nav.html:106
 msgid "LANGUAGE"
 msgstr "ΓΛΩΣΣΑ"
+
+#: .\project\templates\layouts\partials\nav.html:133
+msgid "MENU"
+msgstr "ΜΕΝΟΥ"
+
+#: .\project\templates\layouts\partials\nav.html:134
+msgid "CLOSE"
+msgstr "ΚΛΕΙΣΕ"
 
 #: .\project\urls.py:37
 msgid "TEDxNTUA 2021 administration"
@@ -686,12 +630,12 @@ msgstr ""
 msgid "Null characters are not allowed."
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1162
+#: .\venv\Lib\site-packages\django\db\models\base.py:1165
 #: .\venv\Lib\site-packages\django\forms\models.py:756
 msgid "and"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1164
+#: .\venv\Lib\site-packages\django\db\models\base.py:1167
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
 msgstr ""
@@ -1010,6 +954,7 @@ msgid "Please either submit a file or check the clear checkbox, not both."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:600
+#: .\venv\Lib\site-packages\sorl\thumbnail\fields.py:43
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
@@ -1719,6 +1664,50 @@ msgstr ""
 #: .\venv\Lib\site-packages\versatileimagefield\templates\versatileimagefield\forms\widgets\versatile_image_bootstrap.html:17
 msgid "Primary Point of Interest"
 msgstr ""
+
+#~ msgid "home.about.title"
+#~ msgstr "ΣΧΕΤΙΚΑ"
+
+#~ msgid "home.about.pyrforos"
+#~ msgstr "Πυρφόρος: Το έμβλημα του Εθνικού Μετσόβιου Πολυτεχνείου"
+
+#~ msgid "home.about.auspices"
+#~ msgstr "Υπό την αιγίδα του ΕΜΠ"
+
+#~ msgid "home.about.content"
+#~ msgstr ""
+#~ "<h3>Τι είναι αυτή η εκδήλωση;</h3><p>Το TEDx είναι ένα πρόγραμμα "
+#~ "<strong>τοπικών, αυτόνομα οργανωμένων εκδηλώσεων</strong> που φέρνουν "
+#~ "τους ανθρώπους μαζί. Δημιουργήθηκε από το TED και υπόκειται στη γενική "
+#~ "καθοδήγηση του συνεδρίου TED.</p><p>Το TEDxNTUA είναι ένα συνέδριο που "
+#~ "περιλαμβάνει ομιλίες γύρω από την <strong>εκλαϊκευμένη επιστήμη</strong>, "
+#~ "την <strong>τέχνη</strong> και τα <strong>κοινωνικά ζητήματα</strong>, "
+#~ "<strong>ιστορίες που εμπνέουν</strong>, καθώς και <strong>πολυδιάστατα "
+#~ "workshops και παραστάσεις</strong>. Ξεκίνησε το 2015 και διοργανώνεται "
+#~ "έκτοτε από εθελοντές φοιτητές που προέρχονται κυρίως από το ΕΜΠ.</"
+#~ "p><p>Μάθε περισσότερα για την εκδήλωση, γνώρισε τη φετινή ομάδα και μάθε "
+#~ "πώς μπορείς να συμμετέχεις στην επόμενη, κάνοντας κλικ παρακάτω.</p>"
+
+#~ msgid "home.about.learn_more"
+#~ msgstr "Μάθε περισσότερα για μας"
+
+#~ msgid "home.about.cta_header"
+#~ msgstr "Και μην ξεχάσεις:"
+
+#~ msgid "home.lineup.title"
+#~ msgstr "LINE UP"
+
+#~ msgid "home.venue.accessible_icon"
+#~ msgstr "Για άτομα περιορισμένης κινητικότητας"
+
+#~ msgid "home.venue.accessible"
+#~ msgstr "Προσβάσιμο"
+
+#~ msgid "Find us"
+#~ msgstr "Βρείτε μας"
+
+#~ msgid "More stuff from us"
+#~ msgstr "Περισσότερα από εμάς"
 
 #~ msgid "Picture #1 of"
 #~ msgstr "Φωτογραφία #1 του/της"

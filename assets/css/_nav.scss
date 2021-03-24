@@ -29,11 +29,11 @@ nav#nav {
 	top: 0;
     width: 100%;
     background-color: $body-bg;
-    z-index: 1;
+    z-index: 10;
 }
 
 .navbar-brand {
-    height: $logo-height;
+    height: $logo-height-lg;
     margin-right: auto;
     font-size: inherit;
     &:hover {
@@ -176,7 +176,7 @@ nav#nav {
     position: absolute;
     top: 0;
     right: $page-padding-x;
-    z-index: 1;
+    z-index: 10;
     text-align: right;
 }
 
@@ -184,6 +184,9 @@ nav#nav {
 Enforce that dropdown becomes static for small screens.
  */
 @include media-breakpoint-down(sm) {
+    .navbar-brand {
+        height: $logo-height;
+    }
     .navbar-nav .dropdown-menu {
         position: static !important;
         transform: none !important;
@@ -216,7 +219,7 @@ Enforce that dropdown becomes static for small screens.
         .nav-link {
             flex-direction: column;
             align-items: center;
-            padding: .1em .75em;
+            padding: .1em 1vw;
             margin-bottom: 0;
             // border-bottom: $nav-hover-border-width solid transparent;
             font-size: .9em;
@@ -232,6 +235,18 @@ Enforce that dropdown becomes static for small screens.
                     }
                 }
             }
+            .nav-link-icon {
+                display: flex;
+                width: 1.5em;
+                height: 1.5em;
+                margin-bottom: .2em;
+                margin-right: 0;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
         }
         .nav-item > .nav-link {
             &:hover, &:active, &.active {
@@ -242,13 +257,6 @@ Enforce that dropdown becomes static for small screens.
         }
         .dropdown-toggle-hidden {
             display: none;
-        }
-        .nav-link-icon {
-            display: flex;
-            width: 1.5em;
-            height: 1.5em;
-            margin-bottom: .2em;
-            margin-right: 0;
         }
         .dropdown-menu {
             display: none;

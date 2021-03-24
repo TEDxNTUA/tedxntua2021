@@ -374,7 +374,7 @@ def warm_presenter_images(sender, instance, **kwargs):
     https://django-versatileimagefield.readthedocs.io/en/latest/overview.html#create-images-wherever-you-need-them
     '''
 
-    for field in ['image']:
+    for field in ['image', 'image_alt']:
         if getattr(instance, field, None):
             img_warmer = VersatileImageFieldWarmer(
                 instance_or_queryset=instance,

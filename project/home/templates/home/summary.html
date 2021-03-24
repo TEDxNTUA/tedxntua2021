@@ -1,0 +1,13 @@
+{% load i18n %}
+{% load static %}
+<section id="summary">
+    <div class="summary-container">
+        <img id="summary-totem" class="col-lg-3 col-md-4"
+            src="{% static "images/totem.png" %}" 
+            alt="summary-totem">
+        <div class="summary-text col-lg-9 col-md-8 col-sm-11">
+            {% trans 'home.ubuntu_summary' %}
+            {% trans 'home.ubuntu_full' %}
+        </div>
+    </div>
+</section>

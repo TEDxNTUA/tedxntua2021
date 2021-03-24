@@ -1,34 +1,24 @@
 {% load i18n %}
 {% load static %}
 <section id="hero">
-    <div class="image-container">
-        <div>
-        <img class="image"
-            srcset="{% static 'images/dualism_logo_512.png' %} 512w,
-                    {% static 'images/dualism_logo_1024.png' %} 1024w,
-                    {% static 'images/dualism_logo.png' %} 1585w"
-            sizes="(max-width: 768px) 512px,
-                    (max-width: 1366px) 1024px,
-                    1585px"
-            src="{% static 'images/dualism_logo_512.png' %}"
-            alt="{% trans "home.dualism_logo" %}" />
-        </div>
+    <div id="totem-left" class="totem-container col-2">
+        <img src="{% static "images/totem-hero-left.png" %}" alt="totem-left">
     </div>
-    <div class="content">
-        {% trans 'home.dualism_summary' %}
-        {% trans 'home.dualism_full' %}
+    <div class="content col-8">
+        <h2>TEDxNTUA</h2>
+        <img src="{% static "images/ubuntu-main-logo.png" %}" alt="main-logo">
         <div class="infobox">
             <time class="date" datetime="{{ event_date }}"
                 aria-label="{{ event_date }}">
-                <div class="monthday">{% trans 'home.date' %}</div>
-                <div class="year">
-                    <span>20</span><span>20</span>
-                </div>
-            </time>
+                <h2 class="monthday">{% trans 'home.date' %}</h2>
             <div class="location">
-                <h2>
-                    <span>The Hub</span><span>Events</span><span>Kerameikos</span>
-                </h2>
+                <h3>
+                    <span>The Hub</span><span>Events</span>
+                </h3>
+                <img src="{% static "images/linked-circles.png" %}" alt="linked-circles">
+                <h3>
+                    <span>Kerameikos</span>
+                </h3>
             </div>
         </div>
         {% if settings.TEDXNTUA_TICKETS_ENABLED %}
@@ -36,5 +26,8 @@
             {% trans 'tickets.cta' %}
         </a>
         {% endif %}
+    </div>
+    <div id="totem-right" class="totem-container col-2">
+        <img src="{% static "images/totem-hero-right.png" %}" alt="totem-right">
     </div>
 </section>

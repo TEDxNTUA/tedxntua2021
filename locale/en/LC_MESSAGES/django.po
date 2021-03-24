@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-07 17:26+0200\n"
+"POT-Creation-Date: 2021-03-17 23:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,79 +129,13 @@ msgstr ""
 "general guidance for the TEDx program, but individual TEDx event are self-"
 "organized. (Subject to certain rules and regulations.)</p>"
 
-#: .\project\home\templates\home\about.html:5
-msgid "home.about.title"
-msgstr "ABOUT"
+#: .\project\home\templates\home\hero.html:13
+msgid "home.date"
+msgstr "May 29th 2021"
 
-#: .\project\home\templates\home\about.html:10
-msgid "home.about.pyrforos"
-msgstr "Pyrforos: The emblem of the National Technical University of Athens"
-
-#: .\project\home\templates\home\about.html:12
-msgid "home.about.auspices"
-msgstr "Under the auspices of NTUA"
-
-#: .\project\home\templates\home\about.html:15
-msgid "home.about.content"
-msgstr ""
-"<h3>What is this event?</h3><p>TEDx is a program that consists of "
-"<strong>local, self-organized events</strong> that bring people together. It "
-"was created by TED and is under the general guidance of the TED Conference. "
-"</p><p>TEDxNTUA is a conference that features talks on the topics of "
-"<strong>popular science</strong>, <strong>art</strong>, and <strong>social "
-"issues</strong>, <strong>stories that can inspire</strong>, as well as "
-"<strong>intriguing workshops</strong> and <strong>performances</strong>. It "
-"started in 2015 and is since run by volunteer students, mainly from NTUA.</"
-"p><p>Learn more about the event, meet this year’s team and learn how to be a "
-"part of the next one, by clicking the button below.</p>"
-
-#: .\project\home\templates\home\about.html:17
-msgid "home.about.learn_more"
-msgstr "Learn more about us"
-
-#: .\project\home\templates\home\about.html:20
-msgid "home.about.cta_header"
-msgstr "Oh, and don't forget to:"
-
-#: .\project\home\templates\home\about.html:22
-#: .\project\home\templates\home\hero.html:36
+#: .\project\home\templates\home\hero.html:26
 msgid "tickets.cta"
 msgstr "Get your tickets!"
-
-#: .\project\home\templates\home\hero.html:14
-msgid "home.dualism_logo"
-msgstr "Logo of our theme: Dualism"
-
-#: .\project\home\templates\home\hero.html:18
-msgid "home.dualism_summary"
-msgstr ""
-"<p><strong>DUALISM</strong> is the interpretation of the world based on "
-"<strong>two principles</strong> that act jointly and collaborate with each "
-"other. It is proposed to be <strong>the basis of connection and creation</"
-"strong>, rather than the foundation of opposition.</p>"
-
-#: .\project\home\templates\home\hero.html:19
-msgid "home.dualism_full"
-msgstr ""
-"<details><summary>Read more</summary><p>In this year's event, we approach "
-"subjects that touch upon current social, humanitarian, artistic and "
-"scientific issues, which consist of two principles.</p><p>The two principles "
-"seem to be unrelated and opposite to one another, but in reality they "
-"complement each other and act jointly to achieve a harmonious unity.</"
-"p><p>What are humans made of? Mind and body or just matter? How does the "
-"wave&mdash;particle duality lead to the cutting-edge technology of quantum "
-"computing? How do the parallel existence of electricity and magnetism and "
-"their relationship as identified by Maxwell, lead to our modern economy and "
-"society? How does digital dualism define our daily life? How does the "
-"contrast between white and black compose the essence of a picture? How do "
-"emptiness and fullness compose landscapes in architecture?</p><p>In all of "
-"the above, the dependence relationship between the two principles is clear. "
-"Without the existence of the first, the meaning of the other is negated.</"
-"p></details>"
-
-#: .\project\home\templates\home\hero.html:23
-msgid "home.date"
-msgstr "March 28th"
 
 #: .\project\home\templates\home\index.html:5
 msgid "home.title"
@@ -210,77 +144,94 @@ msgstr "Home"
 #: .\project\home\templates\home\index.html:6
 msgid "home.description"
 msgstr ""
-"TEDxNTUA 2020 is held this year, on Saturday, March 28th, at The Hub Events. "
-"The theme of the event is Dualism. Join us in this journey, full of "
+"TEDxNTUA 2021 is held this year, on Saturday, May 29th, at The Hub Events. "
+"The theme of the event is Ubuntu. Join us in this journey, full of "
 "intriguing scientific talks, engaging performances and multifaceted "
 "workshops."
 
-#: .\project\home\templates\home\lineup.html:4
-msgid "home.lineup.title"
-msgstr "LINE UP"
-
-#: .\project\home\templates\home\lineup.html:11
+#: .\project\home\templates\home\lineup.html:9
 #: .\project\program\templates\program\_event-tabs.html:5
 #: .\project\program\templates\program\listing.html:5
 #: .\project\templates\layouts\partials\nav.html:50
 msgid "Speakers"
 msgstr ""
 
-#: .\project\home\templates\home\lineup.html:18
+#: .\project\home\templates\home\lineup.html:16
 #: .\project\program\templates\program\_event-tabs.html:8
 #: .\project\program\templates\program\listing.html:7
 #: .\project\templates\layouts\partials\nav.html:56
 msgid "Performers"
 msgstr ""
 
-#: .\project\home\templates\home\lineup.html:25
+#: .\project\home\templates\home\lineup.html:23
 #: .\project\program\templates\program\_event-tabs.html:11
 #: .\project\program\templates\program\listing.html:9
 #: .\project\templates\layouts\partials\nav.html:62
 msgid "Side events"
 msgstr ""
 
-#: .\project\home\templates\home\lineup.html:97
+#: .\project\home\templates\home\lineup.html:64
 #: .\project\program\templates\program\listing.html:66
 msgid "more_soon"
 msgstr "More soon"
 
-#: .\project\home\templates\home\venue.html:5
+#: .\project\home\templates\home\summary.html:9
+msgid "home.ubuntu_summary"
+msgstr ""
+"<p><strong>DUALISM</strong> is the interpretation of the world based on "
+"<strong>two principles</strong> that act jointly and collaborate with each "
+"other. It is proposed to be <strong>the basis of connection and creation</"
+"strong>, rather than the foundation of opposition.</p>"
+
+#: .\project\home\templates\home\summary.html:10
+msgid "home.ubuntu_full"
+msgstr ""
+"<p>In this year's event, we approach subjects that touch upon current "
+"social, humanitarian, artistic and scientific issues, which consist of two "
+"principles.</p><p>The two principles seem to be unrelated and opposite to "
+"one another, but in reality they complement each other and act jointly to "
+"achieve a harmonious unity.</p><p>What are humans made of? Mind and body or "
+"just matter? How does the wave&mdash;particle duality lead to the cutting-"
+"edge technology of quantum computing? How do the parallel existence of "
+"electricity and magnetism and their relationship as identified by Maxwell, "
+"lead to our modern economy and society? How does digital dualism define our "
+"daily life? How does the contrast between white and black compose the "
+"essence of a picture? How do emptiness and fullness compose landscapes in "
+"architecture?</p><p>In all of the above, the dependence relationship between "
+"the two principles is clear. Without the existence of the first, the meaning "
+"of the other is negated.</p>"
+
+#: .\project\home\templates\home\venue.html:4
 msgid "home.venue.title"
 msgstr "VENUE"
 
-#: .\project\home\templates\home\venue.html:9
+#: .\project\home\templates\home\venue.html:5
 msgid "home.venue.name"
 msgstr "The HUB Events"
 
-#: .\project\home\templates\home\venue.html:10
+#: .\project\home\templates\home\venue.html:6
 msgid "home.venue.address"
 msgstr "Alkminis 5, Kerameikos"
 
-#: .\project\home\templates\home\venue.html:15
-msgid "home.venue.accessible_icon"
-msgstr "For persons with reduced mobility"
-
-#: .\project\home\templates\home\venue.html:16
-msgid "home.venue.accessible"
-msgstr "Accessible"
-
-#: .\project\home\templates\home\venue.html:26
+#: .\project\home\templates\home\venue.html:10
 msgid "home.venue.photo_alt"
 msgstr "Photo of The HUB Events' building"
 
-#: .\project\home\templates\home\venue.html:30
+#: .\project\home\templates\home\venue.html:17
+msgid "home.venue.get_there"
+msgstr "HOW TO GET THERE"
+
+#: .\project\home\templates\home\venue.html:19
 msgid "home.venue.access"
 msgstr ""
-"<h3>How to get to The HUB Events?</h3><h4>Public transport</h4><p>The venue "
-"is 7 minutes away on foot from the nearest metro station, "
-"<strong>Kerameikos</strong> (M3 line), and 12 minutes away from the "
-"<strong>Kato Petralona</strong> station (M1 line).</p><p>You can also get "
-"there by bus or trolley:</p><ul><li>Bus lines 049, 815, 838, 914, Β18, Γ18 "
-"(Kampa stop)</li><li>Trolley line 21 (Kampa stop)</li></ul><p>Use the <a "
-"class=\"underline-parent\" href=\"http://telematics.oasa.gr/\"><span class="
-"\"underline\">Best Route</span></a> tool from the OASA website to get a "
-"detailed itinerary.</a>"
+"<h4>Public transport</h4><p>The venue is 7 minutes away on foot from the "
+"nearest metro station, <strong>Kerameikos</strong> (M3 line), and 12 minutes "
+"away from the <strong>Kato Petralona</strong> station (M1 line).</p><p>You "
+"can also get there by bus or trolley:</p><ul><li>Bus lines 049, 815, 838, "
+"914, Β18, Γ18 (Kampa stop)</li><li>Trolley line 21 (Kampa stop)</li></"
+"ul><p>Use the <a class=\"underline-parent\" href=\"http://telematics.oasa.gr/"
+"\"><span class=\"underline\">Best Route</span></a> tool from the OASA "
+"website to get a detailed itinerary.</a>"
 
 #: .\project\partners\admin.py:15
 #: .\project\program\admin\presenter_admin.py:18
@@ -325,7 +276,7 @@ msgid "Published"
 msgstr ""
 
 #: .\project\partners\templates\partners\index.html:3
-#: .\project\templates\layouts\partials\nav.html:79
+#: .\project\templates\layouts\partials\nav.html:81
 msgid "Partners"
 msgstr ""
 
@@ -452,56 +403,49 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:9
-msgid "Find us"
-msgstr ""
-
-#: .\project\templates\layouts\partials\footer.html:52
-msgid "More stuff from us"
-msgstr ""
-
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:112
 msgid "Privacy Policy"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:118
+#: .\project\templates\layouts\partials\footer.html:115
 msgid "Terms of Use"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:122
+#: .\project\templates\layouts\partials\footer.html:119
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:20
-msgid "MENU"
-msgstr ""
-
-#: .\project\templates\layouts\partials\nav.html:21
-msgid "CLOSE"
-msgstr ""
-
-#: .\project\templates\layouts\partials\nav.html:31
+#: .\project\templates\layouts\partials\nav.html:23
 msgid "Home"
 msgstr ""
 
+#: .\project\templates\layouts\partials\nav.html:36
 #: .\project\templates\layouts\partials\nav.html:42
 msgid "The event"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:42
+#: .\project\templates\layouts\partials\nav.html:36
 msgid "(Toggle dropdown)"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:87
+#: .\project\templates\layouts\partials\nav.html:91
 msgid "About us"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:95
+#: .\project\templates\layouts\partials\nav.html:101
 msgid "Tickets"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:100
+#: .\project\templates\layouts\partials\nav.html:106
 msgid "LANGUAGE"
+msgstr ""
+
+#: .\project\templates\layouts\partials\nav.html:133
+msgid "MENU"
+msgstr ""
+
+#: .\project\templates\layouts\partials\nav.html:134
+msgid "CLOSE"
 msgstr ""
 
 #: .\project\urls.py:37
@@ -669,12 +613,12 @@ msgstr ""
 msgid "Null characters are not allowed."
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1162
+#: .\venv\Lib\site-packages\django\db\models\base.py:1165
 #: .\venv\Lib\site-packages\django\forms\models.py:756
 msgid "and"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\db\models\base.py:1164
+#: .\venv\Lib\site-packages\django\db\models\base.py:1167
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
 msgstr ""
@@ -993,6 +937,7 @@ msgid "Please either submit a file or check the clear checkbox, not both."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:600
+#: .\venv\Lib\site-packages\sorl\thumbnail\fields.py:43
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
@@ -1700,6 +1645,44 @@ msgstr ""
 #: .\venv\Lib\site-packages\versatileimagefield\templates\versatileimagefield\forms\widgets\versatile_image_bootstrap.html:17
 msgid "Primary Point of Interest"
 msgstr ""
+
+#~ msgid "home.about.title"
+#~ msgstr "ABOUT"
+
+#~ msgid "home.about.pyrforos"
+#~ msgstr "Pyrforos: The emblem of the National Technical University of Athens"
+
+#~ msgid "home.about.auspices"
+#~ msgstr "Under the auspices of NTUA"
+
+#~ msgid "home.about.content"
+#~ msgstr ""
+#~ "<h3>What is this event?</h3><p>TEDx is a program that consists of "
+#~ "<strong>local, self-organized events</strong> that bring people together. "
+#~ "It was created by TED and is under the general guidance of the TED "
+#~ "Conference. </p><p>TEDxNTUA is a conference that features talks on the "
+#~ "topics of <strong>popular science</strong>, <strong>art</strong>, and "
+#~ "<strong>social issues</strong>, <strong>stories that can inspire</"
+#~ "strong>, as well as <strong>intriguing workshops</strong> and "
+#~ "<strong>performances</strong>. It started in 2015 and is since run by "
+#~ "volunteer students, mainly from NTUA.</p><p>Learn more about the event, "
+#~ "meet this year’s team and learn how to be a part of the next one, by "
+#~ "clicking the button below.</p>"
+
+#~ msgid "home.about.learn_more"
+#~ msgstr "Learn more about us"
+
+#~ msgid "home.about.cta_header"
+#~ msgstr "Oh, and don't forget to:"
+
+#~ msgid "home.lineup.title"
+#~ msgstr "LINE UP"
+
+#~ msgid "home.venue.accessible_icon"
+#~ msgstr "For persons with reduced mobility"
+
+#~ msgid "home.venue.accessible"
+#~ msgstr "Accessible"
 
 #~ msgid "home.location"
 #~ msgstr "Hub Events, Kerameikos"
