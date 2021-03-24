@@ -1,112 +1,95 @@
 article.that{
-    .page-title{
-      text-align: center;
-      //text-decoration: underline;
-      margin: 1em;
-    }
+  .page-title{
+    text-align: center;
+    margin: 1em;
+  }
   
+  .team-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imagebox{
+    position: relative;
+    margin-top: 1em;
+    padding: 1em 15px;
+      
     .member{
       text-align: center;
       font-size: 1.2em;
       color: $primary;
-      //padding-bottom: 1em;
       margin-top: -2.5em;
-      //bottom: 10px;
-      //left: 5em;
       background: $primary;
       padding: 4px 8px;
       color: black;
       position: absolute;
       font-size: 1em;
-      //margin: 0;
-      
     }
-  
-    .team-title{
-      margin-top: 1em;
-      text-align: center;
+
+    .team-member-hover{
+      position: absolute;
+      left: 0.95em;
+      top: 0;
+      transition: opacity 0.5s ease-in;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;    
+      img{
+        margin-top: 16px;
+      }  
     }
-  
-    .team-container{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  
 
-    .imagebox{
-      position: relative;
-      margin-top: 1em;
-      padding: 1em 15px;
-      
-
-      .team-member-hover {
-        position: absolute;
-        left: 0.95em;
-        top: 0;
-        transition: opacity 0.5s ease-in;
-        opacity: 0;
-        height: 0;
-        overflow: hidden;    
-        img{
-          margin-top: 16px;
-        }  
-     }
-
-     img{
+    img{
       border-radius: 10px;
     }
-    }
+  }
 
+  .imagebox:hover .team-member-hover{ 
+    display: inline;
+    width: 100%;
+    opacity: 1;
+    height: auto;
+  }
 
-    
-
-    .imagebox:hover .team-member-hover { 
-      display: inline;
-      width: 100%;
-      opacity: 1;
-      height: auto;
-    }
-
-
-    .chain{
-       margin-top: 75px;
-       margin-left: -35px;
-       margin-right: -35px;
-       img{
+  .chain{
+    margin-top: 75px;
+    margin-left: -35px;
+    margin-right: -35px;
+    img{
       width: 9vw;
-       height:5em;
-       }
+      height: 5em;
     }
-  
+  }  
 
-  section#about {
+  section#about{
     margin-top: 3rem;
-    img {
+    img{
         width: 100%;
         height: auto;
         object-fit: cover;
         border: 4px solid $secondary;
-        border-radius: 10px;
-        
+        border-radius: 10px;    
     }
-    h3 {
+
+    h3{
         margin-bottom: 1rem;
     }
-    p {
-        line-height: 1.75;
-        text-align: justify;
-        &:last-child {
-            margin-bottom: 0;
-        }
+
+    p{
+      line-height: 1.75;
+      text-align: justify;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
-}
+  }
 
-.about-section {
+  .about-section{
     margin-bottom: 2rem;
-}
+  }
 
-#about-tedxntua {
+  #about-tedxntua{
     position: relative;
     width: 60rem;
     max-width: 90%;
@@ -117,11 +100,11 @@ article.that{
     background-color: $body-bg;
     border: 4px solid $secondary;
     border-radius: 10px;
-}
+  }
 }
   
-@include media-breakpoint-up (lg) {
-  .chain:nth-child(3n+0) {
+@include media-breakpoint-up (lg){
+  .chain:nth-child(3n+0){
    display: none;
   }
   .chain:last-child{
@@ -129,56 +112,53 @@ article.that{
   }
 }
 
-@include media-breakpoint-down (md) {
-  .chain:nth-child(4n+0) {
-   display: none;
+@include media-breakpoint-down (md){
+  .chain:nth-child(4n+0){
+    display: none;
   }
   .chain:last-child{
     display: none;
   }
 
-.imagebox{   
-  width: 35vw;
-  padding:1em 0;
-  .team-member img {
-    width: 100%;
-    height: 12em;
-    object-fit: cover;
-  }
-  .team-member-hover {
-    left: 0;
-    img {
-      width: 91%;
+  .imagebox{   
+    width: 35vw;
+    padding:1em 0;
+    .team-member img{
+      width: 100%;
       height: 12em;
       object-fit: cover;
     }
+    .team-member-hover{
+      left: 0;
+      img{
+        width: 91%;
+        height: 12em;
+        object-fit: cover;
+      }
+    }
   }
-}
-
-
-
- .chain{
   
+  .chain{
     margin: auto 0;
     img{
       width: 20vw;
     }
+  }
 }
 
-}
 @include media-breakpoint-down (sm){
-  article.that {
+  article.that{
     .imagebox{   
       width: 35vw;
       padding:1em 0;
-      .team-member img {
+      .team-member img{
         width: 100%;
         height: 12em;
         object-fit: cover;
       }
-      .team-member-hover {
+      .team-member-hover{
         left: 0;
-        img {
+        img{
           margin-top: 16px;
           width: 100%;
           height: 12em;
@@ -187,7 +167,6 @@ article.that{
       }
     }
 
-
     .chain{
       margin: auto 0;
       img{
@@ -195,7 +174,7 @@ article.that{
       }
     }
 
-    .chain:nth-child(4n+0) {
+    .chain:nth-child(4n+0){
       display: none;
      }
 
