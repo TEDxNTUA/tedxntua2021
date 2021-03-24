@@ -1,0 +1,192 @@
+main article.that {
+  padding: 0 $page-padding-x-lg $page-padding-y-lg;
+}
+
+article.that{
+  .page-title{
+    text-align: center;
+    margin: 1em;
+  }
+  
+  .team-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imagebox{
+    position: relative;
+    margin-top: 1em;
+    padding: 1em 15px;
+      
+    .member{
+      text-align: center;
+      font-size: 1.2em;
+      color: $primary;
+      margin-top: -2.5em;
+      background: $primary;
+      padding: 4px 8px;
+      color: black;
+      position: absolute;
+      font-size: 1em;
+    }
+
+    .team-member-hover{
+      position: absolute;
+      left: 0.95em;
+      top: 0;
+      transition: opacity 0.5s ease-in;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;    
+      img{
+        margin-top: 16px;
+      }  
+    }
+
+    img{
+      border-radius: $border-radius-sm;
+    }
+  }
+
+  .imagebox:hover .team-member-hover{ 
+    display: inline;
+    width: 100%;
+    opacity: 1;
+    height: auto;
+  }
+
+  .chain{
+    margin-top: 75px;
+    margin-left: -35px;
+    margin-right: -35px;
+    img{
+      width: 9vw;
+      height: 5em;
+    }
+  }  
+
+  section#about{
+    margin-top: 3rem;
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 4px solid $secondary;
+        border-radius: $border-radius;    
+    }
+
+    h3{
+        margin-bottom: 1rem;
+    }
+
+    p{
+      line-height: 1.75;
+      text-align: justify;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .about-section{
+    margin-bottom: 2rem;
+  }
+
+  #about-tedxntua{
+    position: relative;
+    width: 60rem;
+    max-width: 90%;
+    margin-top: -12vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    background-color: $body-bg;
+    border: 4px solid $secondary;
+    border-radius: $border-radius;
+  }
+}
+  
+@include media-breakpoint-up (lg){
+  .chain:nth-child(3n+0){
+   display: none;
+  }
+  .chain:last-child{
+    display: none;
+  }
+}
+
+@include media-breakpoint-down (md){
+  main article.that{
+    padding: 0 $page-padding-x $page-padding-y;
+  }
+  .chain:nth-child(4n+0){
+    display: none;
+  }
+  .chain:last-child{
+    display: none;
+  }
+
+  .imagebox{   
+    width: 35vw;
+    padding:1em 0;
+    .team-member img{
+      width: 100%;
+      height: 12em;
+      object-fit: cover;
+    }
+    .team-member-hover{
+      left: 0;
+      img{
+        width: 91%;
+        height: 12em;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  .chain{
+    margin: auto 0;
+    img{
+      width: 20vw;
+    }
+  }
+}
+
+@include media-breakpoint-down (sm){
+  article.that{
+    .imagebox{   
+      width: 35vw;
+      padding:1em 0;
+      .team-member img{
+        width: 100%;
+        height: 12em;
+        object-fit: cover;
+      }
+      .team-member-hover{
+        left: 0;
+        img{
+          margin-top: 16px;
+          width: 100%;
+          height: 12em;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .chain{
+      margin: auto 0;
+      img{
+        width: 20vw;
+      }
+    }
+
+    .chain:nth-child(4n+0){
+      display: none;
+     }
+
+    .chain:last-child{
+      display: none;
+    }
+  }
+}
