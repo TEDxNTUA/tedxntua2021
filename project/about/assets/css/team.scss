@@ -1,4 +1,4 @@
-main {
+main article.that {
   padding: 0 $page-padding-x-lg $page-padding-y-lg;
 }
 
@@ -117,7 +117,7 @@ article.that{
 }
 
 @include media-breakpoint-down (md){
-  main {
+  main article.that{
     padding: 0 $page-padding-x $page-padding-y;
   }
   .chain:nth-child(4n+0){
