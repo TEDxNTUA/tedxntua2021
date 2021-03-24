@@ -45,7 +45,7 @@ article.that{
     }
 
     img{
-      border-radius: 10px;
+      border-radius: $border-radius-sm;
     }
   }
 
@@ -73,7 +73,7 @@ article.that{
         height: auto;
         object-fit: cover;
         border: 4px solid $secondary;
-        border-radius: 10px;    
+        border-radius: $border-radius;    
     }
 
     h3{
@@ -103,7 +103,7 @@ article.that{
     padding: 1.5rem;
     background-color: $body-bg;
     border: 4px solid $secondary;
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
 }
   
