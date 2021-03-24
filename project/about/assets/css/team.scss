@@ -38,15 +38,24 @@ article.that{
       transition: opacity 0.5s ease-in;
       opacity: 0;
       height: 0;
-      overflow: hidden;    
+      overflow: hidden;  
       img{
         margin-top: 16px;
+        width: 18em;
+        height: 15em;
+        object-fit: cover;
       }  
     }
 
     img{
       border-radius: $border-radius-sm;
     }
+  }
+
+  .team-member img{
+    width: 18em;
+    height: 15em;
+    object-fit: cover;
   }
 
   .imagebox:hover .team-member-hover{ 
@@ -56,10 +65,14 @@ article.that{
     height: auto;
   }
 
+  .imagebox:hover .team-member{
+    opacity: 0;
+  }
+
   .chain{
-    margin-top: 75px;
-    margin-left: -35px;
-    margin-right: -35px;
+     margin-left: -35px;
+     margin-right: -35px;
+    align-self: center;
     img{
       width: 9vw;
       height: 5em;
