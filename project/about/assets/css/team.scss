@@ -1,5 +1,6 @@
 main article.that {
-  padding: 0 $page-padding-x-lg $page-padding-y-lg;
+  //padding: 0 $page-padding-x-lg $page-padding-y-lg;
+  //padding: 0 calc($page-padding-x-lg - 10em) $page-padding-y-lg;
 }
 
 article.that{
@@ -41,7 +42,7 @@ article.that{
       overflow: hidden;  
       img{
         margin-top: 16px;
-        width: 18em;
+        width: 17em;
         height: 15em;
         object-fit: cover;
       }  
@@ -53,7 +54,7 @@ article.that{
   }
 
   .team-member img{
-    width: 18em;
+    width: 17em;
     height: 15em;
     object-fit: cover;
   }
@@ -120,12 +121,20 @@ article.that{
   }
 }
   
+
 @include media-breakpoint-up (lg){
   .chain:nth-child(3n+0){
    display: none;
   }
   .chain:last-child{
     display: none;
+  }
+}
+
+@include media-breakpoint-up (xl){
+  main article.that{
+  padding-left: 3em;
+  padding-right: 3em;
   }
 }
 
@@ -140,7 +149,7 @@ article.that{
     display: none;
   }
 
-  .imagebox{   
+  .imagebox{ 
     width: 35vw;
     padding:1em 0;
     .team-member img{
