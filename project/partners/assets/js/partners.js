@@ -10,3 +10,21 @@ $(document).ready(function () {
         leafletFrame.setAttribute('src', leafletPath + '#view=Fit')
     })
 })
+
+var activePartner;
+
+window.addEventListener('click', function() {
+    $('.image-container').on("click touch", function() {
+        activePartner = $(this);
+        $(this).addClass('hover');
+        $('.image-container').not(this).removeClass('hover');
+    });
+});
+
+$(window).on("click", function(e) {
+    if (activePartner != null) {
+        if ($(e.target.parentElement).hasClass('image-container') == false) {
+            activePartner.removeClass('hover');
+        }
+    }
+});
