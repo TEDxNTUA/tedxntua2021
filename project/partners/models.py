@@ -76,6 +76,10 @@ class Partner(TranslatableModel):
     )
     partner_type = models.CharField(max_length=3, choices=PARTNER_TYPES)
     link = models.URLField()
+    career_link = models.URLField(
+        null=True,
+        blank=True,
+    )
 
     image = VersatileImageField(
         'Image',
