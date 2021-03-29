@@ -2,11 +2,11 @@
 {% load i18n %}
 {% block title %}{% spaceless %}
     {% if listing_type == 'speakers' %}
-        {% trans 'Speakers' %}
+        {% trans 'speakers.title' %}
     {% elif listing_type == 'performers' %}
-        {% trans 'Performers' %}
+        {% trans 'performers.title' %}
     {% elif listing_type == 'side_events' %}
-        {% trans 'Side events' %}
+        {% trans 'side_events.title' %}
     {% endif %}
 {% endspaceless %}{% endblock %}
 {% block description %}{% spaceless %}

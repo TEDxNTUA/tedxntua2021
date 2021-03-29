@@ -150,21 +150,21 @@ msgstr ""
 #: project/program/templates/program/listing.html:5
 #: project/templates/layouts/partials/nav.html:50
 msgid "Speakers"
-msgstr ""
+msgstr "SPEAKERS"
 
 #: project/home/templates/home/lineup.html:16
 #: project/program/templates/program/_event-tabs.html:8
 #: project/program/templates/program/listing.html:7
 #: project/templates/layouts/partials/nav.html:56
 msgid "Performers"
-msgstr ""
+msgstr "PERFORMERS"
 
 #: project/home/templates/home/lineup.html:23
 #: project/program/templates/program/_event-tabs.html:11
 #: project/program/templates/program/listing.html:9
 #: project/templates/layouts/partials/nav.html:62
 msgid "Side events"
-msgstr ""
+msgstr "SIDE EVENTS"
 
 #: project/home/templates/home/lineup.html:64
 #: project/program/templates/program/listing.html:66
@@ -233,6 +233,9 @@ msgstr ""
 msgid "Link"
 msgstr ""
 
+msgid "partners.title"
+msgstr "Partners"
+
 #: project/partners/models.py:65
 msgid "Platinum Sponsor"
 msgstr ""
@@ -273,7 +276,7 @@ msgstr ""
 #: project/partners/templates/partners/index.html:3
 #: project/templates/layouts/partials/nav.html:81
 msgid "Partners"
-msgstr ""
+msgstr "PARTNERS"
 
 #: project/partners/templates/partners/index.html:4
 msgid "partners.description"
@@ -287,9 +290,27 @@ msgstr ""
 msgid "website"
 msgstr "WEBSITE"
 
+msgid "career site"
+msgstr "CAREER SITE"
+
 #: project/partners/templates/partners/index.html:46
 msgid "leaflet"
 msgstr "LEAFLET"
+
+msgid "Previous Talks"
+msgstr ""
+
+msgid "WATCH"
+msgstr ""
+
+msgid "Previous Events"
+msgstr ""
+
+msgid "Newsletter"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
 
 #: project/program/admin/activity_admin.py:26
 msgid "Presenter"
@@ -353,7 +374,7 @@ msgstr ""
 #: project/program/templates/program/_event-tabs.html:15
 #: project/templates/layouts/partials/nav.html:69
 msgid "Schedule"
-msgstr ""
+msgstr "SCHEDULE"
 
 #: project/program/templates/program/listing.html:14
 msgid "speakers.description"
@@ -412,12 +433,12 @@ msgstr ""
 
 #: project/templates/layouts/partials/nav.html:23
 msgid "Home"
-msgstr ""
+msgstr "HOME"
 
 #: project/templates/layouts/partials/nav.html:36
 #: project/templates/layouts/partials/nav.html:42
 msgid "The event"
-msgstr ""
+msgstr "ΤΗΕ EVENT"
 
 #: project/templates/layouts/partials/nav.html:36
 msgid "(Toggle dropdown)"
@@ -425,11 +446,11 @@ msgstr ""
 
 #: project/templates/layouts/partials/nav.html:91
 msgid "About us"
-msgstr ""
+msgstr "ABOUT US"
 
 #: project/templates/layouts/partials/nav.html:101
 msgid "Tickets"
-msgstr ""
+msgstr "TICKETS"
 
 #: project/templates/layouts/partials/nav.html:106
 msgid "LANGUAGE"
@@ -1689,3 +1710,5 @@ msgstr ""
 
 #~ msgid "speakers.title"
 #~ msgstr "Speakers"
+
+

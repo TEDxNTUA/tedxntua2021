@@ -13,12 +13,10 @@ $(document).ready(function () {
 
 var activePartner;
 
-window.addEventListener('click', function() {
-    $('.image-container').on("click touch", function() {
-        activePartner = $(this);
-        $(this).addClass('hover');
-        $('.image-container').not(this).removeClass('hover');
-    });
+$('.image-container').on("click touch", function() {
+    activePartner = $(this);
+    $(this).addClass('hover');
+    $('.image-container').not(this).removeClass('hover');
 });
 
 $(window).on("click", function(e) {

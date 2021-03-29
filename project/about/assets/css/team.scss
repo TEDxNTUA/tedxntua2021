@@ -1,6 +1,5 @@
 main article.that {
-  //padding: 0 $page-padding-x-lg $page-padding-y-lg;
-  //padding: 0 calc($page-padding-x-lg - 10em) $page-padding-y-lg;
+  padding: 0 3*$page-padding-x-lg $page-padding-y-lg;
 }
 
 article.that{
@@ -32,11 +31,16 @@ article.that{
       font-size: 1em;
     }
 
+    .team-member, .team-member-hover {
+      background-color: white;
+      border-radius: 20px;
+    }
+
     .team-member-hover{
       position: absolute;
       left: 0.95em;
       top: 0;
-      transition: opacity 0.5s ease-in;
+      // transition: opacity 0.5s ease-in;
       opacity: 0;
       height: 0;
       overflow: hidden;  
@@ -128,13 +132,6 @@ article.that{
   }
   .chain:last-child{
     display: none;
-  }
-}
-
-@include media-breakpoint-up (xl){
-  main article.that{
-  padding-left: 3em;
-  padding-right: 3em;
   }
 }
 
