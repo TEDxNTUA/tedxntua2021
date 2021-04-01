@@ -16,26 +16,21 @@ article.sponsors {
         align-self: center;
     }
 
-    .category-container{
-        display: flex;
+    .category-container {
+        display: block;
         flex-direction: column;
+        .partners-collection {
+            @include make-col(12);
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            align-items: center;
+            justify-content: center;  
+        }
     }
-
-    .partners-collection{
-        @include make-col(12);
-        display: flex;
-        flex-flow: row wrap;
-        width: 100%;
-        align-items: center;
-        justify-content: space-evenly;  
-    }
-
-    .partner-instance{ 
+    .partner-instance { 
         margin: 2em 0.25rem;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        position: relative;
+        display: flex;
         padding: 0;
         .partner-card {
             margin: auto;
@@ -59,7 +54,7 @@ article.sponsors {
                 width: 100%;
                 height: 100%;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: space-around;
             }
             &.hover{
                 .website-button{
