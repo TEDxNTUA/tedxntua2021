@@ -20,19 +20,19 @@
     </div>
     <div id="prev-talks" class="footer-container col-4">
         <header>
-            <h4>Previous Talks</h4>
+            <h4>{% trans 'Previous Talks' %}</h4>
         </header>
         <a href="https://www.youtube.com/playlist?list=PLd7-PjFC85gz9xYWxVVqTddWLg75c8jZU" target="blank">
             <div id="prev-talks-card">
                 <img class="lazy lazy-on-view" src="{% static "images/TED-talk-2016.jpg" %}" alt="">
-                <div class="prev-talks-btn">WATCH</div>
+                <div class="prev-talks-btn">{% trans 'WATCH' %}</div>
             </div>
-            <div id="prev-talks-btn-sm"><i class="fa fa-youtube-play"></i>&nbsp; Previous Talks</div>
+            <div id="prev-talks-btn-sm"><i class="fa fa-youtube-play"></i>&nbsp; {% trans 'Previous Talks' %}</div>
         </a>
     </div>
     <div id="prev-events" class="footer-container col-4">
         <header>
-            <h4>Previous Events</h4>
+            <h4>{% trans 'Previous Events' %}</h4>
         </header>
         <div id="prev-events-card" class="carousel" data-ride="carousel" data-interval="4000">
             <ul class="scrollable-cards">
@@ -92,14 +92,14 @@
     </div>
     <div id="newsletter" class="footer-container col-4">
         <header>
-            <h4>Newsletter</h4>
+            <h4>{% trans 'Newsletter' %}</h4>
         </header>
         <div id="newsletter-card">
             <form id="newsletter-form">
                 <input id="newsletter-input-field" type="email" name="Email" placeholder="Your email"></input>
             </form>
             <div id="newsletter-submit-btn" class="submit-btn">
-                Submit
+                {% trans 'Submit' %}
             </div>
         </div>
     </div>
