@@ -250,6 +250,10 @@ Enforce that dropdown becomes static for small screens.
         }
         .nav-item > .nav-link {
             &:hover, &:active, &.active {
+                border-bottom: 2px solid $primary;
+                border-radius: $border-radius-sm;
+                position: relative;
+                top: 1px; //to counter border-width
                 .nav-item-text {
                     box-shadow: none;
                 }
@@ -276,6 +280,12 @@ Enforce that dropdown becomes static for small screens.
             padding: .4em 1em;
             border: none;
             line-height: 1;
+            &:hover {
+                border-bottom: 2px solid $primary;
+                border-radius: $border-radius-sm;
+                // position: relative;
+                // top: 1px; //to counter border-width
+            }
         }
         .nav-dropdown-item-icon {
             width: 1em;
