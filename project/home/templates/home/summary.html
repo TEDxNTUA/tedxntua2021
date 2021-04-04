@@ -2,13 +2,12 @@
 {% load static %}
 <section id="summary">
     <div class="summary-container">
-        <!-- <img id="summary-totem" class="col-lg-3 col-md-4"
-            src="{% static "images/totem.png" %}" 
-            alt="summary-totem"> -->
-        <model-viewer src="{% static "images/gumball_finished_smooth_obj.glb" %}" 
-                      alt="Astronaut" loading="eager" reveal="auto"
+        <model-viewer src="{% static "images/3D_totem_color.glb" %}" 
+                      alt="totem" loading="eager" reveal="auto"
                       auto-rotate rotation-per-second="60deg"
-                      poster="{% static "images/totem.png" %}"
+                      exposure="0.1"
+                      shadow-intensity="2"
+                      shadow-shoftness="10"
                       id="summary-totem">
         </model-viewer>
         <div class="summary-text col-lg-9 col-md-8 col-sm-11">

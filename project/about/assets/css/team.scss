@@ -11,6 +11,7 @@ article.about {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 10em;
   }
   .imagebox {
     @include make-col(2);
@@ -57,6 +58,7 @@ article.about {
       top: 50%;
       transform: translate(0, -50%);
       display: flex;
+      font-size: 0.8rem;
       img {
         margin: auto;
         transform: scale(1);
@@ -80,6 +82,7 @@ article.about {
     align-self: center;
     margin: 1em 0;
     overflow: hidden;
+    font-size: 0.8rem;
     img{
       height: 3em;
       width: 100%;

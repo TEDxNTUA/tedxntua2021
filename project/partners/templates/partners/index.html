@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load render_bundle from webpack_loader %}
 {% block title %}{% trans 'partners.title' %}{% endblock %}
 {% block description %}{% trans 'partners.description' %}{% endblock %}
 {% block content %}
@@ -62,4 +63,7 @@
     </div>
 </div>
 </article>
+{% endblock %}
+{% block scripts %}
+    {% render_bundle 'partners' 'js' %}
 {% endblock %}
