@@ -38,7 +38,6 @@ $social-icon-size: 3em;
             padding: 0.5em;
             opacity: 0.3;
             &:hover {
-                cursor: pointer;
                 opacity: 1;
             }
         }
@@ -197,7 +196,6 @@ $social-icon-size: 3em;
                 font-size: 90%;
                 &:hover {
                     transform: scale(1.02);
-                    cursor: pointer;
                 }
             }
         }
@@ -303,7 +301,6 @@ $social-icon-size: 3em;
                     align-items: center;
                     background-color: $ted;
                     border-radius: $border-radius;
-                    cursor: pointer;
                     font-size: 0.9rem;
                 }
             }

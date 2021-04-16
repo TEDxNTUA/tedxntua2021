@@ -22,8 +22,14 @@ class HomeView(TemplateView):
 
         qs['side_events'] = qs['side_events'].select_related('presenter')
 
-        return render(request, self.template_name, {
+        hosts = Presenter.objects.get_queryset().filter(
+            activity__activity_type=Activity.HOSTING,
+            is_published=True,
+        ).distinct()
+
+        return render(request, self.template_name, {    
             'lineup': qs,
+            'hosts': hosts,
             'placeholders': list(range(4)),
             'event_date': settings.TEDXNTUA_DATE,
         })

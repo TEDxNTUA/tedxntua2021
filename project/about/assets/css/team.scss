@@ -93,7 +93,6 @@ article.about {
 
   .imagebox:hover .hover{ 
     opacity: 1;
-    cursor: pointer;
   } 
 
   section#about{
@@ -224,7 +223,6 @@ article.about {
       @include make-col(4);
     }
     .chain, .chain-left, .chain-right {
-      font-size: 0.7rem;
     } 
   }
   .inner-box:nth-child(4n) {
