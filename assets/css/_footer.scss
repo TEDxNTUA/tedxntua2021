@@ -2,7 +2,7 @@ $social-icon-size: 3em;
 
 #footer {
     z-index: 0;
-    padding: 1em $page-padding-x-lg;
+    padding: 1.5em $page-padding-x-lg;
     padding-bottom: 0.5em;
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     position: relative;
@@ -70,7 +70,6 @@ $social-icon-size: 3em;
                     border-radius: $border-radius;
                     position: relative;
                     top: -3em;
-                    cursor: pointer;
                 }
             }
             &:hover {

@@ -255,9 +255,9 @@ article.home-page {
             margin-top: 1em;
             .presenter-card {
                 flex-direction: row;
-                min-height: calc(12.5em - 1.5vw);
+                min-height: calc(12em - 1.5vw);
                 .image-container {
-                    height: calc(12.5em - 1.5vw);
+                    height: calc(12em - 1.5vw);
                     width: 12em;
                     border-radius: $border-radius 0 0 $border-radius;
                     img {
