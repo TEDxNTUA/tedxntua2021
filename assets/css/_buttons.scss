@@ -10,25 +10,18 @@ $btn-active-transform: translate($btn-box-shadow-size - $btn-active-box-shadow-s
     border-color: $border;
     border-radius: 20px;
     font-weight: bold;
-    // @include box-shadow($btn-box-shadow);
     transition: $transition-base;
-    // margin-right: $btn-box-shadow-size;
-    // margin-bottom: $btn-box-shadow-size;
     font-family: $font-family-serif;
 
     @include hover {
         color: color-yiq($hover-background);
-        // @include gradient-bg($hover-background);
         border-color: $hover-border;
-        // box-shadow: $btn-active-box-shadow;
-        // transform: $btn-active-transform;
-        // transform: scale(1.02);
+        box-shadow: $btn-active-box-shadow;
+        filter: contrast(1.5);
     }
 
     &:focus,
     &.focus {
-        // box-shadow: $btn-active-box-shadow;
-        transform: $btn-active-transform;
     }
 
     // Disabled comes first so active can properly restyle
@@ -55,7 +48,6 @@ $btn-active-transform: translate($btn-box-shadow-size - $btn-active-box-shadow-s
 
         &:focus {
             box-shadow: $btn-active-box-shadow;
-            transform: $btn-active-transform;
         }
     }
 }
@@ -63,6 +55,10 @@ $btn-active-transform: translate($btn-box-shadow-size - $btn-active-box-shadow-s
 @each $color, $value in $theme-colors {
     .btn-#{$color} {
         @include button-variant($value, $value);
+        backface-visibility: hidden;
+        white-space: nowrap;
+        background: linear-gradient(180deg, $color 0%, $color 49%, $color 51%, $color 100%);
+        box-shadow: inset 0px 1px 0px rgba(255,255,255,.5),0px 1px 3px rgba(0,0,0,0.3);
     }
 }
 

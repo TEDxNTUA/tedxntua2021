@@ -12,4 +12,5 @@ class TeamView(View):
         teams = TeamMember.objects.get_teams(
             unpublished=settings.TEDXNTUA_SHOW_UNPUBLISHED,
         )
+        photography_team = TeamMember.objects.get_teams()
         return render(request, self.template_name, {'teams': teams})

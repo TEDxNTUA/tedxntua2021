@@ -12,6 +12,7 @@
     {% for member in members %}
     <div class="imagebox inner-box">      
       <div class="team-member">
+        <div class="circle"></div>
         <img class="lazy lazy-on-hover" data-loaded="false"
         src="{{ member.image.thumbnail.320x320.url }}" 
         data-srcset="{{ member.image.thumbnail.320x320.url }} 320w,
@@ -22,15 +23,7 @@
         <p class="member-tag">
           {{member.name}}
         </p>
-      </div>
-      <div class="team-member hover">
-        <img src="{{ member.image_alt.thumbnail.320x320.url }}" 
-        data-srcset="{{ member.image_alt.thumbnail.320x320.url }} 320w,
-        {{ member.image_alt.thumbnail.720x720.url }} 720w,
-        {{ member.image_alt.thumbnail.1024x1024.url }} 1024w" sizes="(max-width: 576px) 320px,
-        (max-width: 992px) 720px,
-        1024px" alt="" />
-        <p class="member-tag"> 
+        <p class="member-tag alt"> 
           {% blocktrans trimmed with team_name=member.get_team_display|upper %}
             {{ team_name }}
           {% endblocktrans %}
@@ -48,7 +41,6 @@
     </div>
     {% endfor %}
   </div>
-
 
   <section id="about">
     <img class="lazy lazy-on-view"

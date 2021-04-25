@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load render_bundle from webpack_loader %}
 {% block title %}{{ presenter.name }}{% endblock %}
 {% block description %}{{ presenter.name }}: {{ presenter.occupation }}{% endblock %}
 {% block content %}
 <article class="presenter-page">
     {% if go_back_url %}
-        <a href="{{ go_back_url }}" class="btn btn-secondary">
+        <a href="{% url 'speakers' %}" class="btn btn-secondary back-btn">
             &lt; {% trans 'back' %}
         </a>
     {% endif %}
     <div class="presenter">
         {% if presenter.image %}
+        <div class="col-sm-3">
             <img class="image"
                 srcset="{{ presenter.image.thumbnail.320x320.url }} 320w,
                         {{ presenter.image.thumbnail.720x720.url }} 720w,
@@ -25,32 +27,50 @@
                 <div class="squares-overlayed blue-black"></div>
             </div>
         {% endif %}
-        <div class="info">
-            <h1>{{presenter.name}}</h1>
-            <h2>{{presenter.occupation}}</h2>
-            <div class="collapse content" id="description">
-                {{presenter.short_bio|safe}}
-            </div>
-            <a href="#description" class="btn btn-primary" data-toggle="collapse"
-                aria-expanded="false" aria-controls="description">
-                {% trans 'presenter.read_full' %}
-            </a>
         </div>
-    </div>
+
+        <div class ="info">
+            <div class="col-sm-15">
+                <div class="name_link_oc">
+                    <div class="name_link">
+                        <h1>{{presenter.name}}</h1>
+                        <div class="link_icon">
+                            <a href= {{presenter.link}} target="blank" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>{{presenter.occupation}}</h3>
+                </div>
+                <div id="description" class="container" >
+                    <p class= "" id="collapse-one" aria-expanded="false">
+                        {{presenter.short_bio|safe}}
+                    </p>
+                    <a id="info-toggle-btn" role="button" class="btn btn-primary collapsed" data-toggle="collapse" href="#collapse-one" aria-expanded="false" 
+                    aria-controls="collapse-one"> 
+                        <span class="if-collapsed">{% trans 'presenter.read_full' %}</span>
+                        <span class="if-not-collapsed">{% trans 'presenter.read_less' %}</span> 
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>  
+
     <div class="activities">
         {% for activity in activities %}
         <div class="activity">
             <header>
-                <h5>{{ activity.title }}</h5>
-                <h6 class="h5">
-                    <span class="type">
-                        {{activity.get_activity_type_display | upper}}
-                    </span>
-                    {% if activity.start and activity.end %}
-                        <span class="sep">|</span>
+                <div class="name_title">
+                    <h5>{{activity.get_activity_type_display | upper}}: {{ activity.title }}</h5>
+                    <h6 class="h5">
+                        {% if activity.start and activity.end %}
                         <time>{{activity.start_time}}</time>&mdash;<time>{{activity.end_time}}</time>
-                    {% endif %}
-                </h6>
+                        {% endif %}
+                    </h6>
+                </div>
             </header>
             <div class="content">
                 {{activity.description|safe}}
@@ -59,4 +79,7 @@
         {% endfor %}
     </div>
 </article>
+{% endblock %}
+{% block scripts %}
+{% render_bundle 'schedule' 'js' %}
 {% endblock %}

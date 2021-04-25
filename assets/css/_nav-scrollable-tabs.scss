@@ -2,7 +2,7 @@ ul.nav-scrollable-tabs {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    margin-bottom: 2em;
+    margin: 1em;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     .nav-item {
