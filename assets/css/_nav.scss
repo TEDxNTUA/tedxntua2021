@@ -54,6 +54,9 @@ nav#nav {
     outline: none !important;
     padding: 0 .75rem;
     font-size: 1em;
+    &:hover {
+        cursor: url(/static/images/arrow.png), auto;
+    }
     > span {
         margin-top: .25em;
     }
@@ -96,6 +99,9 @@ nav#nav {
     justify-content: space-between;
     width: 2.5em;
     height: 1.6em;
+    &:hover {
+        cursor: url(/static/images/arrow.png), auto;
+    }
     span {
         display: block;
         width: 100%;

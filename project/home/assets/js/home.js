@@ -1,2 +1,2 @@
-// import "./logoRotation"
 import "./socialIcons"
+import "./animations"

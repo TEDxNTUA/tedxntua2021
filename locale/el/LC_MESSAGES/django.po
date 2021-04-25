@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-04 19:03+0300\n"
+"POT-Creation-Date: 2021-04-16 19:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,12 +179,17 @@ msgstr "PERFORMERS"
 msgid "Side events"
 msgstr "SIDE EVENTS"
 
-#: .\project\home\templates\home\lineup.html:64
+#: .\project\home\templates\home\lineup.html:68
 #: .\project\program\templates\program\listing.html:66
 msgid "more_soon"
 msgstr "Σύντομα περισσότερα"
 
-#: .\project\home\templates\home\summary.html:20
+#: .\project\home\templates\home\lineup.html:78
+#: .\project\program\models.py:197
+msgid "Hosting"
+msgstr "ΠΑΡΟΥΣΙΑΖΕΙ"
+
+#: .\project\home\templates\home\summary.html:14
 msgid "home.ubuntu_summary"
 msgstr ""
 "<h3>ΤΙ ΣΗΜΑΙΝΕΙ UBUNTU ? </h3><p><strong>ΔΥΪΣΜΟΣ</strong>, η προσπάθεια "
@@ -193,7 +198,7 @@ msgstr ""
 "σύνδεσης και δημιουργίας</strong>, η κατάρριψη της σύνδεσής του με την "
 "αντίθεση.</p>"
 
-#: .\project\home\templates\home\summary.html:21
+#: .\project\home\templates\home\summary.html:15
 msgid "home.ubuntu_full"
 msgstr ""
 "<p>Στο φετινό μας συνέδριο προσεγγίζουμε θεματικές που άπτονται σύγχρονων "
@@ -250,8 +255,8 @@ msgid "Link"
 msgstr "Σύνδεσμος"
 
 #: .\project\partners\models.py:65
-msgid "Platinum Sponsor"
-msgstr "Platinum Χορηγός"
+msgid "Platinum Sponsors"
+msgstr "Platinum Χορηγοί"
 
 #: .\project\partners\models.py:66
 msgid "Grand Sponsors"
@@ -286,23 +291,17 @@ msgstr "Συνεργάτες Κοινότητας"
 msgid "Published"
 msgstr "Δημόσιο"
 
-#: .\project\partners\templates\partners\index-old.html:3
-#: .\project\templates\layouts\partials\nav.html:81
-msgid "Partners"
-msgstr "ΣΥΝΕΡΓΑΤΕΣ"
-
-#: .\project\partners\templates\partners\index-old.html:4
-#: .\project\partners\templates\partners\index.html:5
-msgid "partners.description"
+#: .\project\partners\templates\partners\index.html:4
+#, fuzzy
+#| msgid "partners.description"
+msgid "partners.title"
 msgstr ""
 "Η εκδήλωσή μας δεν θα ήταν εφικτή χωρίς τη στήριξη από οργανισμούς που "
 "συμμερίζονται τις αξίες και τα οράματά μας. Επισκεφθείτε τις ιστοσελίδες "
 "τους και μάθετε περισσότερα για αυτούς."
 
-#: .\project\partners\templates\partners\index.html:4
-#, fuzzy
-#| msgid "partners.description"
-msgid "partners.title"
+#: .\project\partners\templates\partners\index.html:5
+msgid "partners.description"
 msgstr ""
 "Η εκδήλωσή μας δεν θα ήταν εφικτή χωρίς τη στήριξη από οργανισμούς που "
 "συμμερίζονται τις αξίες και τα οράματά μας. Επισκεφθείτε τις ιστοσελίδες "
@@ -374,10 +373,6 @@ msgstr "Performance"
 #: .\project\program\models.py:196
 msgid "Side event"
 msgstr "Side event"
-
-#: .\project\program\models.py:197
-msgid "Hosting"
-msgstr "Παρουσίαση"
 
 #: .\project\program\templates\program\_event-tabs.html:15
 #: .\project\templates\layouts\partials\nav.html:69
@@ -492,6 +487,10 @@ msgstr "Η ΕΚΔΗΛΩΣΗ"
 #: .\project\templates\layouts\partials\nav.html:36
 msgid "(Toggle dropdown)"
 msgstr "(Εμφάνιση/Απόκρυψη υπομενού)"
+
+#: .\project\templates\layouts\partials\nav.html:81
+msgid "Partners"
+msgstr "ΣΥΝΕΡΓΑΤΕΣ"
 
 #: .\project\templates\layouts\partials\nav.html:91
 msgid "About us"

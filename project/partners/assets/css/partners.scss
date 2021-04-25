@@ -61,8 +61,8 @@ article.sponsors {
                     display: flex;
                 }
                 .logo{
-                    filter: blur(5px);
-                    -webkit-filter: blur(5px);
+                    filter: blur(4px);
+                    -webkit-filter: blur(4px);
                 }
                 &.hasCareerLink{
                     .career-button{
@@ -134,9 +134,13 @@ article.sponsors {
         h2{
             margin-top: 1rem;
         }
+        .partners-collection {
+            justify-content: space-evenly;
+        }
         .partner-instance{
             max-width: 100%;
             flex: 0;
+            margin: 1em;
             .partner-card {
                 width: 20em;
                 height: 20em;
@@ -173,7 +177,6 @@ article.sponsors {
                 border-left: solid 2em #CACACA;
                 border-top: solid 2em $body-bg;
                 border-right: solid 2em $body-bg;
-                cursor: pointer;
                 transition-duration: 0.4s ;
                 .leaflet-button{
                     width: 100%;
@@ -231,7 +234,6 @@ article.sponsors {
                 border-left: solid 1.7em #CACACA;
                 border-top: solid 1.7em $body-bg;
                 border-right: solid 1.7em $body-bg;
-                cursor: pointer;
                 transition-duration: 0.4s ;
             }
         }

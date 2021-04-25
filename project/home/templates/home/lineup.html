@@ -34,15 +34,17 @@
                 <a class="presenter-card col-6 col-sm-4 col-lg-3 col-xl-2 mx-xl-1"
                     href="{% url "presenter" slug=item.slug %}">
                     {% if item.image %}
-                        <img class="image"
-                            srcset="{{ item.image.thumbnail.320x320.url }} 320w,
-                                    {{ item.image.thumbnail.720x720.url }} 720w,
-                                    {{ item.image.thumbnail.1024x1024.url }} 1024w"
-                            sizes="(max-width: 576px) 320px,
-                                    (max-width: 992px) 720px,
-                                    1024px"
-                            src="{{ item.image.thumbnail.320x320.url }}"
-                            alt="" />
+                        <div class="image-container">
+                            <img class="image"
+                                srcset="{{ item.image.thumbnail.320x320.url }} 320w,
+                                        {{ item.image.thumbnail.720x720.url }} 720w,
+                                        {{ item.image.thumbnail.1024x1024.url }} 1024w"
+                                sizes="(max-width: 576px) 320px,
+                                        (max-width: 992px) 720px,
+                                        1024px"
+                                src="{{ item.image.thumbnail.320x320.url }}"
+                                alt="" />
+                        </div>
                     {% else %}
                         <div class="media image image-placeholder squares-overlayed blue-black"></div>
                     {% endif %}
@@ -58,7 +60,9 @@
                 {% for p in placeholders reversed %}
                     {% if items|length <= p %}
                         <a class="presenter-card placeholder col-6 col-sm-4 col-lg-3 col-xl-2 mx-xl-1">
-                            <img src="{% static "images/totem-hero-left.png" %}" alt="">
+                            <div class="image-container">
+                                <img src="{% static "images/totem-hero-left.png" %}" alt="">
+                            </div>
                             <div class="info">
                                 <p><strong>{% trans 'more_soon' %}</strong></p>
                             </div>
@@ -68,5 +72,33 @@
             </div>
         </div>
         {% endfor %}
+    </div>
+    {% if hosts %} 
+    <h4 id="presenter-title">{% trans 'Hosting' %}</h4>
+    {% endif %}
+    <div id="presenter-container">
+        {% for host in hosts %}
+        <div class="presenter-card">
+            {% if host.image %}
+                <div class="image-container">
+                    <img class="image"
+                        srcset="{{ host.image.thumbnail.320x320.url }} 320w,
+                                {{ host.image.thumbnail.720x720.url }} 720w,
+                                {{ host.image.thumbnail.1024x1024.url }} 1024w"
+                        sizes="(max-width: 576px) 320px,
+                                (max-width: 992px) 720px,
+                                1024px"
+                        src="{{ host.image.thumbnail.320x320.url }}"
+                        alt="" />
+                </div>
+            {% else %}
+                <div class="media image image-placeholder squares-overlayed blue-black"></div>
+            {% endif %}
+            <div class="info">
+                <p><strong>{{ host.name }}</strong></p>
+                {% if host.occupation %}<p>{{ host.occupation }}</p>{% endif %}
+            </div>
+        {% endfor %}
+        </div>
     </div>
 </section>

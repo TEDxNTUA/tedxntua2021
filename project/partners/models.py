@@ -62,7 +62,7 @@ class Partner(TranslatableModel):
     MEDIA_PARTNERS = 'MP'
     COMMUNITY_PARTNERS = 'CP'
     PARTNER_TYPES = (
-        (PLATINUM_SPONSORS, _('Platinum Sponsor')),
+        (PLATINUM_SPONSORS, _('Platinum Sponsors')),
         (GRAND_SPONSORS, _('Grand Sponsors')),
         (GRAND_CARRIER_SPONSORS, _('Grand Carrier Sponsors')),
         (GRAND_HOSPITALITY_SPONSORS, _('Grand Hospitality Sponsors')),

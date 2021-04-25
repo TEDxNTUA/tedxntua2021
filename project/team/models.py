@@ -61,6 +61,7 @@ class TeamMember(TranslatableModel):
     MEDIA = 'media'
     SPEAKERS = 'speakers'
     VENUE_PRODUCTION = 'venue-production'
+    PHOTOGRAPHY = 'photography'
     TEAM_CHOICES = (
         (EXPERIENCE, 'Experience'),
         (IT, 'IT'),
@@ -69,6 +70,7 @@ class TeamMember(TranslatableModel):
         (MEDIA, 'Media'),
         (SPEAKERS, 'Speakers'),
         (VENUE_PRODUCTION, 'Venue & Production'),
+        (PHOTOGRAPHY, 'Photography'),
     )
     translations = TranslatedFields(
         name=models.CharField(max_length=255, default='')
