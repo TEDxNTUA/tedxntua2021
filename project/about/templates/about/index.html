@@ -12,6 +12,7 @@
     {% for member in members %}
     <div class="imagebox inner-box">      
       <div class="team-member">
+        <div class="background-container"></div>
         <div class="circle"></div>
         <img class="lazy lazy-on-hover" data-loaded="false"
         src="{{ member.image.thumbnail.320x320.url }}" 
@@ -43,7 +44,7 @@
   </div>
 
   <section id="about">
-    <img class="lazy lazy-on-view"
+    <!-- <img class="lazy lazy-on-view"
         src="{% static "images/tedxntua_photo_540.jpg" %}"
         data-srcset="{% static "images/tedxntua_photo_540.jpg" %} 540w,
                  {% static "images/tedxntua_photo_1200.jpg" %} 1200w,
@@ -51,17 +52,17 @@
         sizes="(max-width: 768px) 540px,
                 (max-width: 1440px) 1200px,
                 2400px"
-        alt="TEDxNTUA organizing team and volunteers celebrating the conclusion of the 2019 event" />
+        alt="TEDxNTUA organizing team and volunteers celebrating the conclusion of the 2019 event" /> -->
     <div class="about-section" id="about-tedxntua">
         {% trans 'about.tedxntua' %}
         {% trans 'about.join' %}
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 about-section" id="about-ted">
+            <div class="col-12 col-md-5 about-section" id="about-ted">
                 {% trans 'about.ted' %}
             </div>
-            <div class="col-12 col-md-6 about-section" id="about-tedx">
+            <div class="col-12 col-md-5 about-section" id="about-tedx">
                 {% trans 'about.tedx' %}
             </div>
         </div>

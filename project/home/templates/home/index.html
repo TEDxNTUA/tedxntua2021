@@ -15,9 +15,11 @@
     <div class="section-container">
         {% include "home/lineup.html" %}
     </div>
+    {% if settings.TEDXNTUA_VENUE_ENABLED %}
     <div class="section-container">
         {% include "home/venue.html" %}
     </div>
+    {% endif %}
     <div>
         {% include "home/social.html" %}
     </div>

@@ -27,26 +27,29 @@ article.listing-page {
             }
             .parent {
                 position: relative;
-                width: 85%;
+                width: 100%;
                 margin: 1.5em auto;
+                height: calc(2*5vw + 10em);
                 .flip_card_inner {
+                    height: 100%;
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    transition: transform 0.5s;
+                    transition: transform 0.3s ease-out;
                     transform-style: preserve-3d; 
                     overflow: hidden;
+                    border-radius: $border-radius;
                     .image1 {
                         width: 100%; 
-                    }
-                    .background-upper {
-                        border-radius: $border-radius $border-radius 0 0;
                     }
                     .background-lower {
                         z-index: 2;
                         border-radius: 0 0 $border-radius $border-radius;
                         opacity: 0.85;
+                        margin-top: auto;
+                        object-fit: contain;
                     }
                     .image2 {
                         position: absolute;
@@ -85,6 +88,9 @@ article.listing-page {
             a .parent:hover {
                 .flip_card_inner {
                     transform: rotateY(180deg);
+                    img {
+                        transform: rotateY(-180deg);
+                    }
                 }
                 .boxed {
                     h3, h4 {

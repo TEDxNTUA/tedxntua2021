@@ -4,4 +4,4 @@
 //     scheduleTable.setAttribute('data-activetab', evt.target.value)
 // })
 
-import "./toggleInfo"
+// import "./toggleInfo"

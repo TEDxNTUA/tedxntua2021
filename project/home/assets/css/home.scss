@@ -65,7 +65,7 @@ article.home-page {
             transition: $logo-timing;
             -moz-transition: $logo-timing;
             -webkit-transition: $logo-timing;
-            transition-timing-function: cubic-bezier(.51,.21,.48,1.1);
+            transition-timing-function: cubic-bezier(1,.28,.59,1.37);
             transform: scale(4);
             opacity: 0;
             h2 {
@@ -199,6 +199,7 @@ article.home-page {
                 border-radius: $border-radius $border-radius 0 0;
             }
             .info {
+                font-family: $font-family-serif;
                 min-height: 3.5em;
                 display: flex;
                 flex-flow: column wrap;
@@ -262,7 +263,7 @@ article.home-page {
                 flex-direction: row;
                 min-height: calc(12em - 1.5vw);
                 .image-container {
-                    height: calc(12em - 1.5vw);
+                    height: calc(14em - 1.5vw);
                     width: 12em;
                     border-radius: $border-radius 0 0 $border-radius;
                     img {
