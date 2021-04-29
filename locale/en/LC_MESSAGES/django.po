@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 19:50+0300\n"
+"POT-Creation-Date: 2021-04-29 21:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,12 @@ msgstr ""
 msgid "about.meet_the_team"
 msgstr "MEET THE TEAM"
 
-#: .\project\about\templates\about\index.html:34
+#: .\project\about\templates\about\index.html:28
 #, python-format
 msgid "%(team_name)s"
 msgstr ""
 
-#: .\project\about\templates\about\index.html:64
+#: .\project\about\templates\about\index.html:57
 msgid "about.tedxntua"
 msgstr ""
 "<h3>What is TEDxNTUA?</h3><p>TEDxNTUA is a conference that features "
@@ -67,7 +67,7 @@ msgstr ""
 "Institute of Communication and Computer Systems (<a href=\"https://www.iccs."
 "gr\" target=\"_blank\">ICCS</a>) of NTUA.</p>"
 
-#: .\project\about\templates\about\index.html:65
+#: .\project\about\templates\about\index.html:58
 msgid "about.join"
 msgstr ""
 "<details><summary><strong>I want to join the team!</strong></summary><p>The "
@@ -86,7 +86,7 @@ msgstr ""
 "weeks before the event for the event-day volunteers. <strong>Stay tuned</"
 "strong> to our social media pages to be updated.</p></details>"
 
-#: .\project\about\templates\about\index.html:70
+#: .\project\about\templates\about\index.html:63
 msgid "about.ted"
 msgstr ""
 "<h3>What is TED?</h3><p>TED is a nonprofit organization devoted to "
@@ -117,7 +117,7 @@ msgstr ""
 "innovators from around the globe to amplify the impact of their remarkable "
 "projects and activities.</p>"
 
-#: .\project\about\templates\about\index.html:73
+#: .\project\about\templates\about\index.html:66
 msgid "about.tedx"
 msgstr ""
 "<h3>What is TEDx?</h3><p>In the spirit of ideas worth spreading, TEDx is a "
@@ -133,7 +133,11 @@ msgstr ""
 msgid "home.date"
 msgstr "May 29th 2021"
 
-#: .\project\home\templates\home\hero.html:26
+#: .\project\home\templates\home\hero.html:29
+msgid "home.dualism_logo"
+msgstr ""
+
+#: .\project\home\templates\home\hero.html:38
 msgid "tickets.cta"
 msgstr "Get your tickets!"
 
@@ -168,7 +172,7 @@ msgid "Side events"
 msgstr "SIDE EVENTS"
 
 #: .\project\home\templates\home\lineup.html:68
-#: .\project\program\templates\program\listing.html:66
+#: .\project\program\templates\program\listing.html:79
 msgid "more_soon"
 msgstr "More soon"
 
@@ -274,7 +278,7 @@ msgid "Community Partners"
 msgstr ""
 
 #: .\project\partners\models.py:93 .\project\program\models.py:223
-#: .\project\program\models.py:347 .\project\team\models.py:101
+#: .\project\program\models.py:347 .\project\team\models.py:103
 msgid "Published"
 msgstr ""
 
@@ -382,13 +386,17 @@ msgstr "Meet the performers of the TEDxNTUA 2021 event!"
 msgid "side_events.description"
 msgstr "Learn more about the side events of the TEDxNTUA 2021 event!"
 
-#: .\project\program\templates\program\presenter.html:9
+#: .\project\program\templates\program\presenter.html:10
 msgid "back"
 msgstr "Back"
 
-#: .\project\program\templates\program\presenter.html:36
+#: .\project\program\templates\program\presenter.html:54
 msgid "presenter.read_full"
 msgstr "Read full description"
+
+#: .\project\program\templates\program\presenter.html:55
+msgid "presenter.read_less"
+msgstr "Read less"
 
 #: .\project\program\templates\program\schedule.html:4
 msgid "schedule.title"

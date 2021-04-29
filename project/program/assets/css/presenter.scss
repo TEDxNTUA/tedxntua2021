@@ -43,7 +43,6 @@ article.presenter-page {
             #collapse-one { 
                 height: 120px; 
                 overflow-y: hidden;
-                margin-right: 0;
                 &.show {
                     height: max-content;
                     transition: 0.5s;
@@ -155,8 +154,11 @@ article.presenter-page {
     }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
     main article.presenter-page{
         padding: 0 $page-padding-x $page-padding-y;
+        .info {
+            margin-top: 2em;
+        }
     }
 }

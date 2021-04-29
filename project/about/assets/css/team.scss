@@ -23,6 +23,8 @@ article.about {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 10em;
+    margin: auto;
+    max-width: 1500px;
   }
   .imagebox {
     @include make-col(2);
@@ -38,7 +40,13 @@ article.about {
       height: 100%;
       overflow: hidden;
       border-radius: $border-radius;  
-      background-color: white;
+      .background-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(232, 227, 220, 1);
+        filter: blur(10px);
+      }
       img {
         width: 100%;
         height: 100%;
@@ -46,19 +54,19 @@ article.about {
         border-radius: $border-radius-sm;
         position: relative;
       }  
-      // &.hover {
-      //   opacity: 0;
-      // }
       .member-tag{
+        font-family: $font-family-serif;
         text-align: center;
         font-size: 1.2em;
         color: $primary;
         margin-top: -2.5em;
-        background: $primary;
+        background: $secondary;
         padding: 4px 8px;
-        color: black;
+        color: white;
         position: absolute;
         font-size: 1em;
+        opacity: 0.9;
+        border-radius: 0 5px 5px 0;
         &.alt {
           opacity: 0;
         }
@@ -98,7 +106,7 @@ article.about {
       .member-tag {
         opacity: 0;
         &.alt {
-          opacity: 1;
+          opacity: 0.9;
         }
       }
     }
@@ -118,7 +126,9 @@ article.about {
   }
 
   section#about{
-    margin-top: 3rem;
+    margin: auto;
+    margin-top: 5rem;
+    max-width: 1500px;
     img{
         width: 100%;
         height: auto;
@@ -139,6 +149,9 @@ article.about {
         margin-bottom: 0;
       }
     }
+    .row {
+      justify-content: space-evenly;
+    }
   }
 
   .about-section{
@@ -147,9 +160,8 @@ article.about {
 
   #about-tedxntua{
     position: relative;
-    width: 60rem;
     max-width: 90%;
-    margin-top: -6vw;
+    // margin-top: -6vw;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5rem;

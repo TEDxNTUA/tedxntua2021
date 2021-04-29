@@ -52,13 +52,14 @@ $social-icon-size: 3em;
                 border-radius: $border-radius;
                 display: flex;
                 flex-flow: wrap; //for firefox
+                box-shadow: $box-shadow-soft;
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     border-radius: $border-radius;
-                    filter: contrast(0.6);
-                    
+                    opacity: 0.8;
+                    filter: contrast(0.7);
                 }
                 .prev-talks-btn {
                     width: 90%;
@@ -75,7 +76,7 @@ $social-icon-size: 3em;
             }
             &:hover {
                 #prev-talks-card img {
-                    filter: contrast(0.8);
+                    filter: contrast(0.9);
                     transition: 0.4s;
                 }
                 .prev-talks-btn, #prev-talks-btn-sm {
@@ -93,6 +94,7 @@ $social-icon-size: 3em;
             max-width: 20em;
             margin-bottom: 1em;
             border-radius: $border-radius;
+            box-shadow: $box-shadow-soft;
         }
     }
     ul.scrollable-cards {
@@ -171,6 +173,7 @@ $social-icon-size: 3em;
             #newsletter-form {
                 width: 100%;
                 margin-bottom: 1em;
+                box-shadow: $box-shadow-soft;
                 #newsletter-input-field {
                     width: 100%;
                     height: 2em;

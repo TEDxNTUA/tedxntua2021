@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 19:51+0300\n"
+"POT-Creation-Date: 2021-04-29 21:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,13 +33,13 @@ msgstr ""
 msgid "about.meet_the_team"
 msgstr "ΓΝΩΡΙΣΕ ΤΗΝ ΟΜΑΔΑ"
 
-#: .\project\about\templates\about\index.html:34
+#: .\project\about\templates\about\index.html:28
 #, fuzzy, python-format
 #| msgid "%(team_name)s TEAM"
 msgid "%(team_name)s"
 msgstr "ΟΜΑΔΑ %(team_name)s"
 
-#: .\project\about\templates\about\index.html:64
+#: .\project\about\templates\about\index.html:57
 msgid "about.tedxntua"
 msgstr ""
 "<h3>Τι είναι το TEDxNTUA;</h3><p>Το TEDxNTUA είναι ένα συνέδριο που "
@@ -72,7 +72,7 @@ msgstr ""
 "Ινστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών (<a href=\"https://www."
 "iccs.gr\" target=\"_blank\">ΕΠΙΣΕΥ</a>) του ΕΜΠ.</p>"
 
-#: .\project\about\templates\about\index.html:65
+#: .\project\about\templates\about\index.html:58
 msgid "about.join"
 msgstr ""
 "<details><summary><strong>Θέλω να συμμετέχω στην ομάδα!</strong></"
@@ -94,7 +94,7 @@ msgstr ""
 "<strong>Συντονίσου</strong> στις σελίδες μας στα social media ώστε να "
 "παραμένεις ενημερωμένος/η.</p></details>"
 
-#: .\project\about\templates\about\index.html:70
+#: .\project\about\templates\about\index.html:63
 msgid "about.ted"
 msgstr ""
 "<h3>Τι είναι το TED;</h3><p>Το TED είναι ένας μη κερδοσκοπικός οργανισμός "
@@ -127,7 +127,7 @@ msgstr ""
 "που θέλουν να αλλάξουν τον κόσμο να ενισχύσουν τον αντίκτυπο των "
 "αξιοσημείωτων έργων τους, όπως και των δραστηριοτήτων τους.</p>"
 
-#: .\project\about\templates\about\index.html:73
+#: .\project\about\templates\about\index.html:66
 msgid "about.tedx"
 msgstr ""
 "<h3>Τι είναι το TEDx;</h3><p>Στο πνεύμα των Ιδεών που Αξίζει να Διαδοθούν, "
@@ -145,7 +145,11 @@ msgstr ""
 msgid "home.date"
 msgstr "29 Μαΐου 2021"
 
-#: .\project\home\templates\home\hero.html:26
+#: .\project\home\templates\home\hero.html:29
+msgid "home.dualism_logo"
+msgstr ""
+
+#: .\project\home\templates\home\hero.html:38
 msgid "tickets.cta"
 msgstr "Κάνε κράτηση!"
 
@@ -180,7 +184,7 @@ msgid "Side events"
 msgstr "SIDE EVENTS"
 
 #: .\project\home\templates\home\lineup.html:68
-#: .\project\program\templates\program\listing.html:66
+#: .\project\program\templates\program\listing.html:79
 msgid "more_soon"
 msgstr "Σύντομα περισσότερα"
 
@@ -287,7 +291,7 @@ msgid "Community Partners"
 msgstr "Συνεργάτες Κοινότητας"
 
 #: .\project\partners\models.py:93 .\project\program\models.py:223
-#: .\project\program\models.py:347 .\project\team\models.py:101
+#: .\project\program\models.py:347 .\project\team\models.py:103
 msgid "Published"
 msgstr "Δημόσιο"
 
@@ -410,13 +414,17 @@ msgstr "Γνώρισε τους performers του φετινού TEDxNTUA 2020!"
 msgid "side_events.description"
 msgstr "Μάθε περισσότερα για τα side events του φετινού TEDxNTUA 2020!"
 
-#: .\project\program\templates\program\presenter.html:9
+#: .\project\program\templates\program\presenter.html:10
 msgid "back"
 msgstr "Πίσω"
 
-#: .\project\program\templates\program\presenter.html:36
+#: .\project\program\templates\program\presenter.html:54
 msgid "presenter.read_full"
 msgstr "Διάβασε την πλήρη περιγραφή"
+
+#: .\project\program\templates\program\presenter.html:55
+msgid "presenter.read_less"
+msgstr "Διάβασε λιγότερα"
 
 #: .\project\program\templates\program\schedule.html:4
 msgid "schedule.title"
