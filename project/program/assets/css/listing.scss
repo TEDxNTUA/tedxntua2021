@@ -5,10 +5,11 @@ main article.listing-page {
 article.listing-page {
     .listing-grid {
         h4 {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         h3 {
             font-size: 1.2rem;
+            margin: auto;
         }
         display: flex;
         flex-flow: row wrap;
@@ -41,6 +42,7 @@ article.listing-page {
                     transform-style: preserve-3d; 
                     overflow: hidden;
                     border-radius: $border-radius;
+                    box-shadow: $box-shadow-soft;
                     .image1 {
                         width: 100%; 
                     }
@@ -58,19 +60,17 @@ article.listing-page {
                         top: 0;
                         object-fit: cover;
                         border-radius: $border-radius;
-                        background: black;
+                        // background: black;
                     }
                     .boxed {
                         position: absolute;
                         bottom: 0px;
-                        height: 20%;
+                        height: 23%;
                         width: 100%;
                         text-align: center;
                         display: flex;
                         align-items: center;
-                        justify-content: center;
                         flex-flow: column; 
-                        word-break: break-all;
                         overflow: auto;
                         z-index: 2;
                         h4:last-child {
@@ -85,7 +85,7 @@ article.listing-page {
 @include media-breakpoint-up(sm) {
     article.listing-page { 
         .listing-grid{
-            a .parent:hover {
+            a:not(.placeholder) .parent:hover {
                 .flip_card_inner {
                     transform: rotateY(180deg);
                     img {
@@ -99,7 +99,7 @@ article.listing-page {
                     h4:last-child {
                         transition: transform 0.5s;
                         display: block;
-                        transform: rotateY(180deg);
+                        transform: rotateY(-180deg);
                     }
                 }
             }
@@ -115,9 +115,10 @@ article.listing-page {
         .listing-grid {
             h4 {
                 font-size: 0.8rem;
+                font-weight: bold;
             }
             h3 {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 margin-bottom: 0.2rem;
             }
             a {

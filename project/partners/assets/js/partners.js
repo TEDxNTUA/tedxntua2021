@@ -26,3 +26,14 @@ $(window).on("click", function(e) {
         }
     }
 });
+
+$('.triangle').on("click touch", function(){
+    let id = this.id.concat("-modal");
+    let m = document.getElementById(id);
+    $(m).removeClass('hidden');
+});
+
+$('.close').on("click touch", function(){
+    let m1 = this.parentElement.parentElement;
+    $(m1).addClass('hidden');
+});

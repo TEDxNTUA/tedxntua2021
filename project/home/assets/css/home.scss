@@ -182,6 +182,7 @@ article.home-page {
         }
         .presenter-card {
             min-height: 17em;
+            max-width: 12em;
             display: flex;
             flex-direction: column;
             margin-bottom: 1em;
@@ -190,12 +191,13 @@ article.home-page {
                 height: 12em;
                 overflow: hidden;
                 border-radius: $border-radius $border-radius 0 0;
+                box-shadow: $box-shadow-soft;
             }
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                background-color: black;
+                // background-color: black;
                 border-radius: $border-radius $border-radius 0 0;
             }
             .info {
@@ -208,6 +210,7 @@ article.home-page {
                 border-top: none;
                 border-radius: 0 0 $border-radius $border-radius;
                 padding: 0.2em 0.2em;
+                box-shadow: $box-shadow-soft;
                 p {
                     &:first-child {
                         font-size: 1.2rem;
@@ -261,6 +264,7 @@ article.home-page {
             margin-top: 1em;
             .presenter-card {
                 flex-direction: row;
+                max-width: none;
                 min-height: calc(12em - 1.5vw);
                 .image-container {
                     height: calc(14em - 1.5vw);

@@ -245,32 +245,99 @@ article.sponsors {
 // Modal
 /////////////////////////////////
 .modal{
-    padding-right: 0 !important;
-}   
-.modal-dialog{
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none;
-    margin: 0 auto;
+    display: flex; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: $body-bg; /* Fallback color */
+    background-color: rgba(36, 42, 48, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: rgba(50,50,50,0.9);
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 90%;
+    border-radius: $border-radius;
+  }
+.modal-info-container{
     display: flex;
-    align-items: center;
+    overflow: scroll;
 }
-.modal-content{
-    height: 95% !important;
-    background: transparent;
-    border: 0;
-    padding: 0 0.5rem;
+.modal-image-container{
+    @include make-col (4);
+    .modal-logo{
+        top: 0;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 25px;
+        padding: 1em 2em;
+    }
+    .modal-buttons{
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        .modal-career-button{
+            border-radius:5px ;
+            background-color: #171717;
+            padding: 0 1em;
+            margin: 0.5em;
+            text-align: center;
+        }
+        .modal-website-button{
+            border-radius:5px ;
+            background-color: #171717;
+            padding: 0 1em;
+            margin: 0.5em;
+            text-align: center;
+        }
+        .modal-career-button:hover{
+            background-color: black;
+        }
+        .modal-website-button:hover{
+            background-color: black;
+        }
+    }
 }
-.modal-body{
-    height: 100% !important;
-    padding: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.iframe-div{
+.info{
+    align-self: center;
+    text-align: left;
+    overflow: scroll;
+    width: 100%;
     height: 100%;
-    width: 80vw;
+    word-wrap: break-word;
+    .name{
+        text-align: left;
+    }
+    p {
+        font-size: 1.2rem;
+        line-height: 150%;
+    }
+}
+
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  width: max-content;
+  margin-left: auto;
+}
+
+.hidden{
+    display:none;
 }
 
 @include media-breakpoint-up(xl){
@@ -340,6 +407,30 @@ article.sponsors {
         }
     }
 }
+
+@include media-breakpoint-down(xs){
+    .modal-content{
+        height: 100%;
+    }
+    .modal-info-container{
+        display: flex;
+        flex-flow: column;
+        overflow: scroll;
+        .modal-image-container{
+            max-width: unset;
+            width: 80%;
+            height: auto;
+            align-self: center;
+        }
+        .info{
+            overflow: initial;
+        }
+        .name{
+            text-align: center;
+        }
+    }
+}
+
 @media (max-width: 372px) {
     article.sponsors {
         .partner-instance .partner-card {

@@ -72,7 +72,11 @@ class Partner(TranslatableModel):
         (COMMUNITY_PARTNERS, _('Community Partners')),
     )
     translations = TranslatedFields(
-        name=models.CharField(max_length=255, verbose_name='name')
+        name=models.CharField(max_length=255, verbose_name='name'),
+        description=models.CharField(max_length=5000, verbose_name='description',
+            null=True,
+            blank=True
+        )
     )
     partner_type = models.CharField(max_length=3, choices=PARTNER_TYPES)
     link = models.URLField()
