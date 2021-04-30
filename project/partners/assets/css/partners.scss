@@ -256,6 +256,9 @@ article.sponsors {
     overflow: auto; /* Enable scroll if needed */
     background-color: $body-bg; /* Fallback color */
     background-color: rgba(36, 42, 48, 0.4); /* Black w/ opacity */
+    &.hidden{
+        display:none;
+    }
 }
 
 .modal-content {
@@ -270,10 +273,32 @@ article.sponsors {
     width: 90%;
     height: 90%;
     border-radius: $border-radius;
+    .close {
+        color: #aaaaaa;
+        font-size: 28px;
+        font-weight: bold;
+        width: max-content;
+        margin-left: auto;
+      }
   }
 .modal-info-container{
     display: flex;
     overflow: scroll;
+    .info{
+        align-self: center;
+        text-align: left;
+        overflow: scroll;
+        width: 100%;
+        height: 100%;
+        word-wrap: break-word;
+        .name{
+            text-align: left;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 150%;
+        }
+    }
 }
 .modal-image-container{
     @include make-col (4);
@@ -311,33 +336,6 @@ article.sponsors {
             background-color: black;
         }
     }
-}
-.info{
-    align-self: center;
-    text-align: left;
-    overflow: scroll;
-    width: 100%;
-    height: 100%;
-    word-wrap: break-word;
-    .name{
-        text-align: left;
-    }
-    p {
-        font-size: 1.2rem;
-        line-height: 150%;
-    }
-}
-
-.close {
-  color: #aaaaaa;
-  font-size: 28px;
-  font-weight: bold;
-  width: max-content;
-  margin-left: auto;
-}
-
-.hidden{
-    display:none;
 }
 
 @include media-breakpoint-up(xl){

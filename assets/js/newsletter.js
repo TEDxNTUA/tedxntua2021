@@ -9,7 +9,10 @@ submitButton.onclick = function(){
         type:'post',
         data:$("#newsletter-form").serializeArray(),
         success: function(){
-          alert("SUCCESS! Welcome to our Newsletter")
+          // alert("SUCCESS! Welcome to our Newsletter")
+          let m = document.getElementById("newsletter-modal");
+          $(m).removeClass("hidden");
+          setTimeout(function() { $(m).addClass("hidden"); }, 1000);
         },
         error: function(){
           alert("There was an error :(")
