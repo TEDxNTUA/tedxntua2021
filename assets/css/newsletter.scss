@@ -1,8 +1,8 @@
-#newsletter-modal{
+#newsletter-modal {
     background-color: rgba(188, 240, 158, 0.7);
     position: fixed;
     margin: auto;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -10,13 +10,15 @@
     height: 10em;
     padding: 4em 0;
     opacity: 1;
+    visibility: visible;
     border-radius: $border-radius;
-    p{
+    p {
         margin: auto;
         align-self: center;
     }
-    &.hidden{
+    &.hidden {
         opacity: 0;
+        visibility: hidden;
         transition: opacity 1s linear;
     }
 }

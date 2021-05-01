@@ -60,7 +60,6 @@ article.listing-page {
                         top: 0;
                         object-fit: cover;
                         border-radius: $border-radius;
-                        // background: black;
                     }
                     .boxed {
                         position: absolute;
@@ -100,6 +99,8 @@ article.listing-page {
                         transition: transform 0.5s;
                         display: block;
                         transform: rotateY(-180deg);
+                        margin: auto;
+                        font-size: 1.1rem;
                     }
                 }
             }
@@ -114,12 +115,12 @@ article.listing-page {
     article.listing-page {
         .listing-grid {
             h4 {
-                font-size: 0.8rem;
-                font-weight: bold;
+                font-size: 0.9rem;
             }
             h3 {
                 font-size: 1.1rem;
                 margin-bottom: 0.2rem;
+                font-weight: bold;
             }
             a {
                 .parent {
@@ -147,10 +148,10 @@ article.listing-page {
     article.listing-page {
         .listing-grid {
             h4 {
-                font-size: 0.7rem;
+                font-size: 0.8rem;
             }
             h3 {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 margin-bottom: 0.1rem;
             }
             a {
