@@ -6,11 +6,11 @@
     </div>
     <div class="content col-8">
         <!-- <h2>TEDxNTUA</h2> -->
-        <img id="main-logo" src="{% static "images/ubuntu-main-logo.png" %}" alt="main-logo">
+        <img id="main-logo" src="{% static "images/ubuntu-main-logo-transparent.png" %}" alt="main-logo">
         <div class="infobox">
             <time class="date" datetime="{{ event_date }}"
                 aria-label="{{ event_date }}">
-                <h2 class="monthday">{% trans 'home.date' %}</h2>
+            <h2 class="monthday">{% trans 'home.date' %}</h2>
             {% if settings.TEDXNTUA_VENUE_ENABLED %}
             <div class="location">
                 <h3>
@@ -36,13 +36,13 @@
             {% endif %}
         </div>
         {% if settings.TEDXNTUA_TICKETS_ENABLED %}
-        <a href="{{ settings.TEDXNTUA_TICKETS_URL }}" class="btn btn-lg btn-primary">
+        <a href="{{ settings.TEDXNTUA_TICKETS_URL }}" class="btn btn-lg btn-primary" target="_blank">
             {% trans 'tickets.cta' %}
         </a>
         {% endif %}
-        <a href="https://www.youtube.com/playlist?list=PLd7-PjFC85gxOG7Ou-H_DjIFGLHpPYqy2" target="_blank">
+        <!-- <a href="https://www.youtube.com/playlist?list=PLd7-PjFC85gxOG7Ou-H_DjIFGLHpPYqy2" target="_blank">
         <img id="dialogues-logo" src="{% static "images/dialogues-logo.png" %}" alt="TEDxNTUA Dialogues logo">
-        </a>
+        </a> -->
     </div>
     <div id="totem-right" class="totem-container col-2">
         <img src="{% static "images/totem-hero-right.png" %}" alt="totem-right">
