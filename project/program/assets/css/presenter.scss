@@ -18,7 +18,7 @@ article.presenter-page {
         height: auto;
         flex-shrink: 0;
         border-radius: $border-radius;
-        background: black;
+        box-shadow: $box-shadow-soft;
     }
     .image-placeholder div {
         width: 50vw;
@@ -40,6 +40,7 @@ article.presenter-page {
             }
         }
         #description {
+            word-wrap: break-word;
             #collapse-one { 
                 height: 120px; 
                 overflow-y: hidden;
@@ -75,21 +76,25 @@ article.presenter-page {
             margin-top: 1.5em;
             padding: 0.1em;
             margin: 0em;
-            img {
-                width: 100%;
-                height: auto;
-                flex-shrink: 0;
-                object-fit: cover;
-                padding-left: 0em; 
-                min-width: 9em;
-                min-height: 14em;
-                border-radius: $border-radius;
-            }
-            .image-placeholder div {
-                width: 30em;
-                max-width: 50vw;
-                height: 30em;
-                max-height: 50vw;
+            .col-sm-3 .image_box {
+                display: flex;
+                img {
+                    width: 100%;
+                    height: auto;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                    padding-left: 0em; 
+                    min-width: 10em;
+                    min-height: 14em;
+                    border-radius: $border-radius;
+                    margin-top: 0.3em;
+                }
+                .image-placeholder div {
+                    width: 30em;
+                    max-width: 50vw;
+                    height: 30em;
+                    max-height: 50vw;
+                }
             }
             .info {
                 display: flex;
@@ -101,9 +106,8 @@ article.presenter-page {
                     max-width: 100%;
                     padding: 2px;
                     margin-left: 1%;
-                    margin-top:1em;
                     .name_link {
-                        display:flex;
+                        display: flex;
                         flex-direction: row;
                     }
                 }
@@ -114,6 +118,7 @@ article.presenter-page {
                 #description {
                     #collapse-one { 
                         margin-right: 10%;
+                        word-wrap: break-word;
                     }
                 }
             }
@@ -150,6 +155,30 @@ article.presenter-page {
         h5 {
             margin-bottom: .25rem;
             color: rgb(255, 255, 255);
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    main article.presenter-page {
+        padding: 0 1rem $page-padding-y-lg;
+        .presenter{
+            .info{
+                padding-left: 2em;
+                .name_link_oc{
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) and (max-width: 991px){
+    main article.presenter-page{
+        .presenter{
+            .info{
+                padding-left: 0em;
+            }
         }
     }
 }

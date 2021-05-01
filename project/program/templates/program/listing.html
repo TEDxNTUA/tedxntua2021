@@ -61,12 +61,9 @@
         {% endfor %}
         {% for p in placeholders reversed %}
             {% if items|length <= p %}
-                <a class="col col-6 col-md-4 col-lg-3 col-xl-2 mx-xl-1 underline-parent placeholder">
+                <a class="col col-6 col-sm-4 col-lg-3 col-xl-2 mx-xl-1 underline-parent placeholder">
                     <div class="parent">
                         <div class="flip_card_inner">
-                            <img class="image1 background-upper"
-                            src="{% static "images/hoover-03-upper.png" %}"
-                            alt="">
                             <img class="image1 background-lower"
                             src="{% static "images/hoover-03-lower.png" %}"
                             alt="">
