@@ -19,6 +19,7 @@ article.presenter-page {
         flex-shrink: 0;
         border-radius: $border-radius;
         box-shadow: $box-shadow-soft;
+        background: rgba(49, 49, 49, 0.5);
     }
     .image-placeholder div {
         width: 50vw;
