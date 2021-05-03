@@ -42,6 +42,8 @@ article.presenter-page {
         }
         #description {
             word-wrap: break-word;
+            font-family: $font-family-serif;
+            margin-left: 2%;
             #collapse-one { 
                 height: 120px; 
                 overflow-y: hidden;
@@ -68,6 +70,30 @@ article.presenter-page {
         margin-left: 3.5%;
     }
 }
+
+@include media-breakpoint-down(xs) {
+    main article.presenter-page{
+        padding: 0 $page-padding-x $page-padding-y;
+        .presenter .info {
+            margin-top: 2em;
+            padding-left: 15px;
+            .name_link_oc {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) and (max-width: 991px){
+    main article.presenter-page{
+        .presenter{
+            .info{
+                padding-left: 0em;
+            }
+        }
+    }
+}
+
 @include media-breakpoint-up(sm) {
     article.presenter-page {
         padding: 0 $page-padding-x-lg $page-padding-y-lg;
@@ -85,7 +111,7 @@ article.presenter-page {
                     flex-shrink: 0;
                     object-fit: cover;
                     padding-left: 0em; 
-                    min-width: 10em;
+                    // min-width: 10em;
                     min-height: 14em;
                     border-radius: $border-radius;
                     margin-top: 0.3em;
@@ -101,6 +127,7 @@ article.presenter-page {
                 display: flex;
                 align-content: right;
                 flex-direction: row;
+                justify-content: flex-start;
                 .name_link_oc {
                     display:flex;
                     flex-direction: column;
@@ -165,7 +192,6 @@ article.presenter-page {
         padding: 0 1rem $page-padding-y-lg;
         .presenter{
             .info{
-                padding-left: 2em;
                 .name_link_oc{
                     margin-left: 2%;
                 }
@@ -174,21 +200,5 @@ article.presenter-page {
     }
 }
 
-@media (min-width: 750px) and (max-width: 991px){
-    main article.presenter-page{
-        .presenter{
-            .info{
-                padding-left: 0em;
-            }
-        }
-    }
-}
 
-@include media-breakpoint-down(xs) {
-    main article.presenter-page{
-        padding: 0 $page-padding-x $page-padding-y;
-        .info {
-            margin-top: 2em;
-        }
-    }
-}
+

@@ -45,6 +45,7 @@ $social-icon-size: 3em;
     }
     #prev-talks {
         a {
+            margin-top: auto;
             #prev-talks-card {
                 height: 10em;
                 max-width: 20em;
@@ -72,6 +73,8 @@ $social-icon-size: 3em;
                     border-radius: $border-radius;
                     position: relative;
                     top: -3em;
+                    font-family: $font-family-serif;
+                    font-weight: bold;
                 }
             }
             &:hover {
@@ -198,6 +201,7 @@ $social-icon-size: 3em;
                 background-color: $ted;
                 border-radius: $border-radius;
                 font-size: 90%;
+                font-family: $font-family-serif;
                 &:hover {
                     transform: scale(1.02);
                 }

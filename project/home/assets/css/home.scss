@@ -174,6 +174,9 @@ article.home-page {
                 transition: 1s ease-in;
                 transform: translate(110%, 0);
                 opacity: 0;
+                box-shadow: $box-shadow-soft;
+                background: rgba(58, 57, 57, 0.5);
+                border-radius: $border-radius;
             }
         }
     }
@@ -418,6 +421,8 @@ article.home-page {
                     }
                     p {
                         margin: auto;
+                        font-family: $font-family-serif;
+                        font-weight: bold;
                     }
                     &.youtube-btn {
                         color: white;
