@@ -64,6 +64,7 @@ article.about {
         padding: 4px 8px;
         color: white;
         position: absolute;
+        bottom: 0;
         font-size: 1em;
         opacity: 0.9;
         border-radius: 0 5px 5px 0;
@@ -195,6 +196,13 @@ article.about {
 }
  
 @include media-breakpoint-down(lg) {
+  main article.about{
+    padding: 0 $page-padding-x $page-padding-y;
+    .imagebox .team-member .member-tag {
+      font-size: 0.9rem;
+    }
+  }
+
   .inner-box:nth-child(8n) {
     display: flex !important;
    }
@@ -221,7 +229,7 @@ article.about {
   }
 
   .inner-box:nth-child(6n) {
-    display: none;
+    display: none !important;
    }
    .inner-box:nth-child(6n-1){
      .chain-left {
@@ -249,7 +257,7 @@ article.about {
   }
 
   .inner-box:nth-child(6n) {
-    display: flex;
+    display: flex !important;
    }
    .inner-box:nth-child(6n-1){
      .chain-left {
@@ -285,7 +293,6 @@ article.about {
 }
 
 @include media-breakpoint-down (xs){
-  
   main article.about{
     padding: 0 5px;
   }
@@ -293,6 +300,9 @@ article.about {
     .imagebox {
       max-width: 44.66667%;
       flex: 0 0 44.66667%;
+      .team-member img {
+        object-fit: cover;
+      }
     } 
   }
 }

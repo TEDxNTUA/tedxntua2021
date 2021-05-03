@@ -1,0 +1,21 @@
+{% load i18n %}
+{% load static %}
+<section id="dialogues">
+    <h2 class="mb-3">{% trans 'DIALOGUES' %}</h2>
+    <h3 class="mb-3">The 1st TEDx Vidcast in Greece</h3>
+    <div id="dialogues-card">
+        <div class="image-container">
+            <img src="{% static "images/dialogues-logo.png" %}" alt="dialogues"/>
+        </div>
+        <div class="buttons-container">
+            <a class="media-btn youtube-btn" href="https://www.youtube.com/playlist?list=PLd7-PjFC85gxOG7Ou-H_DjIFGLHpPYqy2" target="_blank">
+                <img src="{% static "images/youtube-color.png" %}"/>
+                <p>Watch on Youtube</p>
+            </a>
+            <a class="media-btn spotify-btn" href="https://open.spotify.com/show/37aJ01THIfCNqtGxJEJwcj?si=2a0555fe7de249eb" target="_blank">
+                <img src="{% static "images/spotify-color.png" %}"/>
+                <p>Listen on Spotify</p>
+            </a>
+        </div>
+    </div>
+</section>

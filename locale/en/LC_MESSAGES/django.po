@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-29 21:43+0300\n"
+"POT-Creation-Date: 2021-05-03 16:32+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,15 +129,19 @@ msgstr ""
 "general guidance for the TEDx program, but individual TEDx event are self-"
 "organized. (Subject to certain rules and regulations.)</p>"
 
+#: .\project\home\templates\home\dialogues.html:4
+msgid "DIALOGUES"
+msgstr ""
+
 #: .\project\home\templates\home\hero.html:13
 msgid "home.date"
 msgstr "May 29th 2021"
 
-#: .\project\home\templates\home\hero.html:29
+#: .\project\home\templates\home\hero.html:30
 msgid "home.dualism_logo"
 msgstr ""
 
-#: .\project\home\templates\home\hero.html:38
+#: .\project\home\templates\home\hero.html:40
 msgid "tickets.cta"
 msgstr "Get your tickets!"
 
@@ -172,41 +176,32 @@ msgid "Side events"
 msgstr "SIDE EVENTS"
 
 #: .\project\home\templates\home\lineup.html:68
-#: .\project\program\templates\program\listing.html:79
+#: .\project\program\templates\program\listing.html:73
 msgid "more_soon"
-msgstr "More soon"
+msgstr "MORE SOON"
 
 #: .\project\home\templates\home\lineup.html:78
 #: .\project\program\models.py:197
 msgid "Hosting"
-msgstr "HOSTING"
+msgstr "HOSTED BY"
 
 #: .\project\home\templates\home\summary.html:14
 msgid "home.ubuntu_summary"
-msgstr ""
-"<h3>WHAT IS UBUNTU ? </h3><p><strong>DUALISM</strong> is the interpretation "
-"of the world based on <strong>two principles</strong> that act jointly and "
-"collaborate with each other. It is proposed to be <strong>the basis of "
-"connection and creation</strong>, rather than the foundation of opposition.</"
-"p>"
+msgstr "<h3>WHAT IS UBUNTU ? </h3>"
 
 #: .\project\home\templates\home\summary.html:15
 msgid "home.ubuntu_full"
 msgstr ""
-"<p>In this year's event, we approach subjects that touch upon current "
-"social, humanitarian, artistic and scientific issues, which consist of two "
-"principles.</p><p>The two principles seem to be unrelated and opposite to "
-"one another, but in reality they complement each other and act jointly to "
-"achieve a harmonious unity.</p><p>What are humans made of? Mind and body or "
-"just matter? How does the wave&mdash;particle duality lead to the cutting-"
-"edge technology of quantum computing? How do the parallel existence of "
-"electricity and magnetism and their relationship as identified by Maxwell, "
-"lead to our modern economy and society? How does digital dualism define our "
-"daily life? How does the contrast between white and black compose the "
-"essence of a picture? How do emptiness and fullness compose landscapes in "
-"architecture?</p><p>In all of the above, the dependence relationship between "
-"the two principles is clear. Without the existence of the first, the meaning "
-"of the other is negated.</p>"
+"<p> What is Ubuntu other than an open source operating system? </p> Ubuntu "
+"is a word derived from the Zulu tribe in Africa and specifically means « I am "
+"because you are » (I am because you are). The word identifies unity, "
+"humanity, completeness, solidarity and faith in a global bond that unites "
+"all humanity. The most correct interpretation of the word is « I am this, "
+"because what we all are. » How every little act affects our fellow man us? "
+"How do we all connect with each other? Does that mean we are everyone is "
+"equal? ​​What does ubuntu really mean and how many things can it connect to? "
+"Maybe Ubuntu is so deep and primitive that its interpretation calls for "
+"every thinker. </p> "
 
 #: .\project\home\templates\home\venue.html:4
 msgid "home.venue.title"
@@ -277,7 +272,7 @@ msgstr ""
 msgid "Community Partners"
 msgstr ""
 
-#: .\project\partners\models.py:93 .\project\program\models.py:223
+#: .\project\partners\models.py:97 .\project\program\models.py:223
 #: .\project\program\models.py:347 .\project\team\models.py:103
 msgid "Published"
 msgstr ""
@@ -293,11 +288,11 @@ msgstr ""
 "organizations that share our values and visions. Visit their websites and "
 "learn more about them."
 
-#: .\project\partners\templates\partners\index.html:38
+#: .\project\partners\templates\partners\index.html:76
 msgid "career site"
 msgstr "CAREER SITE"
 
-#: .\project\partners\templates\partners\index.html:42
+#: .\project\partners\templates\partners\index.html:80
 msgid "website"
 msgstr "WEBSITE"
 
@@ -386,15 +381,19 @@ msgstr "Meet the performers of the TEDxNTUA 2021 event!"
 msgid "side_events.description"
 msgstr "Learn more about the side events of the TEDxNTUA 2021 event!"
 
+#: .\project\program\templates\program\listing.html:56
+msgid "more_info"
+msgstr "MORE INFO"
+
 #: .\project\program\templates\program\presenter.html:10
 msgid "back"
 msgstr "Back"
 
-#: .\project\program\templates\program\presenter.html:54
+#: .\project\program\templates\program\presenter.html:56
 msgid "presenter.read_full"
 msgstr "Read full description"
 
-#: .\project\program\templates\program\presenter.html:55
+#: .\project\program\templates\program\presenter.html:57
 msgid "presenter.read_less"
 msgstr "Read less"
 
@@ -442,15 +441,15 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:112
+#: .\project\templates\layouts\partials\footer.html:113
 msgid "Privacy Policy"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:116
 msgid "Terms of Use"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:119
+#: .\project\templates\layouts\partials\footer.html:120
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 
