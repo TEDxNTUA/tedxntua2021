@@ -177,6 +177,10 @@ article.home-page {
                 box-shadow: $box-shadow-soft;
                 background: rgba(58, 57, 57, 0.5);
                 border-radius: $border-radius;
+                p {
+                    margin-bottom: 0.5rem;
+                    font-family: $font-family-serif;
+                }
             }
         }
     }
@@ -212,7 +216,6 @@ article.home-page {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                // background-color: black;
                 border-radius: $border-radius $border-radius 0 0;
             }
             .info {
@@ -517,7 +520,7 @@ article.home-page {
     article.home-page {
         section#summary {
             .summary-container {
-                padding: 0 $page-padding-x;
+                padding: $page-padding-x;
                 #summary-totem {
                     position: absolute;
                     filter: blur(4px) brightness(300%);
