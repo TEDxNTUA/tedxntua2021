@@ -310,7 +310,7 @@ article.about {
 @media (max-width: 372px) {
   article.about {
     .chain {
-      display: none;
+      display: none !important;
     }
     .imagebox {
       max-width: 46.66667%;

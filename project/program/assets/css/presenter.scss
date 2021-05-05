@@ -45,7 +45,7 @@ article.presenter-page {
             font-family: $font-family-serif;
             margin-left: 2%;
             #collapse-one { 
-                height: 120px; 
+                height: 100px; 
                 overflow-y: hidden;
                 &.show {
                     height: max-content;
@@ -76,7 +76,6 @@ article.presenter-page {
         padding: 0 $page-padding-x $page-padding-y;
         .presenter .info {
             margin-top: 2em;
-            padding-left: 15px;
             .name_link_oc {
                 margin-left: 0;
             }

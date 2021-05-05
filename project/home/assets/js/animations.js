@@ -13,10 +13,12 @@ $(document).ready(function() {
         $(this).css('opacity', '1')
     })
     
-    $logoContent.each(function() {
-        $(this).css('transform', 'scale(1)');
-        $(this).css('opacity', '1')
-    })
+    setTimeout(function() {
+        $logoContent.each(function() {
+            $(this).css('transform', 'scale(1)')
+            $(this).css('opacity', '1')
+        })
+    }, 1000);
 });
 
 $win.on('scroll', function () {
