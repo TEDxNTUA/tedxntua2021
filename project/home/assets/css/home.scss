@@ -31,6 +31,7 @@ article.home-page {
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
+        min-height: 50vh;
         .totem-container {
             width: 100%;
             height: 83vh;
@@ -379,10 +380,11 @@ article.home-page {
         flex-direction: column;
         padding: 2em 0;
         h2 { 
-            font-size: 2.5rem;
+            font-size: 2.5em;
         }
         h3 {
             text-align: center;
+            font-size: 1.7em;
         }
         #dialogues-card {
             margin-top: calc(2em + 1vw);
@@ -521,6 +523,7 @@ article.home-page {
         section#summary {
             .summary-container {
                 padding: $page-padding-x;
+                padding-bottom: 5em;
                 #summary-totem {
                     position: absolute;
                     filter: blur(4px) brightness(300%);
@@ -530,8 +533,11 @@ article.home-page {
                 }
             }
         }
-        section#lineup #presenter-container .presenter-card {
-            font-size: 0.7rem;
+        section#lineup {
+            padding-bottom: 5em;
+            #presenter-container .presenter-card {
+                font-size: 0.7rem;
+            }
         }
         section#venue {
             .location {
@@ -558,6 +564,9 @@ article.home-page {
                     margin-bottom: 1em;
                 }
             }
+        }
+        section#dialogues {
+            padding-bottom: 5em;
         }
         #social-container {
             display: none;
