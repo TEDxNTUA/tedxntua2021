@@ -221,14 +221,14 @@ article.home-page {
             }
             .info {
                 font-family: $font-family-serif;
-                min-height: 3.5em;
+                min-height: 5em;
                 display: flex;
                 flex-flow: column wrap;
                 align-items: center;
                 border: 1px solid $body-color;
                 border-top: none;
                 border-radius: 0 0 $border-radius $border-radius;
-                padding: 0.2em 0.2em;
+                padding: 0.5em 0.3em;
                 box-shadow: $box-shadow-soft;
                 p {
                     &:first-child {
@@ -535,8 +535,18 @@ article.home-page {
         }
         section#lineup {
             padding-bottom: 5em;
+            .tab-content .lineup-container .lineup-inner {
+                justify-content: space-evenly;
+                .presenter-card {
+                    padding-left: 2px !important;
+                    padding-right: 2px !important;
+                }
+            }
             #presenter-container .presenter-card {
                 font-size: 0.7rem;
+                .info {
+                    min-height: 7em;
+                }
             }
         }
         section#venue {
