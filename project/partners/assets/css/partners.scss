@@ -16,6 +16,49 @@ article.sponsors {
         align-self: center;
     }
 
+    .career-button, .website-button {
+        background-color: #272626d9;
+        padding: 0 2px;
+        p {
+            color: $body-color;
+        }
+        &:hover {
+            background-color: black;
+        }
+    }
+
+    .career-button {
+        height: 40%;
+        width: 40%;
+        border-radius: $border-radius-sm;
+        border: 1px solid black;
+        z-index:1;
+        display: none;
+        p {
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            line-height: 1.1;
+            margin-bottom: 0;
+        }
+    }
+
+    .website-button {
+        height: 60%;
+        width: 60%;
+        border-radius: $border-radius-sm;
+        border: 1px solid black;
+        z-index:1;
+        display: none;
+        p {  
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            z-index:2;
+            margin-bottom: 0;
+        }
+    }
+
     .category-container {
         display: block;
         flex-direction: column;
@@ -28,6 +71,7 @@ article.sponsors {
             justify-content: center;  
         }
     }
+    
     .partner-instance { 
         margin: 2em 0.25rem;
         display: flex;
@@ -56,18 +100,27 @@ article.sponsors {
                 align-items: center;
                 justify-content: space-around;
             }
-            &.hover{
-                .website-button{
+            &.hover {
+                .website-button {
                     display: flex;
                 }
-                .logo{
+                .logo {
                     filter: blur(4px);
                     -webkit-filter: blur(4px);
                 }
                 &.hasCareerLink{
-                    .career-button{
+                    .career-button {
                         display: flex;
                     }   
+                }
+            }
+            &.hasCareerLink {
+                .website-button, .career-button {
+                    width: 40%;
+                    height: 40%;
+                    p {
+                        font-size: 0.6rem;
+                    }    
                 }
             }
         }
@@ -80,64 +133,15 @@ article.sponsors {
         }
     }
 
-    .career-button{
-        height: 40%;
-        width: 40%;
-        border-radius: $border-radius-sm;
-        border: 1px solid black;
-        z-index:1;
-        display: none;
-        p{
-            font-weight: bold;
-            color: black;
-            width: 100%;
-            text-align: center;
-            line-height: 1.1;
-            margin-bottom: 0;
-        }
-    }
-
-    .career-button:hover{
-        background-color: black;
-        p{
-            color:white;
-        }
-    }
-
-    .website-button{
-        height: 60%;
-        width: 60%;
-        border-radius: $border-radius-sm;
-        border: 1px solid black;
-        z-index:1;
-        display: none;
-        p{  
-            font-weight: bold;
-            color: black;
-            width: 100%;
-            text-align: center;
-            z-index:2;
-            margin-bottom: 0;
-        }
-    }
-    
-    .website-button:hover{
-        background-color: black;
-        p{
-            color:white;
-        }
-    }
-
-
     //partner categories
     .category#PS {
-        h2{
+        h2 {
             margin-top: 1rem;
         }
         .partners-collection {
             justify-content: space-evenly;
         }
-        .partner-instance{
+        .partner-instance {
             max-width: 100%;
             flex: 0;
             margin: 1em;
@@ -145,19 +149,19 @@ article.sponsors {
                 width: 20em;
                 height: 20em;
             }
-            .career-button{
-                p{
+            .career-button {
+                p {
                     font-size: 1.2em;
                 }
             }
-            .website-button{
+            .website-button {
                 width: 40%;
                 height: 40%;
-                p{
+                p {
                     font-size: 1.2em;
                 }
             }
-            .triangle{
+            .triangle {
                 width: 2.5em;
                 height: 2.5em;
                 position: absolute;
@@ -169,7 +173,7 @@ article.sponsors {
                 border-top: solid 1.7em $body-bg;
                 border-right: solid 1.7em $body-bg;
             }
-            .triangle:hover{
+            .triangle:hover {
                 width: 3em;
                 height: 3em;
                 border-bottom: solid 2em #CACACA;
@@ -178,7 +182,7 @@ article.sponsors {
                 border-top: solid 2em $body-bg;
                 border-right: solid 2em $body-bg;
                 transition-duration: 0.4s ;
-                .leaflet-button{
+                .leaflet-button {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -188,7 +192,7 @@ article.sponsors {
     }
 
     .category#GS {
-        .partner-instance{
+        .partner-instance {
             @include make-col(4);
             margin-left: 0;
             margin-right: 0;
@@ -197,25 +201,25 @@ article.sponsors {
                 width: 15em;
                 height: 15em;
             }
-            .image-container{
+            .image-container {
                 width: 100%;
                 height: 100%;
             }
-            .career-button{
+            .career-button {
                 p{
                     font-size: 1em;
                     top:40%;
                 }
             }
-            .website-button{
+            .website-button {
                 width: 40%;
                 height: 40%;
-                p{
+                p {
                     font-size: 1em;
                     top:37%;
                 }
             }
-            .triangle{
+            .triangle {
                 width: 1.7em;
                 height: 1.7em;
                 position: absolute;
@@ -227,7 +231,7 @@ article.sponsors {
                 border-top: solid 1.2em $body-bg;
                 border-right: solid 1.2em $body-bg;
             }
-            .triangle:hover{
+            .triangle:hover {
                 width: 3em;
                 height: 3em;
                 border-bottom: solid 1.7em #CACACA;
@@ -244,7 +248,7 @@ article.sponsors {
 /////////////////////////////////
 // Modal
 /////////////////////////////////
-.modal{
+.modal {
     display: flex; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 10; /* Sit on top */
@@ -256,7 +260,7 @@ article.sponsors {
     overflow: auto; /* Enable scroll if needed */
     background-color: $body-bg; /* Fallback color */
     background-color: rgba(36, 42, 48, 0.4); /* Black w/ opacity */
-    &.hidden{
+    &.hidden {
         display:none;
     }
 }
@@ -281,18 +285,25 @@ article.sponsors {
         margin-left: auto;
       }
   }
-.modal-info-container{
+.modal-info-container {
     display: flex;
     overflow: scroll;
-    .info{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .info {
         align-self: center;
         text-align: left;
         overflow: scroll;
         width: 100%;
         height: 100%;
         word-wrap: break-word;
-        .name{
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .name {
             text-align: left;
+            font-size: 200%;
         }
         p {
             font-size: 1.2rem;
@@ -300,59 +311,59 @@ article.sponsors {
         }
     }
 }
-.modal-image-container{
+.modal-image-container {
     @include make-col (4);
-    .modal-logo{
+    .modal-logo {
         top: 0;
-        width: 100%;
+        width: 95%;
+        height: fit-content;
         object-fit: contain;
         border-radius: 25px;
         padding: 1em 2em;
+        background: #272626d9;
     }
-    .modal-buttons{
+    .modal-buttons {
         display: inline-flex;
         justify-content: center;
-        width: 100%;
+        width: 95%;
         height: auto;
         flex-wrap: wrap;
-        .modal-career-button{
+        margin-top: 1em;
+        .modal-career-button {
             border-radius:5px ;
             background-color: #171717;
-            padding: 0 1em;
+            padding: 0.5em 1em;
             margin: 0.5em;
             text-align: center;
         }
-        .modal-website-button{
-            border-radius:5px ;
+        .modal-website-button {
+            border-radius: 5px ;
             background-color: #171717;
-            padding: 0 1em;
+            padding: 0.5em 1em;
             margin: 0.5em;
             text-align: center;
         }
-        .modal-career-button:hover{
-            background-color: black;
-        }
-        .modal-website-button:hover{
-            background-color: black;
+        .modal-career-button:hover, .modal-website-button:hover {
+            background-color: rgba(39, 38, 38, 0.8);
         }
     }
 }
 
-@include media-breakpoint-up(xl){
-    .image-container:hover{
-        .website-button{
+@include media-breakpoint-up(xl) {
+    .image-container:hover {
+        .website-button {
             display: flex;
         }
-        .logo{
+        .logo {
             filter: blur(5px);
             -webkit-filter: blur(5px); 
         }
-        &.hasCareerLink{
-            .website-button{
-                top:30%;
+        &.hasCareerLink {
+            .website-button {
+                top: 30%;
                 left: 10%;
             }
-            .career-button{
+            .career-button {
                 display: flex;
             }   
         }
@@ -404,9 +415,6 @@ article.sponsors {
             height: 11em;
         }
     }
-}
-
-@include media-breakpoint-down(xs){
     .modal-content{
         height: 100%;
     }
