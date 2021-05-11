@@ -5,6 +5,11 @@ ul.nav-scrollable-tabs {
     margin: 1em;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none; //FOR FIREFOX
+    -ms-overflow-style: none; //EDGE BROWSER
+    &::-webkit-scrollbar {
+        display: none;
+    }
     .nav-item {
         flex-shrink: 0;
         scroll-snap-align: start;

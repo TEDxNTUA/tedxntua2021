@@ -1,20 +1,22 @@
 /* GLOBALS */
 
-*::-webkit-scrollbar {
-	background: $body-bg;
-}
-*::-webkit-scrollbar-thumb {
-	background: rgba(254, 168, 55, 0.5);
-	border-radius: calc(15px / 2);
-	&:hover {
-		background: rgba(254, 168, 55, 1);
-	}
-}
-
 html, body {
 	height: 100%;
 	width: 100%;
 	cursor: url(/static/images/arrow.png), auto;
+
+	scrollbar-width: thin;
+	scrollbar-color: $primary $body-bg;
+	&::-webkit-scrollbar {
+		background: $body-bg;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: rgba(254, 168, 55, 0.5);
+		border-radius: calc(15px / 2);
+		&:hover {
+			background: rgba(254, 168, 55, 1);
+		}
+	}
 }
 
 body {
