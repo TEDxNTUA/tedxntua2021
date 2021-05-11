@@ -5,8 +5,15 @@
         <img src="{% static "images/totem-hero-left.png" %}" alt="totem-left">
     </div>
     <div class="content col-8">
-        <!-- <h2>TEDxNTUA</h2> -->
-        <img id="main-logo" src="{% static "images/ubuntu-main-logo-transparent.png" %}" alt="main-logo">
+        <img id="main-logo" class="image"
+                    srcset="{% static 'images/ubuntu-main-logo-transparent-540.png' %} 540w,
+                            {% static 'images/ubuntu-main-logo-transparent-1024.png' %} 1024w,
+                            {% static 'images/ubuntu-main-logo-transparent-2400.png' %} 2400w"
+                    sizes="(max-width: 768px) 540px,
+                            (max-width: 1366px) 1024px,
+                            2400px"
+                    src="{% static 'images/ubuntu-main-logo-transparent-540.png' %}"
+                    alt="main-logo" />
         <div class="infobox">
             <time class="date" datetime="{{ event_date }}"
                 aria-label="{{ event_date }}">
@@ -18,17 +25,6 @@
                 </h3>
 
                 <img src="{% static "images/linked-circles.png" %}" alt="linked-circles">
-
-                <!-- <img class="image"
-                    srcset="{% static 'images/dualism_logo_512.png' %} 512w,
-                            {% static 'images/dualism_logo_1024.png' %} 1024w,
-                            {% static 'images/dualism_logo.png' %} 1585w"
-                    sizes="(max-width: 768px) 512px,
-                            (max-width: 1366px) 1024px,
-                            1585px"
-                    src="{% static 'images/dualism_logo_512.png' %}"
-                    alt="{% trans "home.dualism_logo" %}" /> -->
-
                 <h3>
                     <span>Kerameikos</span>
                 </h3>
@@ -40,9 +36,6 @@
             {% trans 'tickets.cta' %}
         </a>
         {% endif %}
-        <!-- <a href="https://www.youtube.com/playlist?list=PLd7-PjFC85gxOG7Ou-H_DjIFGLHpPYqy2" target="_blank">
-        <img id="dialogues-logo" src="{% static "images/dialogues-logo.png" %}" alt="TEDxNTUA Dialogues logo">
-        </a> -->
     </div>
     <div id="totem-right" class="totem-container col-2">
         <img src="{% static "images/totem-hero-right.png" %}" alt="totem-right">
