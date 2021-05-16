@@ -34,7 +34,7 @@
                 <a class="presenter-card col-6 col-sm-4 col-lg-3 col-xl-2 mx-xl-1"
                     href="{% url "presenter" slug=item.slug %}">
                     {% if item.image %}
-                        <div class="image-container">
+                        <div class="image-container">   
                             <img class="image"
                                 srcset="{{ item.image.thumbnail.320x320.url }} 320w,
                                         {{ item.image.thumbnail.720x720.url }} 720w,

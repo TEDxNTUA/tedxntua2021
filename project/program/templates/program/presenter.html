@@ -63,7 +63,7 @@
 
     <div class="activities">
         {% for activity in activities %}
-        <div class="activity">
+        <div class="activity col-sm-9">
             <header>
                 <div class="name_title">
                     <h5>{{activity.get_activity_type_display | upper}}: {{ activity.title }}</h5>
