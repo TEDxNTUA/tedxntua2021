@@ -12,7 +12,7 @@ class HomeView(TemplateView):
         qs = {
             'speakers': Presenter.speakers,
             'performers': Presenter.performers,
-            'side_events': Activity.side_events,
+            'side_events': Presenter.side_presenters,
         }
         for key in qs:
             if settings.TEDXNTUA_SHOW_UNPUBLISHED:
@@ -20,7 +20,7 @@ class HomeView(TemplateView):
             else:
                 qs[key] = qs[key].published()
 
-        qs['side_events'] = qs['side_events'].select_related('presenter')
+        # qs['side_events'] = qs['side_events'].select_related('presenter')
 
         hosts = Presenter.objects.get_queryset().filter(
             activity__activity_type=Activity.HOSTING,
