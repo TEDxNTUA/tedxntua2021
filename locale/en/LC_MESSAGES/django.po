@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-09 10:53+0300\n"
+"POT-Creation-Date: 2021-05-21 10:11+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,15 +133,19 @@ msgstr ""
 msgid "DIALOGUES"
 msgstr ""
 
-#: .\project\home\templates\home\hero.html:13
+#: .\project\home\templates\home\hero.html:20
 msgid "home.date"
 msgstr "May 29th 2021"
 
-#: .\project\home\templates\home\hero.html:30
-msgid "home.dualism_logo"
-msgstr ""
+#: .\project\home\templates\home\hero.html:24
+msgid "home.metallourgeio"
+msgstr "Metallourgeio"
 
-#: .\project\home\templates\home\hero.html:40
+#: .\project\home\templates\home\hero.html:28
+msgid "home.kerameikos"
+msgstr "Kerameikos"
+
+#: .\project\home\templates\home\hero.html:35
 msgid "tickets.cta"
 msgstr "Get your tickets!"
 
@@ -176,7 +180,7 @@ msgid "Side events"
 msgstr "SIDE EVENTS"
 
 #: .\project\home\templates\home\lineup.html:68
-#: .\project\program\templates\program\listing.html:73
+#: .\project\program\templates\program\listing.html:64
 msgid "more_soon"
 msgstr "MORE SOON"
 
@@ -210,15 +214,15 @@ msgstr "VENUE"
 
 #: .\project\home\templates\home\venue.html:5
 msgid "home.venue.name"
-msgstr "The HUB Events"
+msgstr "Metallourgeio"
 
 #: .\project\home\templates\home\venue.html:6
 msgid "home.venue.address"
-msgstr "Alkminis 5, Kerameikos"
+msgstr "Pireos 127, Kerameikos"
 
 #: .\project\home\templates\home\venue.html:10
 msgid "home.venue.photo_alt"
-msgstr "Photo of The HUB Events' building"
+msgstr "Photo of Metallourgeio' building"
 
 #: .\project\home\templates\home\venue.html:17
 msgid "home.venue.get_there"
@@ -382,7 +386,7 @@ msgstr "Meet the performers of the TEDxNTUA 2021 event!"
 msgid "side_events.description"
 msgstr "Learn more about the side events of the TEDxNTUA 2021 event!"
 
-#: .\project\program\templates\program\listing.html:56
+#: .\project\program\templates\program\listing.html:47
 msgid "more_info"
 msgstr "MORE INFO"
 

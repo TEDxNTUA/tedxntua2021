@@ -61,6 +61,7 @@ article.listing-page {
                         top: 0;
                         object-fit: cover;
                         border-radius: $border-radius;
+                        transition: transform 0.3s ease-out;
                     }
                     .boxed {
                         position: absolute;
