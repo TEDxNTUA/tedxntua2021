@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-09 10:53+0300\n"
+"POT-Creation-Date: 2021-05-21 10:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,15 +145,19 @@ msgstr ""
 msgid "DIALOGUES"
 msgstr ""
 
-#: .\project\home\templates\home\hero.html:13
+#: .\project\home\templates\home\hero.html:20
 msgid "home.date"
 msgstr "29 Μαΐου 2021"
 
-#: .\project\home\templates\home\hero.html:30
-msgid "home.dualism_logo"
-msgstr ""
+#: .\project\home\templates\home\hero.html:24
+msgid "home.metallourgeio"
+msgstr "Μεταλλουργείο"
 
-#: .\project\home\templates\home\hero.html:40
+#: .\project\home\templates\home\hero.html:28
+msgid "home.kerameikos"
+msgstr "Κεραμεικός"
+
+#: .\project\home\templates\home\hero.html:35
 msgid "tickets.cta"
 msgstr "Κάνε κράτηση!"
 
@@ -188,7 +192,7 @@ msgid "Side events"
 msgstr "SIDE EVENTS"
 
 #: .\project\home\templates\home\lineup.html:68
-#: .\project\program\templates\program\listing.html:73
+#: .\project\program\templates\program\listing.html:64
 msgid "more_soon"
 msgstr "ΣΥΝΤΟΜΑ ΠΕΡΙΣΣΟΤΕΡΑ"
 
@@ -223,15 +227,15 @@ msgstr "ΧΩΡΟΣ"
 
 #: .\project\home\templates\home\venue.html:5
 msgid "home.venue.name"
-msgstr "The HUB Events"
+msgstr "Μεταλλουργείο"
 
 #: .\project\home\templates\home\venue.html:6
 msgid "home.venue.address"
-msgstr "Αλκμήνης 5, Κεραμεικός"
+msgstr "Πειραιώς 127, Κεραμεικός"
 
 #: .\project\home\templates\home\venue.html:10
 msgid "home.venue.photo_alt"
-msgstr "Φωτογραφία του κτιρίου του The HUB Events"
+msgstr "Φωτογραφία του κτιρίου του Μεταλλουργείου"
 
 #: .\project\home\templates\home\venue.html:17
 msgid "home.venue.get_there"
@@ -411,7 +415,7 @@ msgstr "Γνώρισε τους performers του φετινού TEDxNTUA 2020!"
 msgid "side_events.description"
 msgstr "Μάθε περισσότερα για τα side events του φετινού TEDxNTUA 2020!"
 
-#: .\project\program\templates\program\listing.html:56
+#: .\project\program\templates\program\listing.html:47
 msgid "more_info"
 msgstr "ΠΕΡΙΣΣΟΤΕΡΕΣ ΠΛΗΡΟΦΟΡΙΕΣ"
 

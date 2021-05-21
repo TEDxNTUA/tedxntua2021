@@ -27,6 +27,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	line-height: 150%;
+	.section-container {
+		margin-bottom: calc(2em + 5vw);
+	}
 }
 
 header, main, footer {

@@ -21,11 +21,11 @@
             {% if settings.TEDXNTUA_VENUE_ENABLED %}
             <div class="location">
                 <h3>
-                    <span>The Hub</span><span>Events</span>
+                    <span>{% trans 'home.metallourgeio' %}</span>
                 </h3>
                 <img src="{% static "images/linked-circles.png" %}" alt="linked-circles">
                 <h3>
-                    <span>Kerameikos</span>
+                    <span>{% trans 'home.kerameikos' %}</span>
                 </h3>
             </div>
             {% endif %}
@@ -34,8 +34,9 @@
         <a href="{{ settings.TEDXNTUA_TICKETS_URL }}" class="btn btn-lg btn-primary" target="_blank">
             {% trans 'tickets.cta' %}
         </a>
-        {% endif %}
+        {% else %}
         <h3>Tickets soon available ...</h3>
+        {% endif %}
     </div>
     <div id="totem-right" class="totem-container col-2">
         <img src="{% static "images/totem-hero-right.png" %}" alt="totem-right">
