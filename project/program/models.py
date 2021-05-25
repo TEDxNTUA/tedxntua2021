@@ -204,9 +204,9 @@ class Activity(TranslatableModel):
     end = models.TimeField(null=True, blank=True)
 
     translations = TranslatedFields(
-        title=models.CharField(max_length=255),
-        subtitle=models.TextField(),
-        description=models.TextField(),
+        title=models.CharField(max_length=255, null=True, blank=True),
+        subtitle=models.TextField(null=True, blank=True),
+        description=models.TextField(null=True, blank=True),
     )
 
     image = VersatileImageField(

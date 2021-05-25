@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-21 10:12+0300\n"
+"POT-Creation-Date: 2021-05-25 20:02+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,19 +145,19 @@ msgstr ""
 msgid "DIALOGUES"
 msgstr ""
 
-#: .\project\home\templates\home\hero.html:20
+#: .\project\home\templates\home\hero.html:23
 msgid "home.date"
 msgstr "29 Μαΐου 2021"
 
-#: .\project\home\templates\home\hero.html:24
+#: .\project\home\templates\home\hero.html:27
 msgid "home.metallourgeio"
 msgstr "Μεταλλουργείο"
 
-#: .\project\home\templates\home\hero.html:28
+#: .\project\home\templates\home\hero.html:31
 msgid "home.kerameikos"
 msgstr "Κεραμεικός"
 
-#: .\project\home\templates\home\hero.html:35
+#: .\project\home\templates\home\hero.html:38
 msgid "tickets.cta"
 msgstr "Κάνε κράτηση!"
 
@@ -189,14 +189,14 @@ msgstr "ΕΡΜΗΝΕΥΤΕΣ"
 #: .\project\program\templates\program\_event-tabs.html:11
 #: .\project\templates\layouts\partials\nav.html:62
 msgid "Side events"
-msgstr "SIDE EVENTS"
+msgstr "WORKSHOPS"
 
 #: .\project\home\templates\home\lineup.html:68
 #: .\project\program\templates\program\listing.html:64
 msgid "more_soon"
 msgstr "ΣΥΝΤΟΜΑ ΠΕΡΙΣΣΟΤΕΡΑ"
 
-#: .\project\home\templates\home\lineup.html:78
+#: .\project\home\templates\home\lineup.html:77
 #: .\project\program\models.py:197
 msgid "Hosting"
 msgstr "ΠΑΡΟΥΣΙΑΖΕΙ"
@@ -292,7 +292,7 @@ msgid "Community Partners"
 msgstr "Συνεργάτες Κοινότητας"
 
 #: .\project\partners\models.py:97 .\project\program\models.py:223
-#: .\project\program\models.py:347 .\project\team\models.py:103
+#: .\project\program\models.py:347 .\project\team\models.py:104
 msgid "Published"
 msgstr "Δημόσιο"
 
@@ -419,15 +419,18 @@ msgstr "Μάθε περισσότερα για τα side events του φετι�
 msgid "more_info"
 msgstr "ΠΕΡΙΣΣΟΤΕΡΕΣ ΠΛΗΡΟΦΟΡΙΕΣ"
 
-#: .\project\program\templates\program\presenter.html:10
+#: .\project\program\templates\program\presenter.html:11
+#: .\project\program\templates\program\presenter.html:15
+#: .\project\program\templates\program\presenter.html:19
+#: .\project\program\templates\program\presenter.html:24
 msgid "back"
 msgstr "Πίσω"
 
-#: .\project\program\templates\program\presenter.html:56
+#: .\project\program\templates\program\presenter.html:70
 msgid "presenter.read_full"
 msgstr "Διάβασε την πλήρη περιγραφή"
 
-#: .\project\program\templates\program\presenter.html:57
+#: .\project\program\templates\program\presenter.html:71
 msgid "presenter.read_less"
 msgstr "Διάβασε λιγότερα"
 
@@ -512,18 +515,6 @@ msgstr "ΣΧΕΤΙΚΑ"
 #: .\project\templates\layouts\partials\nav.html:101
 msgid "Tickets"
 msgstr "ΕΙΣΙΤΗΡΙΑ"
-
-#: .\project\templates\layouts\partials\nav.html:106
-msgid "LANGUAGE"
-msgstr "ΓΛΩΣΣΑ"
-
-#: .\project\templates\layouts\partials\nav.html:133
-msgid "MENU"
-msgstr "ΜΕΝΟΥ"
-
-#: .\project\templates\layouts\partials\nav.html:134
-msgid "CLOSE"
-msgstr "ΚΛΕΙΣΕ"
 
 #: .\project\urls.py:37
 msgid "TEDxNTUA 2021 administration"
@@ -1724,6 +1715,15 @@ msgstr ""
 #: .\venv\Lib\site-packages\versatileimagefield\templates\versatileimagefield\forms\widgets\versatile_image_bootstrap.html:17
 msgid "Primary Point of Interest"
 msgstr ""
+
+#~ msgid "LANGUAGE"
+#~ msgstr "ΓΛΩΣΣΑ"
+
+#~ msgid "MENU"
+#~ msgstr "ΜΕΝΟΥ"
+
+#~ msgid "CLOSE"
+#~ msgstr "ΚΛΕΙΣΕ"
 
 #~ msgid "leaflet"
 #~ msgstr "ΦΥΛΛΑΔΙΟ"

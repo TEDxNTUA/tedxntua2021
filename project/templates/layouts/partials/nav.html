@@ -102,18 +102,6 @@
             </a>
         </li>
         {% endif %}
-        <!-- <li class="nav-item language-switch-container">
-            <h6>{% trans 'LANGUAGE' %}</h6>
-            <div role="group" class="btn-group language-switch"
-                aria-label="Select website language">
-                {% for code, lang_name in LANGUAGES %}
-                <a class="btn{% if code == CURR_LANG %} active{% endif %}"
-                    aria-label="{{ lang_name }}" href="{% change_lang code %}">
-                    {{ code | lang_short_name }}
-                </a>
-                {% endfor %}
-            </div>
-        </li> -->
     </ul>
     <div role="group" class="btn-group language-switch"
         aria-label="Select website language">
@@ -130,7 +118,11 @@
         <div class="navbar-toggler-icon" aria-hidden="true">
             <span></span><span></span><span></span>
         </div>
-        <!-- <span class="unexpanded contrast-font">{% trans 'MENU' %}</span>
-        <span class="expanded contrast-font">{% trans 'CLOSE' %}</span> -->
     </button>
 </nav>
+{% if settings.TEDXNTUA_SHOW_LIVE %}
+    <div id="on-air-label">
+        <i class="fa fa-circle"></i>
+        <span class="live">&nbsp;LIVE</span>
+    </div>
+{% endif %}

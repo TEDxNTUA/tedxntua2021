@@ -20,3 +20,40 @@ submitButton.onclick = function(){
     });
     emailField.value = '';
 };
+
+if(window.screen.width >= 992) {
+  /*Shows the pop up for Newsletter after 10seconds*/
+  $(document).ready(function(){
+    let newsAlert = document.getElementById("newsletter");
+    setTimeout(function() { 
+      let x = document.getElementById("x-button");
+      $(x).removeClass("hidden");
+      $(newsAlert).addClass("popUp");}, 7000);
+  });
+
+  /*close pop up for Newsletter*/
+  $('.close').on("click touch", function(){
+    let newsAlert = document.getElementById("newsletter");
+    $(newsAlert).removeClass('popUp');
+    let x = document.getElementById("x-button");
+    x.remove();
+  });
+
+  let navOffsetY = 500
+
+  window.addEventListener('scroll', function() {
+    let x = document.getElementById("x-button");
+    let newsAlert = document.querySelector("#newsletter");
+    let footerOffsetY = document.querySelector('#footer').offsetTop;
+    if (newsAlert != null) {
+        if (window.pageYOffset < footerOffsetY-800) {
+          newsAlert.classList.add('scrolled');
+          $(x).removeClass("hidden");
+        }
+        else {
+          newsAlert.classList.remove('scrolled');
+          $(x).addClass("hidden");
+        }  
+    }
+  });
+}

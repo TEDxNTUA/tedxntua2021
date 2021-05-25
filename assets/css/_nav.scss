@@ -186,6 +186,10 @@ nav#nav {
     text-align: right;
 }
 
+.on-air-label {
+    display: none;
+}
+
 /**
 Enforce that dropdown becomes static for small screens.
  */
@@ -227,7 +231,6 @@ Enforce that dropdown becomes static for small screens.
             align-items: center;
             padding: .1em 1vw;
             margin-bottom: 0;
-            // border-bottom: $nav-hover-border-width solid transparent;
             font-size: .9em;
             &:hover, &:active, &.active {
                 border-color: $primary;
@@ -289,8 +292,6 @@ Enforce that dropdown becomes static for small screens.
             &:hover {
                 border-bottom: 2px solid $primary;
                 border-radius: $border-radius-sm;
-                // position: relative;
-                // top: 1px; //to counter border-width
             }
         }
         .nav-dropdown-item-icon {
@@ -314,4 +315,57 @@ Enforce that dropdown becomes static for small screens.
             margin-bottom: .35em;
         }
     }
+    #on-air-label {
+        display: block;
+        position: fixed;
+        right: 5em;
+        top: calc(3.25em + 3rem + 1px);
+        font-size: 1.35rem;
+        padding: 0.3em 0.7em;
+        border-radius: 0 0 $border-radius-sm $border-radius-sm;
+        box-shadow: $box-shadow-soft;
+        background: rgba(83, 83, 83, 0.5);
+        z-index: 100;
+        &.scrolled {
+            top: calc(3.25em + 0.4*3rem + 1px);
+            transition: 0.4s;
+        }
+    }
+}
+
+.fa-circle {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+     animation-name: blinker;
+     animation-duration: 2s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+    
+     color: red;
+}
+    
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
