@@ -72,6 +72,24 @@ article.about {
           opacity: 0;
         }
       }
+      .member-link {
+        background: rgb(46, 101, 184);
+        opacity: 0.7;
+        z-index: 5;
+        height: 2.3em;
+        width: 2.3em;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 70% 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          opacity: 1;
+          cursor: url(/static/images/arrow-alt.png), auto;
+        }
+      }
     }
     .chain-left, .chain-right {
       height: 3em;
@@ -162,7 +180,6 @@ article.about {
   #about-tedxntua{
     position: relative;
     max-width: 90%;
-    // margin-top: -6vw;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5rem;

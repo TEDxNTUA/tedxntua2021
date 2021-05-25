@@ -7,7 +7,7 @@ var $totems = $('.totem-container');
 var $logoContent = $('.content');
 
 // Start animations when all assets are loaded
-$(document).ready(function() {
+$logoContent.ready(function() {
     setTimeout(function() {
         $totems.each(function() {
             $(this).css('transform', 'translate(0,0)')

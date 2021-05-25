@@ -29,6 +29,11 @@
             {{ team_name }}
           {% endblocktrans %}
         </p>
+        {% if member.link %}
+        <a class="member-link" href="{{ member.link }}" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+        </a>
+        {% endif %}
       </div>
       <div class="chain-left">
         <img src="{% static "images/3d-chain-left.png" %}"/>
@@ -44,15 +49,6 @@
   </div>
 
   <section id="about">
-    <!-- <img class="lazy lazy-on-view"
-        src="{% static "images/tedxntua_photo_540.jpg" %}"
-        data-srcset="{% static "images/tedxntua_photo_540.jpg" %} 540w,
-                 {% static "images/tedxntua_photo_1200.jpg" %} 1200w,
-                 {% static "images/tedxntua_photo_2400.jpg" %} 2400w"
-        sizes="(max-width: 768px) 540px,
-                (max-width: 1440px) 1200px,
-                2400px"
-        alt="TEDxNTUA organizing team and volunteers celebrating the conclusion of the 2019 event" /> -->
     <div class="about-section" id="about-tedxntua">
         {% trans 'about.tedxntua' %}
         {% trans 'about.join' %}

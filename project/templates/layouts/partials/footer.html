@@ -27,7 +27,7 @@
                 <img class="lazy lazy-on-view" src="{% static "images/TED-talk-2016.jpg" %}" alt="">
                 <div class="prev-talks-btn">{% trans 'WATCH' %}</div>
             </div>
-            <div id="prev-talks-btn-sm"><i class="fa fa-youtube-play"></i>&nbsp; {% trans 'Previous Talks' %}</div>
+            <div id="prev-talks-btn-sm"><i class="fa fa-youtube-play"></i><p>&nbsp; {% trans 'Previous Talks' %}</p></div>
         </a>
     </div>
     <div id="prev-events" class="footer-container col-4">
@@ -91,6 +91,7 @@
         </div>
     </div>
     <div id="newsletter" class="footer-container col-4">
+        <span id="x-button" class="close hidden">&times;</span>
         <header>
             <h4>{% trans 'Newsletter' %}</h4>
         </header>
