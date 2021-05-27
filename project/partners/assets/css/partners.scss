@@ -191,7 +191,7 @@ article.sponsors {
         }
     }
 
-    .category#GS {
+    .category#GS, .category#GHS {
         .partner-instance {
             @include make-col(4);
             margin-left: 0;
@@ -389,8 +389,10 @@ article.sponsors {
                 font-size: 1rem;
             }
         }       
-        .category#GS .partner-instance{
-            @include make-col(6);
+        .category#GS, .category#GHS {
+            .partner-instance{
+                @include make-col(6);
+            }
         }
     }
 }
@@ -410,9 +412,11 @@ article.sponsors {
             width: 17em;
             height: 17em;
         } 
-        .category#GS .partner-instance .partner-card {
-            width: 11em;
-            height: 11em;
+        .category#GS, .category#GHS {
+            .partner-instance .partner-card {
+                width: 11em;
+                height: 11em;
+            }
         }
     }
     .modal-content{
@@ -443,9 +447,11 @@ article.sponsors {
             width: 8em;
             height: 8em;
         }
-        .category#GS .partner-instance .partner-card {
-            width: 9em;
-            height: 9em;
+        .category#GS, .category#GHS {
+            .partner-instance .partner-card {
+                width: 9em;
+                height: 9em;
+            }
         }
     }
 }
