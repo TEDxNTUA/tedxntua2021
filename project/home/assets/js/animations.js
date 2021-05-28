@@ -22,13 +22,15 @@ $logoContent.ready(function() {
         })
     }, 100);
 });
-
+console.log($summary);
 $win.on('scroll', function () {
     var scrollTop = $win.scrollTop();
     
-    if ( (scrollTop - $summary[0].offsetTop) > -600) {
-        $summary.css('transform', 'translate(0,0)')
-        $summary.css('opacity', '1')
+    if ($summary.length != 0) {
+        if ((scrollTop - $summary[0].offsetTop) > -600) {
+            $summary.css('transform', 'translate(0,0)')
+            $summary.css('opacity', '1')
+        }
     }
     if ((scrollTop - $lineup[0].offsetTop) > -600) {
         $lineup.css('opacity', '1')
