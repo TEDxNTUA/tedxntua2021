@@ -5,6 +5,9 @@
     <h3 class="mb-3">The 1st TEDx Vidcast in Greece</h3>
     <div id="dialogues-card">
         <div class="image-container">
+            {% if settings.TEDXNTUA_EASTER_EGGS %}
+            <a class ="easter-egg3" href = "https://www.eventora.com/el/Events/tedxntua-ubuntu-hidden-ticket--2" target="_blank"></a>
+            {% endif %}
             <img src="{% static "images/dialogues-logo.png" %}" alt="dialogues"/>
         </div>
         <div class="buttons-container">

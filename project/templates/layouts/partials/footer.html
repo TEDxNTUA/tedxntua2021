@@ -93,7 +93,15 @@
     <div id="newsletter" class="footer-container col-4">
         <span id="x-button" class="close hidden">&times;</span>
         <header>
+            {% if settings.TEDXNTUA_EASTER_EGGS %}
+            <h4>
+                <a class="easter-egg4" href="https://www.eventora.com/el/Events/tedxntua-ubuntu-hidden-ticket--4" target="_blank">
+                    {% trans 'Newsletter' %}
+                </a>
+            </h4>
+            {% else %}
             <h4>{% trans 'Newsletter' %}</h4>
+            {% endif %}
         </header>
         <div id="newsletter-card">
             <form id="newsletter-form">

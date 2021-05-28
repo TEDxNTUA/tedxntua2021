@@ -50,6 +50,13 @@ article.home-page {
         #totem-left {
             transform: translate(-100%, 0);
             opacity: 0;
+            .easter-egg1 { //for EASTER EGGS
+                position: absolute;
+                left: 15%; 
+                top: 46%;
+                width: 20%;
+                height: 10%;
+            }
         }
         #totem-right {
             transform: translate(100%, 0);
@@ -69,14 +76,23 @@ article.home-page {
             transition-timing-function: cubic-bezier(1,.28,.59,1.37);
             transform: scale(4);
             opacity: 0;
+            position: relative;
             iframe {
                 width: 100%;
                 height: 90%;
                 border-radius: $border-radius;
+                box-shadow: $box-shadow-soft;
             }
             h2 {
                 font-size: 2.5em;
                 text-align: center;
+            }
+            .easter-egg2 { //for EASTER EGGS
+                position: absolute;
+                width: 6%;
+                height: 8%;
+                top: 35%;
+                right: 52%;
             }
             #main-logo {
                 max-width: 65%;
@@ -181,13 +197,25 @@ article.home-page {
                 justify-content: center;
                 transition: 1s ease-in;
                 transform: translate(110%, 0);
-                opacity: 0;
                 box-shadow: $box-shadow-soft;
                 background: rgba(58, 57, 57, 0.5);
                 border-radius: $border-radius;
                 p {
                     margin-bottom: 0.5rem;
                     font-family: $font-family-serif;
+                }
+            }
+            .summary-schedule {
+                display: flex;
+                background: rgba(254, 168, 55, 0.85);
+                padding: 4vh 2vw;
+                box-shadow: $box-shadow-soft;
+                border-radius: $border-radius;
+                max-height: 42em;
+                img {
+                    object-fit: contain;
+                    max-height: 100%;
+                    max-width: 100%;
                 }
             }
         }
@@ -406,11 +434,18 @@ article.home-page {
             padding: 0.9em;
             .image-container{
                 max-width: 50%;
+                position: relative;
                 img {
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
                     border-radius: $border-radius;
+                }
+                .easter-egg3 { //for EASTER EGGS
+                    position: absolute;
+                    right: 30%;
+                    width: 43%;
+                    height: 43%;
                 }
             }
             .buttons-container {
