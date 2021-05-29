@@ -12,6 +12,11 @@
     <div class="section-container">
         {% include "home/summary.html" %}
     </div>
+    {% if settings.TEDXNTUA_PARTNER_PANELS %}
+    <div class="section-container">
+        {% include "home/panels.html" %}
+    </div>
+    {% endif %}
     <div class="section-container">
         {% include "home/lineup.html" %}
     </div>

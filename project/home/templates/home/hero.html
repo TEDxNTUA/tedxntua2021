@@ -29,13 +29,17 @@
             <h2 class="monthday">{% trans 'home.date' %}</h2>
             {% if settings.TEDXNTUA_VENUE_ENABLED %}
             <div class="location">
-                <h3>
+                <h4>
                     <span>{% trans 'home.metallourgeio' %}</span>
-                </h3>
-                <img src="{% static "images/linked-circles.png" %}" alt="linked-circles">
-                <h3>
                     <span>{% trans 'home.kerameikos' %}</span>
-                </h3>
+                    <span>{% trans 'SOLD OUT' %}</span>
+                </h4>
+                <img src="{% static "images/linked-circles.png" %}" alt="linked-circles">
+                <h4>
+                    <span>{% trans 'Parallel' %}</span>
+                    <span>{% trans 'Online Event' %}</span>
+                    <span>{% trans 'Starting 19:30' %}</span>
+                </h4>
             </div>
             {% endif %}
         </div>
