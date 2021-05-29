@@ -264,6 +264,12 @@ article.home-page {
                         margin-left: 0.8em;
                         margin-bottom: 0;
                     }
+                    span {
+                        font-family: $font-family-sans-serif;
+                        font-size: medium;
+                        font-weight: lighter;
+                        margin-left: 0.5em;
+                    }
                 }
                 .google-meet-btn {
                     display: flex;
