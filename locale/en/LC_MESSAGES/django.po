@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-25 20:01+0300\n"
+"POT-Creation-Date: 2021-05-30 17:03+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr "MEET THE TEAM"
 msgid "%(team_name)s"
 msgstr ""
 
-#: .\project\about\templates\about\index.html:57
+#: .\project\about\templates\about\index.html:53
 msgid "about.tedxntua"
 msgstr ""
 "<h3>What is TEDxNTUA?</h3><p>TEDxNTUA is a conference that features "
@@ -67,7 +67,7 @@ msgstr ""
 "Institute of Communication and Computer Systems (<a href=\"https://www.iccs."
 "gr\" target=\"_blank\">ICCS</a>) of NTUA.</p>"
 
-#: .\project\about\templates\about\index.html:58
+#: .\project\about\templates\about\index.html:54
 msgid "about.join"
 msgstr ""
 "<details><summary><strong>I want to join the team!</strong></summary><p>The "
@@ -86,7 +86,7 @@ msgstr ""
 "weeks before the event for the event-day volunteers. <strong>Stay tuned</"
 "strong> to our social media pages to be updated.</p></details>"
 
-#: .\project\about\templates\about\index.html:63
+#: .\project\about\templates\about\index.html:59
 msgid "about.ted"
 msgstr ""
 "<h3>What is TED?</h3><p>TED is a nonprofit organization devoted to "
@@ -117,7 +117,7 @@ msgstr ""
 "innovators from around the globe to amplify the impact of their remarkable "
 "projects and activities.</p>"
 
-#: .\project\about\templates\about\index.html:66
+#: .\project\about\templates\about\index.html:62
 msgid "about.tedx"
 msgstr ""
 "<h3>What is TEDx?</h3><p>In the spirit of ideas worth spreading, TEDx is a "
@@ -133,19 +133,37 @@ msgstr ""
 msgid "DIALOGUES"
 msgstr ""
 
-#: .\project\home\templates\home\hero.html:23
+#: .\project\home\templates\home\hero.html:29
 msgid "home.date"
-msgstr "May 29th 2021"
+msgstr "May 30th 2021"
 
-#: .\project\home\templates\home\hero.html:27
+#: .\project\home\templates\home\hero.html:33
 msgid "home.metallourgeio"
 msgstr "Metallourgeio"
 
-#: .\project\home\templates\home\hero.html:31
+#: .\project\home\templates\home\hero.html:34
 msgid "home.kerameikos"
 msgstr "Kerameikos"
 
-#: .\project\home\templates\home\hero.html:38
+#: .\project\home\templates\home\hero.html:35
+msgid "SOLD OUT"
+msgstr ""
+
+#: .\project\home\templates\home\hero.html:39
+msgid "Parallel"
+msgstr ""
+
+#: .\project\home\templates\home\hero.html:40
+#, fuzzy
+#| msgid "Side events"
+msgid "Online Event"
+msgstr "WORKSHOPS"
+
+#: .\project\home\templates\home\hero.html:41
+msgid "Starting 19:30"
+msgstr ""
+
+#: .\project\home\templates\home\hero.html:48
 msgid "tickets.cta"
 msgstr "Get your tickets!"
 
@@ -189,11 +207,20 @@ msgstr "MORE SOON"
 msgid "Hosting"
 msgstr "HOSTED BY"
 
-#: .\project\home\templates\home\summary.html:14
+#: .\project\home\templates\home\panels.html:4
+msgid "PARTNER PANELS"
+msgstr ""
+
+#: .\project\home\templates\home\panels.html:13
+#: .\project\home\templates\home\panels.html:21
+msgid "Join the room"
+msgstr ""
+
+#: .\project\home\templates\home\summary.html:19
 msgid "home.ubuntu_summary"
 msgstr "<h3>WHAT IS UBUNTU ? </h3>"
 
-#: .\project\home\templates\home\summary.html:15
+#: .\project\home\templates\home\summary.html:20
 msgid "home.ubuntu_full"
 msgstr ""
 "<p>How does every little act affect our fellow men? </p><p>How do we all "
@@ -441,23 +468,24 @@ msgstr ""
 msgid "Previous Events"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:95
+#: .\project\templates\layouts\partials\footer.html:99
+#: .\project\templates\layouts\partials\footer.html:103
 msgid "Newsletter"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:102
+#: .\project\templates\layouts\partials\footer.html:111
 msgid "Submit"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:113
+#: .\project\templates\layouts\partials\footer.html:122
 msgid "Privacy Policy"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:116
+#: .\project\templates\layouts\partials\footer.html:125
 msgid "Terms of Use"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:120
+#: .\project\templates\layouts\partials\footer.html:129
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 
