@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-30 17:12+0300\n"
+"POT-Creation-Date: 2021-06-05 16:52+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,39 +286,43 @@ msgstr ""
 msgid "Link"
 msgstr "Σύνδεσμος"
 
-#: .\project\partners\models.py:65
+#: .\project\partners\models.py:66
 msgid "Platinum Sponsors"
 msgstr "Platinum Χορηγοί"
 
-#: .\project\partners\models.py:66
+#: .\project\partners\models.py:67
 msgid "Grand Sponsors"
 msgstr "Μεγάλοι Χορηγοί"
 
-#: .\project\partners\models.py:67
+#: .\project\partners\models.py:68
+msgid "Grand Production Sponsors"
+msgstr "Μεγάλοι Χορηγοί Παραγωγής"
+
+#: .\project\partners\models.py:69
 msgid "Grand Carrier Sponsors"
 msgstr "Μεγάλοι Χορηγοί Μεταφορών"
 
-#: .\project\partners\models.py:68
+#: .\project\partners\models.py:70
 msgid "Grand Hospitality Sponsors"
 msgstr "Μεγάλοι Χορηγοί Φιλοξενίας"
 
-#: .\project\partners\models.py:69
+#: .\project\partners\models.py:71
 msgid "Sponsors"
 msgstr "Χορηγοί"
 
-#: .\project\partners\models.py:70
+#: .\project\partners\models.py:72
 msgid "Supporters"
 msgstr "Υποστηρικτές"
 
-#: .\project\partners\models.py:71
+#: .\project\partners\models.py:73
 msgid "Media Partners"
 msgstr "Χορηγοί Επικοινωνίας"
 
-#: .\project\partners\models.py:72
+#: .\project\partners\models.py:74
 msgid "Community Partners"
 msgstr "Συνεργάτες Κοινότητας"
 
-#: .\project\partners\models.py:97 .\project\program\models.py:223
+#: .\project\partners\models.py:99 .\project\program\models.py:223
 #: .\project\program\models.py:347 .\project\team\models.py:104
 msgid "Published"
 msgstr "Δημόσιο"
