@@ -191,7 +191,7 @@ article.sponsors {
         }
     }
 
-    .category#GS, .category#GHS {
+    .category#GS, .category#GHS, .category#GPS {
         .partner-instance {
             @include make-col(4);
             margin-left: 0;
@@ -389,7 +389,7 @@ article.sponsors {
                 font-size: 1rem;
             }
         }       
-        .category#GS, .category#GHS {
+        .category#GS, .category#GHS, .category#GPS {
             .partner-instance{
                 @include make-col(6);
             }
@@ -412,7 +412,7 @@ article.sponsors {
             width: 17em;
             height: 17em;
         } 
-        .category#GS, .category#GHS {
+        .category#GS, .category#GHS, .category#GPS {
             .partner-instance .partner-card {
                 width: 11em;
                 height: 11em;
@@ -447,7 +447,7 @@ article.sponsors {
             width: 8em;
             height: 8em;
         }
-        .category#GS, .category#GHS {
+        .category#GS, .category#GHS, .category#GPS {
             .partner-instance .partner-card {
                 width: 9em;
                 height: 9em;

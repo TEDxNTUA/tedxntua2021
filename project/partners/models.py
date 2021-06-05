@@ -55,6 +55,7 @@ class Partner(TranslatableModel):
     '''
     PLATINUM_SPONSORS = 'PS'
     GRAND_SPONSORS = 'GS'
+    GRAND_PRODUCTION_SPONSORS = 'GPS'
     GRAND_CARRIER_SPONSORS = 'GCS'
     GRAND_HOSPITALITY_SPONSORS = 'GHS'
     SPONSORS = 'SPO'
@@ -64,6 +65,7 @@ class Partner(TranslatableModel):
     PARTNER_TYPES = (
         (PLATINUM_SPONSORS, _('Platinum Sponsors')),
         (GRAND_SPONSORS, _('Grand Sponsors')),
+        (GRAND_PRODUCTION_SPONSORS, _('Grand Production Sponsors')),
         (GRAND_CARRIER_SPONSORS, _('Grand Carrier Sponsors')),
         (GRAND_HOSPITALITY_SPONSORS, _('Grand Hospitality Sponsors')),
         (SPONSORS, _('Sponsors')),
