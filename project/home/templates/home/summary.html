@@ -10,15 +10,12 @@
                       shadow-shoftness="10"
                       id="summary-totem">
         </model-viewer>
-        {% if settings.TEDXNTUA_SHOW_LIVE %}
-        <div class="summary-schedule col-lg-9 col-md-8 col-sm-11">
+        <!-- <div class="summary-schedule col-lg-9 col-md-8 col-sm-11">
             <img src="{% static "images/PROGRAM-transparent.png" %}" loading="lazy-on-view" alt="totem-left">
-        </div>
-        {% else %}
+        </div> -->
         <div class="summary-text col-lg-9 col-md-8 col-sm-11">
             {% trans 'home.ubuntu_summary' %}
             {% trans 'home.ubuntu_full' %}
         </div>
-        {% endif %}
     </div>
 </section>
