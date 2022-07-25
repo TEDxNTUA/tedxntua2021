@@ -3,7 +3,7 @@ Django project for [TEDxNTUA](https://tedxntua.com)'s 2021 website.
 
 ## Contributors
 Listed alphabetically:
-1. Elina Syrri ([ElinaSyr](https://github.com/ElinaSyr))
+1. Elina Syrri ([elinasyr](https://github.com/elinasyr))
 1. George Papadoulis ([G-Papad](https://github.com/G-Papad))
 1. Lydia Balafouti ([LydiaBal](https://github.com/LydiaBal))
 1. Nick Bellos ([nickbel7](https://github.com/nickbel7))
